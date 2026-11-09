@@ -1,0 +1,12 @@
+{
+  "schema": "openmitrastar.radio73-final-decisions/v1",
+  "decisions": [
+    "Keep upstream ASPM quirks and HGW tracing/DMA helpers.",
+    "Use upstream rtl_init_sw_leds API with HGW stage logging.",
+    "Use upstream fail6 unwind and HGW registration-state cleanup guard.",
+    "Retain HGW TX ownership diagnostics without upstream-removed unused stop counter.",
+    "Use Linux7.3 linux/unaligned.h in pci.c, efuse.c and trx.c.",
+    "Read station HT capabilities via sta->deflink.ht_cap."
+  ],
+  "original_resolution_sha256": "6503c4fde908e2c27ce67d6adef8c9a39b7a161e6aa69227e65a599bf4f53307"
+}

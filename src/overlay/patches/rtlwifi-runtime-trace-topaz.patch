@@ -1,0 +1,152 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/core.c
++++ b/drivers/net/wireless/realtek/rtlwifi/core.c
+@@ -131,13 +131,25 @@
+ 	int err = 0;
+ 	struct rtl_priv *rtlpriv = rtl_priv(hw);
+ 	struct rtl_hal *rtlhal = rtl_hal(rtl_priv(hw));
+-
+-	if (!is_hal_stop(rtlhal))
++	bool hal_stopped = is_hal_stop(rtlhal);
++	bool interface_started = test_bit(RTL_STATUS_INTERFACE_START,
++					  &rtlpriv->status);
++
++	pr_info("OMRTL stage=op-start-enter hal_stop=%u interface_start=%u\n",
++		(unsigned int)hal_stopped, (unsigned int)interface_started);
++	if (!hal_stopped) {
++		pr_info("OMRTL stage=op-start-skip reason=hal-running\n");
+ 		return 0;
+-	if (!test_bit(RTL_STATUS_INTERFACE_START, &rtlpriv->status))
++	}
++	if (!interface_started) {
++		pr_info("OMRTL stage=op-start-skip reason=interface-not-ready\n");
+ 		return 0;
++	}
+ 	mutex_lock(&rtlpriv->locks.conf_mutex);
++	pr_info("OMRTL stage=adapter-start-enter\n");
+ 	err = rtlpriv->intf_ops->adapter_start(hw);
++	pr_info("OMRTL stage=adapter-start-exit err=%d hal_stop=%u\n",
++		err, (unsigned int)is_hal_stop(rtlhal));
+ 	if (!err)
+ 		rtl_watch_dog_timer_callback(&rtlpriv->works.watchdog_timer);
+ 	mutex_unlock(&rtlpriv->locks.conf_mutex);
+@@ -585,6 +597,10 @@
+ 	struct rtl_ps_ctl *ppsc = rtl_psc(rtl_priv(hw));
+ 	struct ieee80211_conf *conf = &hw->conf;
+ 
++	pr_info("OMRTL stage=config-enter changed=%#x idle=%u scanning=%u\n",
++		changed, (unsigned int)!!(conf->flags & IEEE80211_CONF_IDLE),
++		(unsigned int)mac->act_scanning);
++
+ 	if (mac->skip_scan)
+ 		return 1;
+ 
+@@ -655,6 +671,10 @@
+ 		enum nl80211_channel_type channel_type = NL80211_CHAN_NO_HT;
+ 		u8 wide_chan = (u8) channel->hw_value;
+ 
++		pr_info("OMRTL stage=config-channel hw=%u freq=%u width=%u scanning=%u\n",
++			channel->hw_value, channel->center_freq, width,
++			(unsigned int)mac->act_scanning);
++
+ 		/* channel_type is for 20&40M */
+ 		if (width < NL80211_CHAN_WIDTH_80)
+ 			channel_type =
+@@ -1431,6 +1451,10 @@
+ 	struct rtl_priv *rtlpriv = rtl_priv(hw);
+ 	struct rtl_mac *mac = rtl_mac(rtl_priv(hw));
+ 
++	pr_info("OMRTL stage=scan-start link=%d busy=%u rf=%d\n",
++		mac->link_state,
++		(unsigned int)rtlpriv->link_info.higher_busytraffic,
++		rtlpriv->psc.rfpwr_state);
+ 	rtl_dbg(rtlpriv, COMP_MAC80211, DBG_LOUD, "\n");
+ 	mac->act_scanning = true;
+ 	if (rtlpriv->link_info.higher_busytraffic) {
+@@ -1461,6 +1485,7 @@
+ 
+ 	rtlpriv->cfg->ops->led_control(hw, LED_CTL_SITE_SURVEY);
+ 	rtlpriv->cfg->ops->scan_operation_backup(hw, SCAN_OPT_BACKUP_BAND0);
++	pr_info("OMRTL stage=scan-start-pass\n");
+ }
+ 
+ static void rtl_op_sw_scan_complete(struct ieee80211_hw *hw,
+@@ -1469,6 +1494,8 @@
+ 	struct rtl_priv *rtlpriv = rtl_priv(hw);
+ 	struct rtl_mac *mac = rtl_mac(rtl_priv(hw));
+ 
++	pr_info("OMRTL stage=scan-complete-enter channels=%d results=%d\n",
++		mac->n_channels, rtlpriv->scan_list.num);
+ 	rtl_dbg(rtlpriv, COMP_MAC80211, DBG_LOUD, "\n");
+ 	mac->act_scanning = false;
+ 	mac->skip_scan = false;
+@@ -1500,7 +1527,9 @@
+ 		rtlpriv->btcoexist.btc_ops->btc_scan_notify(rtlpriv, 0);
+ 	else if (rtlpriv->btcoexist.btc_ops)
+ 		rtlpriv->btcoexist.btc_ops->btc_scan_notify_wifi_only(rtlpriv,
+-								      0);
++							      0);
++	pr_info("OMRTL stage=scan-complete-pass results=%d\n",
++		rtlpriv->scan_list.num);
+ }
+ 
+ static int rtl_op_set_key(struct ieee80211_hw *hw, enum set_key_cmd cmd,
+--- a/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c
++++ b/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c
+@@ -1281,6 +1281,7 @@
+ 	u8 tmp_u1b, u1byte;
+ 	u32 tmp_u4b;
+ 
++	pr_info("OMRTL92 stage=hw-init-enter\n");
+ 	rtl_dbg(rtlpriv, COMP_INIT, DBG_LOUD, " Rtl8192EE hw init\n");
+ 	rtlpriv->rtlhal.being_init_adapter = true;
+ 	rtlpriv->intf_ops->disable_aspm(hw);
+@@ -1302,6 +1303,8 @@
+ 	}
+ 
+ 	rtstatus = _rtl92ee_init_mac(hw);
++	pr_info("OMRTL92 stage=hw-init-mac result=%u\n",
++		(unsigned int)rtstatus);
+ 
+ 	rtl_write_byte(rtlpriv, 0x577, 0x03);
+ 
+@@ -1331,6 +1334,8 @@
+ 		return err;
+ 	}
+ 	rtlhal->fw_ready = true;
++	pr_info("OMRTL92 stage=hw-init-firmware-pass bytes=%u\n",
++		rtlhal->fwsize);
+ 	/*fw related variable initialize */
+ 	ppsc->fw_current_inpsmode = false;
+ 	rtlhal->fw_ps_state = FW_PS_STATE_ALL_ON_92E;
+@@ -1343,6 +1348,7 @@
+ 	rtl92ee_phy_bb_config(hw);
+ 
+ 	rtl92ee_phy_rf_config(hw);
++	pr_info("OMRTL92 stage=hw-init-phy-pass\n");
+ 
+ 	rtlphy->rfreg_chnlval[0] = rtl_get_rfreg(hw, RF90_PATH_A,
+ 						 RF_CHNLBW, RFREG_OFFSET_MASK);
+@@ -1386,12 +1392,15 @@
+ 	rtlpriv->rtlhal.being_init_adapter = false;
+ 
+ 	if (ppsc->rfpwr_state == ERFON) {
++		pr_info("OMRTL92 stage=hw-init-iqk-enter initialized=%u\n",
++			(unsigned int)rtlphy->iqk_initialized);
+ 		if (rtlphy->iqk_initialized) {
+ 			rtl92ee_phy_iq_calibrate(hw, true);
+ 		} else {
+ 			rtl92ee_phy_iq_calibrate(hw, false);
+ 			rtlphy->iqk_initialized = true;
+ 		}
++		pr_info("OMRTL92 stage=hw-init-iqk-exit\n");
+ 	}
+ 
+ 	rtlphy->rfpath_rx_enable[0] = true;
+@@ -1423,6 +1432,7 @@
+ 
+ 	rtl_dbg(rtlpriv, COMP_INIT, DBG_LOUD,
+ 		"end of Rtl8192EE hw init %x\n", err);
++	pr_info("OMRTL92 stage=hw-init-pass\n");
+ 	return 0;
+ }
+ 

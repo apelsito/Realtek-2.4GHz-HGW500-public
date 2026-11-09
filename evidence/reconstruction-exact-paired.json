@@ -1,0 +1,314 @@
+{
+  "schema": "realtek.reconstruction/v1",
+  "created_utc": "2026-10-22T13:18:02Z",
+  "status": "PASS_EXACT_DRIVER_MODULES",
+  "hardware_actions": false,
+  "flashable": false,
+  "compiler": "ARCompact ARC700 GCC15.2.0 build10504",
+  "upstream_archive_sha256": "47a8297131505b7d38338d39ad8a9d592507d33c695b27b1bbe55f25869a6b84",
+  "reference_context": "F363 retained kernel output matched historical F367r9 extraction",
+  "exact_object_matches": 27,
+  "compile_units": [
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/base.o",
+      "reference_sha256": "10a05f637ebfaf5cb4d8f5db9cb06ef8151f190129b4a4ebd4bf1a4f0274185a",
+      "command_sha256": "d3597f1b722d8df47ade9e560199a7d7bca8fa48ae2f4b8a7a2301c93df47403",
+      "a_sha256": "10a05f637ebfaf5cb4d8f5db9cb06ef8151f190129b4a4ebd4bf1a4f0274185a",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "10a05f637ebfaf5cb4d8f5db9cb06ef8151f190129b4a4ebd4bf1a4f0274185a"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/cam.o",
+      "reference_sha256": "bea7a0e22ca3491f6b9503cded55b207e91f841a79fd8e16c57d35101d3b39d0",
+      "command_sha256": "3917cf17cae8b7d11ba8d99bb24ede8598b4a42bbaa854de95fc442107c564db",
+      "a_sha256": "bea7a0e22ca3491f6b9503cded55b207e91f841a79fd8e16c57d35101d3b39d0",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "bea7a0e22ca3491f6b9503cded55b207e91f841a79fd8e16c57d35101d3b39d0"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/core.o",
+      "reference_sha256": "c4ba3016ca9285994438f4fde94ed282257e7e527f0e15d9e281938fad31df74",
+      "command_sha256": "62f7c7fdd0cb98058e48ae67da03cd9772c9fbc0b64957573bf6cfd3d0685fe5",
+      "a_sha256": "c4ba3016ca9285994438f4fde94ed282257e7e527f0e15d9e281938fad31df74",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "c4ba3016ca9285994438f4fde94ed282257e7e527f0e15d9e281938fad31df74"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/debug.o",
+      "reference_sha256": "f937a30ab1451da3860c0d2bd05f0c27f7f01c19dfb9a24ee5b5d8ee5c210a8e",
+      "command_sha256": "bf18de012ff4979c136e5a0c4c61aec5b543d2e4ed1297c08b7452a2a6caae06",
+      "a_sha256": "f937a30ab1451da3860c0d2bd05f0c27f7f01c19dfb9a24ee5b5d8ee5c210a8e",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "f937a30ab1451da3860c0d2bd05f0c27f7f01c19dfb9a24ee5b5d8ee5c210a8e"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/efuse.o",
+      "reference_sha256": "b35f6fb6f2e6fe74c0ef4d439c06e25985690cfcf464b78947cbc6f54371b472",
+      "command_sha256": "f730f4604df63c6d9e92aff274f1e771e4e0df58f98109eafd302107f7d41157",
+      "a_sha256": "b35f6fb6f2e6fe74c0ef4d439c06e25985690cfcf464b78947cbc6f54371b472",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "b35f6fb6f2e6fe74c0ef4d439c06e25985690cfcf464b78947cbc6f54371b472"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/ps.o",
+      "reference_sha256": "d47a7494e47c587485dbf674fe714c6f4eaabe09197920fa4327d2b2a15ab349",
+      "command_sha256": "2b641e44f5040df3c20ea1100ccce4c0b940ec6126667103fe853d21dbf9df24",
+      "a_sha256": "d47a7494e47c587485dbf674fe714c6f4eaabe09197920fa4327d2b2a15ab349",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "d47a7494e47c587485dbf674fe714c6f4eaabe09197920fa4327d2b2a15ab349"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rc.o",
+      "reference_sha256": "372d75fa5641af8fb7e227e18b6df3780f341a5930ce923199bc5b7c278245b5",
+      "command_sha256": "fb95d7a9570cc2d4d2d48d0d7942cf5a261206123ae4f02db5134274a852fc58",
+      "a_sha256": "372d75fa5641af8fb7e227e18b6df3780f341a5930ce923199bc5b7c278245b5",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "372d75fa5641af8fb7e227e18b6df3780f341a5930ce923199bc5b7c278245b5"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/regd.o",
+      "reference_sha256": "8c8dd35d14b33d6dad77e5b3484d7b1e6c0883f52042f41e4ec2be8d08575102",
+      "command_sha256": "a32b7b1c520fd81acea400e1730fe3c1b1a11748bd7653433b1f69c65d1ca69e",
+      "a_sha256": "8c8dd35d14b33d6dad77e5b3484d7b1e6c0883f52042f41e4ec2be8d08575102",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "8c8dd35d14b33d6dad77e5b3484d7b1e6c0883f52042f41e4ec2be8d08575102"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/stats.o",
+      "reference_sha256": "54b0c68f73916a344be9a641448548739e1ccd6494e78a1fd5c45dc6152dbd5b",
+      "command_sha256": "b90a75f122b6796142d21edc95fb461c957b88d826ae092ddffac8aefb17d156",
+      "a_sha256": "54b0c68f73916a344be9a641448548739e1ccd6494e78a1fd5c45dc6152dbd5b",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "54b0c68f73916a344be9a641448548739e1ccd6494e78a1fd5c45dc6152dbd5b"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/pci.o",
+      "reference_sha256": "e6e1c49bb2a8796b5b398edcbe441f75713f778f6f2ede37a3fcf7266ef763ad",
+      "command_sha256": "f3162e0318e89e810c652f3c32e51d3b6cd7602469a3a3646568211edd590b9e",
+      "a_sha256": "e6e1c49bb2a8796b5b398edcbe441f75713f778f6f2ede37a3fcf7266ef763ad",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "e6e1c49bb2a8796b5b398edcbe441f75713f778f6f2ede37a3fcf7266ef763ad"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/dm.o",
+      "reference_sha256": "3777a9887d62c25ca06be71e33047c0f734bd522e1131590786fab5070cd78bf",
+      "command_sha256": "c6a22e4909af81a3aad7675d1171c28b39b41a342d3cbbbd2ab83dbe10dcd1b0",
+      "a_sha256": "3777a9887d62c25ca06be71e33047c0f734bd522e1131590786fab5070cd78bf",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "3777a9887d62c25ca06be71e33047c0f734bd522e1131590786fab5070cd78bf"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.o",
+      "reference_sha256": "fdd285f8684bcb54daa19b6c678c9d04034b3ae2a4d1612c4a846b3f0acbaab9",
+      "command_sha256": "557e554e898aea2bf44f76af13012fd80bd7e815d04238fb757bbae000627d07",
+      "a_sha256": "fdd285f8684bcb54daa19b6c678c9d04034b3ae2a4d1612c4a846b3f0acbaab9",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "fdd285f8684bcb54daa19b6c678c9d04034b3ae2a4d1612c4a846b3f0acbaab9"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.o",
+      "reference_sha256": "7d9b828a6e8fc3985d70255c71d0bebd4c27ae4aff2ef6001b5f10a6378f36f4",
+      "command_sha256": "504b0d0e35f234cdfbc08496ef245e532ed35cd0edc744a48acab4651857ea2a",
+      "a_sha256": "7d9b828a6e8fc3985d70255c71d0bebd4c27ae4aff2ef6001b5f10a6378f36f4",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "7d9b828a6e8fc3985d70255c71d0bebd4c27ae4aff2ef6001b5f10a6378f36f4"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/led.o",
+      "reference_sha256": "d58286ca148ba16afc8d3f50d782e849ea9f85d8b389cb78a93a7ee7c4c96e08",
+      "command_sha256": "4adb784bc359bd31a2ad03493b2b295f59e326a2c0b2868f329a0c914b0a0d93",
+      "a_sha256": "d58286ca148ba16afc8d3f50d782e849ea9f85d8b389cb78a93a7ee7c4c96e08",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "d58286ca148ba16afc8d3f50d782e849ea9f85d8b389cb78a93a7ee7c4c96e08"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/phy.o",
+      "reference_sha256": "719c1b1c9e67af36e2673d95256b89f60011a8cfc83eb10962739be2d1c231fe",
+      "command_sha256": "549f783507b9c6a6958696266221f990520ada0608793367debdf6e74f21045c",
+      "a_sha256": "719c1b1c9e67af36e2673d95256b89f60011a8cfc83eb10962739be2d1c231fe",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "719c1b1c9e67af36e2673d95256b89f60011a8cfc83eb10962739be2d1c231fe"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/pwrseq.o",
+      "reference_sha256": "e4aaee546dbad67425e9396e982d444e0456c4d29954df4d791d5a7527758fa1",
+      "command_sha256": "938ef9d33214bbbefa200d14fa9a1062486fc0b0ec6c10c567999c93f20d9c12",
+      "a_sha256": "e4aaee546dbad67425e9396e982d444e0456c4d29954df4d791d5a7527758fa1",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "e4aaee546dbad67425e9396e982d444e0456c4d29954df4d791d5a7527758fa1"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rf.o",
+      "reference_sha256": "9c6cc312335cfbf05f078bfbc72fb86af93128f406587afdab12a94f8c0acfc3",
+      "command_sha256": "7cef06ea1eff6dae7f2d3f004001d9db64875585eea57a7a7528fec36dc9b3a1",
+      "a_sha256": "9c6cc312335cfbf05f078bfbc72fb86af93128f406587afdab12a94f8c0acfc3",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "9c6cc312335cfbf05f078bfbc72fb86af93128f406587afdab12a94f8c0acfc3"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/sw.o",
+      "reference_sha256": "6d0e71849dec6c093dbcc4c81305972a8d67459afafb35dcbb22d21a4b192a8c",
+      "command_sha256": "29fd7e08fe04fe39c9ed65c7da148214f08fcd12d260dbb5cf7ad4a7f65b7cc3",
+      "a_sha256": "6d0e71849dec6c093dbcc4c81305972a8d67459afafb35dcbb22d21a4b192a8c",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "6d0e71849dec6c093dbcc4c81305972a8d67459afafb35dcbb22d21a4b192a8c"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/table.o",
+      "reference_sha256": "9a65cdb76decf9aae2fb784873c7d37171512efb3df7b97d83d742778d740b54",
+      "command_sha256": "91a838e06be96e1df5df9b53a05c6ceb6a09858186a1fb9be85e3602123d2d8d",
+      "a_sha256": "9a65cdb76decf9aae2fb784873c7d37171512efb3df7b97d83d742778d740b54",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "9a65cdb76decf9aae2fb784873c7d37171512efb3df7b97d83d742778d740b54"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.o",
+      "reference_sha256": "0f39d5c12ded42f8cac223c97d84e39f4fd9c97a2ae9ed061af9953e01382307",
+      "command_sha256": "8a67fb86e19bb6ebf68c2e6fa295c29d3b51e02120dbb1aad875ad042739428a",
+      "a_sha256": "0f39d5c12ded42f8cac223c97d84e39f4fd9c97a2ae9ed061af9953e01382307",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "0f39d5c12ded42f8cac223c97d84e39f4fd9c97a2ae9ed061af9953e01382307"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8192e2ant.o",
+      "reference_sha256": "0e5dafceb1a6383daae92376d8c839ce58194c249715de631183f19ba45537a4",
+      "command_sha256": "c4ef82d6547b4f9ae7a1bbc79e7186d16098e4fa77c3611369772e85c26cafb6",
+      "a_sha256": "0e5dafceb1a6383daae92376d8c839ce58194c249715de631183f19ba45537a4",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "0e5dafceb1a6383daae92376d8c839ce58194c249715de631183f19ba45537a4"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8723b1ant.o",
+      "reference_sha256": "2b57debc9e12eb7d43e2555a0917273b25700684726a9bf68a14dd991e4d6f15",
+      "command_sha256": "ae32e8f25260dbb20dc8cebd9fe9465fd16bf9cd7c088d63fb9bf8fc98b4f11f",
+      "a_sha256": "2b57debc9e12eb7d43e2555a0917273b25700684726a9bf68a14dd991e4d6f15",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "2b57debc9e12eb7d43e2555a0917273b25700684726a9bf68a14dd991e4d6f15"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8723b2ant.o",
+      "reference_sha256": "2363a9cdb8f621fac0375b118a0404922636fe89ac972fe2a45b9cc2865de1be",
+      "command_sha256": "4b710718492311a4006ff8d82f45180bd1b3d7ab64f9e440208e543f86b17817",
+      "a_sha256": "2363a9cdb8f621fac0375b118a0404922636fe89ac972fe2a45b9cc2865de1be",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "2363a9cdb8f621fac0375b118a0404922636fe89ac972fe2a45b9cc2865de1be"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8821a1ant.o",
+      "reference_sha256": "e27a231d6d17c0ce86a86047ea71557fa5b1028abfa63f67fd694ae1c578b260",
+      "command_sha256": "f09b3c29efb2ad2fa08750cdacb06f94db92924e9639860c590b672925b0d592",
+      "a_sha256": "e27a231d6d17c0ce86a86047ea71557fa5b1028abfa63f67fd694ae1c578b260",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "e27a231d6d17c0ce86a86047ea71557fa5b1028abfa63f67fd694ae1c578b260"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8821a2ant.o",
+      "reference_sha256": "df7caa4a3a5163c506f7039f55a23cb13460a8755bf5556c66b48fcfef3bdb8c",
+      "command_sha256": "2b81e8849b1524a9cc656b259ef330bf900b9b4bb99df793d47eab6f858865ca",
+      "a_sha256": "df7caa4a3a5163c506f7039f55a23cb13460a8755bf5556c66b48fcfef3bdb8c",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "df7caa4a3a5163c506f7039f55a23cb13460a8755bf5556c66b48fcfef3bdb8c"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtcoutsrc.o",
+      "reference_sha256": "0f030e4e4c030fbc29b7a1d369f95132313603adc0efc9a2e7279af42c3ca0a1",
+      "command_sha256": "a93f68e7cc317b68cdb90861b3b1ee3d43476367d37b8025d76c48e2cd06b146",
+      "a_sha256": "0f030e4e4c030fbc29b7a1d369f95132313603adc0efc9a2e7279af42c3ca0a1",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "0f030e4e4c030fbc29b7a1d369f95132313603adc0efc9a2e7279af42c3ca0a1"
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/btcoexist/rtl_btc.o",
+      "reference_sha256": "9b3be8df7dbf223c09bed22c0f945f91721ec2e9fa69f70eb0e94a115108d5bb",
+      "command_sha256": "96c8f8eb2f065b36ad17125c3f532628855e7a40d36915746b61097cdaf775b3",
+      "a_sha256": "9b3be8df7dbf223c09bed22c0f945f91721ec2e9fa69f70eb0e94a115108d5bb",
+      "paired_identical": true,
+      "exact_reference_identical": true,
+      "b_sha256": "9b3be8df7dbf223c09bed22c0f945f91721ec2e9fa69f70eb0e94a115108d5bb"
+    }
+  ],
+  "modules": [
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko",
+      "bytes": 77412,
+      "a_sha256": "9b7988816abb5065cd5a2a39defba608d073646aac15c75e244ac5cd95e096ee",
+      "reference_sha256": "9b7988816abb5065cd5a2a39defba608d073646aac15c75e244ac5cd95e096ee",
+      "exact_reference_identical": true,
+      "b_sha256": "9b7988816abb5065cd5a2a39defba608d073646aac15c75e244ac5cd95e096ee",
+      "paired_identical": true
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko",
+      "bytes": 45680,
+      "a_sha256": "6f85efa424c6aa5b693982ae074d268d2312a3f9262238e8c6f5eda16199df63",
+      "reference_sha256": "6f85efa424c6aa5b693982ae074d268d2312a3f9262238e8c6f5eda16199df63",
+      "exact_reference_identical": true,
+      "b_sha256": "6f85efa424c6aa5b693982ae074d268d2312a3f9262238e8c6f5eda16199df63",
+      "paired_identical": true
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.ko",
+      "bytes": 102736,
+      "a_sha256": "f014ad53084e1eb3cf7a9083913388ac907f0d254478dd63b0bc9ca054394e85",
+      "reference_sha256": "f014ad53084e1eb3cf7a9083913388ac907f0d254478dd63b0bc9ca054394e85",
+      "exact_reference_identical": true,
+      "b_sha256": "f014ad53084e1eb3cf7a9083913388ac907f0d254478dd63b0bc9ca054394e85",
+      "paired_identical": true
+    },
+    {
+      "relative": "drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.ko",
+      "bytes": 115760,
+      "a_sha256": "c299e80b7b210c8b394815f56b68a1c1eba9e54ea5e807a4738f9b4bec19573f",
+      "reference_sha256": "c299e80b7b210c8b394815f56b68a1c1eba9e54ea5e807a4738f9b4bec19573f",
+      "exact_reference_identical": true,
+      "b_sha256": "c299e80b7b210c8b394815f56b68a1c1eba9e54ea5e807a4738f9b4bec19573f",
+      "paired_identical": true
+    }
+  ],
+  "source_tree": "src/baseline-exact",
+  "paired_build": true,
+  "limits": [
+    "Complete historical kernel F358 tree is not reconstructed.",
+    "Module source .mod.c and module.lds are retained F363 generated context inputs.",
+    "Exact artifact recovery does not prove physical association,traffic,persistence or recovery."
+  ],
+  "compiled_units_total": 54,
+  "linked_modules_total": 8,
+  "diagnostic_line_restored": true,
+  "byte_size_total_four_modules": 341588,
+  "resume_link_correction": "rtl_pci aggregate linker step added; both lanes complete",
+  "completed_utc": "2026-10-22T13:23:01Z",
+  "prior_result_sha256": "4db583f5f072a13381c8d0443e8b7dfc32b84480a5cb4e7b3d6118bfb182db67",
+  "portable_build_context": "build-context/f363",
+  "external_dependencies": [
+    "Linux5.10.260 archive pinned SHA256",
+    "ARCompact ARC700 GCC15.2 toolchain",
+    "Linux/WSL distribution with shell,patch,tar,xz,python3"
+  ]
+}

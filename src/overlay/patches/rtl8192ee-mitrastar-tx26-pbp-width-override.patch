@@ -1,0 +1,52 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c
++++ b/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c
+@@ -17,6 +17,19 @@
+ #include "hw.h"
+ #include "../pwrseqcmd.h"
+ #include "pwrseq.h"
++#include <linux/module.h>
++#include <linux/of.h>
++
++static bool hgw500_force_txbd64_width;
++module_param_named(hgw500_force_txbd64_width,
++		   hgw500_force_txbd64_width, bool, 0444);
++MODULE_PARM_DESC(hgw500_force_txbd64_width,
++		 "Force PCIe 64-byte TXBD width on HGW-500BNA-QCv2");
++
++static bool hgw500_tx_pbp_256;
++module_param_named(hgw500_tx_pbp_256, hgw500_tx_pbp_256, bool, 0444);
++MODULE_PARM_DESC(hgw500_tx_pbp_256,
++		 "Use OEM 256-byte TX packet-buffer pages on HGW-500BNA-QCv2");
+ 
+ #define LLT_CONFIG	5
+ 
+@@ -693,7 +704,13 @@ static bool _rtl92ee_init_mac(struct ieee80211_hw *hw)
+ 	rtl_write_byte(rtlpriv, REG_MGQ_BDNY, txpktbuf_bndy);
+ 	rtl_write_byte(rtlpriv, 0x45D, txpktbuf_bndy);
+ 
+-	rtl_write_byte(rtlpriv, REG_PBP, 0x31);
++	if (of_machine_is_compatible("mitrastar,hgw-500bna-qcv2") &&
++	    hgw500_tx_pbp_256) {
++		rtl_write_byte(rtlpriv, REG_PBP, 0x21);
++		pr_info("OMRTLTX26 stage=pbp tx_bytes=256 rx_bytes=128 reg=21\n");
++	} else {
++		rtl_write_byte(rtlpriv, REG_PBP, 0x31);
++	}
+ 	rtl_write_byte(rtlpriv, REG_RX_DRVINFO_SZ, 0x4);
+ 
+ 	u8tmp = rtl_read_byte(rtlpriv, REG_AUTO_LLT + 2);
+@@ -923,8 +940,11 @@ static bool _rtl92ee_init_mac(struct ieee80211_hw *hw)
+-	if (!rtlpci->txbd_compact32)
++	if (!rtlpci->txbd_compact32 ||
++	    (of_machine_is_compatible("mitrastar,hgw-500bna-qcv2") &&
++	     hgw500_force_txbd64_width))
+ 		wordtmp |= BIT(15);
+ 	rtl_write_word(rtlpriv, REG_RX_RXBD_NUM, wordtmp);
+-	pr_info("OMRTLTX6 stage=txbd-system-width compact32=%u bit15=%u reg=%04x\n",
+-		rtlpci->txbd_compact32, !!(wordtmp & BIT(15)), wordtmp);
++	pr_info("OMRTLTX6 stage=txbd-system-width compact32=%u force64=%u bit15=%u reg=%04x\n",
++		rtlpci->txbd_compact32, hgw500_force_txbd64_width,
++		!!(wordtmp & BIT(15)), wordtmp);
+ 
+ 	rtl_write_dword(rtlpriv, REG_TSFTIMER_HCI, 0XFFFFFFFF);
+ 

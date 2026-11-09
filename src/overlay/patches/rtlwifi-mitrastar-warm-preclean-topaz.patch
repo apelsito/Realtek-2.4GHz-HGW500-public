@@ -1,0 +1,58 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.c
++++ b/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.c
+@@ -52,12 +52,13 @@ static void _rtl92ee_mitrastar_fw_snapshot(struct ieee80211_hw *hw,
+ 		rtl_read_byte(rtlpriv, REG_HMETFR));
+ }
+ 
+-static void _rtl92ee_mitrastar_fw_cleanup(struct ieee80211_hw *hw)
++static void _rtl92ee_mitrastar_fw_cleanup(struct ieee80211_hw *hw,
++					   unsigned int attempt)
+ {
+ 	struct rtl_priv *rtlpriv = rtl_priv(hw);
+ 	struct rtl_hal *rtlhal = rtl_hal(rtlpriv);
+ 
+-	_rtl92ee_mitrastar_fw_snapshot(hw, "cleanup-before", 1);
++	_rtl92ee_mitrastar_fw_snapshot(hw, "cleanup-before", attempt);
+ 
+ 	/* The normal 92EE path only clears MCUFWDL_EN. After a warm RAM boot
+ 	 * the page/checksum bytes can retain state (observed 0x00070600).
+@@ -73,7 +74,7 @@ static void _rtl92ee_mitrastar_fw_cleanup(struct ieee80211_hw *hw)
+ 	rtlhal->last_hmeboxnum = 0;
+ 	udelay(50);
+ 
+-	_rtl92ee_mitrastar_fw_snapshot(hw, "cleanup-after", 1);
++	_rtl92ee_mitrastar_fw_snapshot(hw, "cleanup-after", attempt);
+ }
+ 
+ static void _rtl92ee_write_fw(struct ieee80211_hw *hw,
+@@ -208,6 +209,21 @@ int rtl92ee_download_fw(struct ieee80211_hw *hw, bool buse_wake_on_wlan_fw)
+ 			rtl92ee_firmware_selfreset(hw);
+ 		}
+ 	}
++	if (mitrastar_retry) {
++		u32 mcufwdl = rtl_read_dword(rtlpriv, REG_MCUFWDL);
++
++		/* A RAM/sysrq boot does not reset the PCI endpoint. If the old
++		 * firmware still advertises both MCUFWDL_RDY and WINTINI_RDY, the
++		 * normal path can inherit the old MCU/RX-DMA epoch. Clean it before
++		 * attempt zero; cold boots (neither bit set) retain the upstream path.
++		 */
++		if ((mcufwdl & (MCUFWDL_RDY | WINTINI_RDY)) ==
++		    (MCUFWDL_RDY | WINTINI_RDY)) {
++			pr_warn("OMRTL92 stage=fw-warm-preclean reason=residual-ready mcufwdl=%08x\n",
++				mcufwdl);
++			_rtl92ee_mitrastar_fw_cleanup(hw, 0);
++		}
++	}
+ 	_rtl92ee_mitrastar_fw_snapshot(hw, "attempt-start", 0);
+ 	err = _rtl92ee_download_fw_once(hw, version, pfwdata, fwsize,
+ 					     &checksum_timeout);
+@@ -219,7 +235,7 @@ int rtl92ee_download_fw(struct ieee80211_hw *hw, bool buse_wake_on_wlan_fw)
+ 	 */
+ 	if (err && mitrastar_retry && checksum_timeout) {
+ 		pr_warn("OMRTL92 stage=fw-warm-retry reason=checksum-timeout attempt=1\n");
+-		_rtl92ee_mitrastar_fw_cleanup(hw);
++		_rtl92ee_mitrastar_fw_cleanup(hw, 1);
+ 		checksum_timeout = false;
+ 		err = _rtl92ee_download_fw_once(hw, version, pfwdata, fwsize,
+ 					      &checksum_timeout);

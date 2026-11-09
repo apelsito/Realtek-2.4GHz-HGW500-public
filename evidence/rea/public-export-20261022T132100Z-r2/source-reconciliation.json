@@ -1,0 +1,451 @@
+[
+  {
+    "module": "rtl8192ee",
+    "name": "rtl92ee_dm_dynamic_arfb_select",
+    "elf_size_bytes": 522,
+    "ghidra_body_bytes": 514,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/dm.c",
+        "sha256": "9f686b2ff1610205a99d8c1f4a70f40b98ff13159b7b12563242c565c6978bdc",
+        "first_identifier_line": 964
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "rtl92ee_set_p2p_ps_offload_cmd",
+    "elf_size_bytes": 526,
+    "ghidra_body_bytes": 518,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.c",
+        "sha256": "176f5441b12c5b59def7850b7507a4209dac071f36a768467cd6d5f03298da45",
+        "first_identifier_line": 773
+      },
+      {
+        "kind": "port-overlay",
+        "path": "src/overlay/files/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.c",
+        "sha256": "272c57264c3b6b434ca8921fcf046327ae02a337ec42421c755db0202bb1869d",
+        "first_identifier_line": 856
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "_rtl92ee_set_media_status",
+    "elf_size_bytes": 280,
+    "ghidra_body_bytes": 272,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c",
+        "sha256": "7c5c1a247bbbc95690ffcb2fe6e0744d83da3360c70968489f4a78d8d72ba636",
+        "first_identifier_line": 1451
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "rtl92ee_set_hw_reg",
+    "elf_size_bytes": 2260,
+    "ghidra_body_bytes": 2136,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c",
+        "sha256": "7c5c1a247bbbc95690ffcb2fe6e0744d83da3360c70968489f4a78d8d72ba636",
+        "first_identifier_line": 407
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "rtl92ee_set_qos",
+    "elf_size_bytes": 162,
+    "ghidra_body_bytes": 158,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c",
+        "sha256": "7c5c1a247bbbc95690ffcb2fe6e0744d83da3360c70968489f4a78d8d72ba636",
+        "first_identifier_line": 1561
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "rtl92ee_update_hal_rate_tbl",
+    "elf_size_bytes": 530,
+    "ghidra_body_bytes": 522,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c",
+        "sha256": "7c5c1a247bbbc95690ffcb2fe6e0744d83da3360c70968489f4a78d8d72ba636",
+        "first_identifier_line": 2384
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "_rtl92ee_config_bb_reg",
+    "elf_size_bytes": 136,
+    "ghidra_body_bytes": 130,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/phy.c",
+        "sha256": "2307e9c9f541297c4560d970f8d0318caa444424d2422716b9ad5c7996252a06",
+        "first_identifier_line": 346
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "phy_set_txpower_index_by_rate_array",
+    "elf_size_bytes": 1122,
+    "ghidra_body_bytes": 930,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/phy.c",
+        "sha256": "2307e9c9f541297c4560d970f8d0318caa444424d2422716b9ad5c7996252a06",
+        "first_identifier_line": 1514
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "_rtl92ee_phy_sw_chnl_step_by_step",
+    "elf_size_bytes": 562,
+    "ghidra_body_bytes": 556,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/phy.c",
+        "sha256": "2307e9c9f541297c4560d970f8d0318caa444424d2422716b9ad5c7996252a06",
+        "first_identifier_line": 31
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "rtl92ee_phy_rf6052_config",
+    "elf_size_bytes": 410,
+    "ghidra_body_bytes": 406,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rf.c",
+        "sha256": "00bd83917db564fdf1bcaef3a66099a2bdd8912b32b2fe1553e70bebfc1a934e",
+        "first_identifier_line": 41
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "rtl92ee_rx_query_desc",
+    "elf_size_bytes": 2926,
+    "ghidra_body_bytes": 2912,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c",
+        "sha256": "67d870e9e963947292bb47723b6705eb185538d9956660006e76f6eac4cf1c1b",
+        "first_identifier_line": 327
+      },
+      {
+        "kind": "port-overlay",
+        "path": "src/overlay/files/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c",
+        "sha256": "47b2d7956e0881745b91033814799ecb60573a47e075e723471a49f07a530b57",
+        "first_identifier_line": 669
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl8192ee",
+    "name": "rtl92ee_tx_fill_desc",
+    "elf_size_bytes": 3280,
+    "ghidra_body_bytes": 3258,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c",
+        "sha256": "67d870e9e963947292bb47723b6705eb185538d9956660006e76f6eac4cf1c1b",
+        "first_identifier_line": 639
+      },
+      {
+        "kind": "port-overlay",
+        "path": "src/overlay/files/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c",
+        "sha256": "47b2d7956e0881745b91033814799ecb60573a47e075e723471a49f07a530b57",
+        "first_identifier_line": 1133
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtl_pci",
+    "name": "rtl_pci_probe",
+    "elf_size_bytes": 4334,
+    "ghidra_body_bytes": 4330,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/pci.c",
+        "sha256": "b487ff3aa929f3543495db32bd11df133dc1949cfa130b0631df07dcede3d2f1",
+        "first_identifier_line": 2072
+      },
+      {
+        "kind": "port-overlay",
+        "path": "src/overlay/files/drivers/net/wireless/realtek/rtlwifi/pci.c",
+        "sha256": "5155d5bb5aae02152d00b22c22f62e350dd477f0e4cceb0e284c2a501537b7c1",
+        "first_identifier_line": 2991
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "HIGH_PCODE_TRUNCATION"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_mrate_idx_to_arfr_id",
+    "elf_size_bytes": 188,
+    "ghidra_body_bytes": 178,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/base.c",
+        "sha256": "592e07689dd176de2d28ac2de20a8435a43440741932cbe630a98a7b6aba1140",
+        "first_identifier_line": 701
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_c2h_content_parsing",
+    "elf_size_bytes": 190,
+    "ghidra_body_bytes": 180,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/base.c",
+        "sha256": "592e07689dd176de2d28ac2de20a8435a43440741932cbe630a98a7b6aba1140",
+        "first_identifier_line": 2256
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtlwifi_rate_mapping",
+    "elf_size_bytes": 214,
+    "ghidra_body_bytes": 178,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/base.c",
+        "sha256": "592e07689dd176de2d28ac2de20a8435a43440741932cbe630a98a7b6aba1140",
+        "first_identifier_line": 986
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_send_smps_action",
+    "elf_size_bytes": 488,
+    "ghidra_body_bytes": 482,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/base.c",
+        "sha256": "592e07689dd176de2d28ac2de20a8435a43440741932cbe630a98a7b6aba1140",
+        "first_identifier_line": 2454
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_skb_ether_type_ptr.isra.0",
+    "elf_size_bytes": 100,
+    "ghidra_body_bytes": 94,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/base.c",
+        "sha256": "592e07689dd176de2d28ac2de20a8435a43440741932cbe630a98a7b6aba1140",
+        "first_identifier_line": 1468
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_get_tcb_desc",
+    "elf_size_bytes": 1876,
+    "ghidra_body_bytes": 1818,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/base.c",
+        "sha256": "592e07689dd176de2d28ac2de20a8435a43440741932cbe630a98a7b6aba1140",
+        "first_identifier_line": 1228
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_addr_delay",
+    "elf_size_bytes": 104,
+    "ghidra_body_bytes": 98,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/core.c",
+        "sha256": "931232bba7fd64026229de3a5cc2de1382b3e8faf7ab040e7d5bc6db54f22c94",
+        "first_identifier_line": 32
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_op_ampdu_action",
+    "elf_size_bytes": 380,
+    "ghidra_body_bytes": 366,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/core.c",
+        "sha256": "931232bba7fd64026229de3a5cc2de1382b3e8faf7ab040e7d5bc6db54f22c94",
+        "first_identifier_line": 1386
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_op_add_interface",
+    "elf_size_bytes": 564,
+    "ghidra_body_bytes": 546,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/core.c",
+        "sha256": "931232bba7fd64026229de3a5cc2de1382b3e8faf7ab040e7d5bc6db54f22c94",
+        "first_identifier_line": 210
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_op_set_key",
+    "elf_size_bytes": 1018,
+    "ghidra_body_bytes": 1006,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/core.c",
+        "sha256": "931232bba7fd64026229de3a5cc2de1382b3e8faf7ab040e7d5bc6db54f22c94",
+        "first_identifier_line": 1506
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_hal_pwrseqcmdparsing",
+    "elf_size_bytes": 398,
+    "ghidra_body_bytes": 392,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/core.c",
+        "sha256": "931232bba7fd64026229de3a5cc2de1382b3e8faf7ab040e7d5bc6db54f22c94",
+        "first_identifier_line": 1756
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  },
+  {
+    "module": "rtlwifi",
+    "name": "rtl_signal_scale_mapping",
+    "elf_size_bytes": 134,
+    "ghidra_body_bytes": 130,
+    "source_definition_matches": [
+      {
+        "kind": "original-linux-5.10.260",
+        "path": "original/linux-5.10.260/drivers/net/wireless/realtek/rtlwifi/stats.c",
+        "sha256": "d2f64c4ac4e9e7f26fda14836c9019d5435f049c5781d8f8f12824a281b5a3ed",
+        "first_identifier_line": 40
+      }
+    ],
+    "source_available": true,
+    "exact_binary_equivalence": "UNPROVEN",
+    "issue": "DECODER_OR_BOUNDARY_DIFFERENCE"
+  }
+]

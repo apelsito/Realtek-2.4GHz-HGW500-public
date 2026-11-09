@@ -1,0 +1,6 @@
+0x100a4: add3 r0, r0, 0x100
+0x100a8: ld r0, [r0, -0xc8]
+0x100ac: add_s r1, r1, r0
+0x100ae: ldw r0, [r1]
+0x100b2: extw_s r0, r0
+0x100b4: j_s blink

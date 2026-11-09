@@ -1,0 +1,45 @@
+{
+  "schema": "realtek.basic73-physical-boot-milestone/v1",
+  "status": "PASS_PHYSICAL_BASIC_UART_BOOT",
+  "date": "2026-10-22",
+  "observed_utc": "15:35",
+  "kernel": "7.3.0-openmitrastar-basic73",
+  "ram_image": {
+    "bytes": 1966400,
+    "sha256": "24a085a69296c7f8c31dc587a231231750f66928b3480ff777f0d741aa48fbfb",
+    "crc32": "0f700813"
+  },
+  "bootbase_ram_crc_verified": true,
+  "pid1_observed": true,
+  "new_nonce_reply_verified": true,
+  "uptime_seconds": [
+    175.83,
+    176.14
+  ],
+  "timer0_irq3_counts": [
+    17589,
+    17608
+  ],
+  "uart_irq16_counts": [
+    65,
+    86
+  ],
+  "userspace_memtest": {
+    "bytes": 1048576,
+    "patterns": 2,
+    "status": "PASS",
+    "whole_ram_or_cache_coherence_proven": false
+  },
+  "runtime": "RAM_ONLY_LEFT_RUNNING",
+  "flash_writes": 0,
+  "persistent_bootenv_writes": 0,
+  "ethernet": "NOT_INCLUDED",
+  "realtek_2g": "NOT_INCLUDED",
+  "quantenna_5g": "NOT_INCLUDED",
+  "persistent_boot": "UNRUN",
+  "repeated_cold_boot": "UNRUN",
+  "long_soak": "UNRUN",
+  "post_trial_manual_return": "UNRUN",
+  "full_port_complete": false,
+  "provenance": "Reviewed UART runner; exact RAM CRC and boot/output recorded locally; public-safe summary without raw device identity or credentials"
+}

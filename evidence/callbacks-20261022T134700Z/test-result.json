@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "finished_utc": "2026-10-22T13:25:12.620131+00:00",
+  "tests": 4,
+  "exit_code": 0,
+  "hardware_accessed": false,
+  "tested_script_sha256": "ee9ee965c2bd7194fa7a518d316f477cc757931936052d532476ca0d176e84dc",
+  "stdout": "",
+  "stderr": "test_comment_mask_preserves_source_lines (test_callback_registrations.CallbackTests.test_comment_mask_preserves_source_lines) ... ok\ntest_function_calls_do_not_count_as_values (test_callback_registrations.CallbackTests.test_function_calls_do_not_count_as_values) ... ok\ntest_nested_and_quoted_arguments (test_callback_registrations.CallbackTests.test_nested_and_quoted_arguments) ... ok\ntest_param_ops_is_undefined_data_object (test_callback_registrations.CallbackTests.test_param_ops_is_undefined_data_object) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.009s\n\nOK\n"
+}

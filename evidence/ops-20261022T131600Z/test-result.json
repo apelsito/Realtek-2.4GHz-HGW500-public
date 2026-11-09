@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "finished_utc": "2026-10-22T13:12:47.052035+00:00",
+  "tests": 7,
+  "exit_code": 0,
+  "hardware_accessed": false,
+  "tested_script_sha256": "667128138fe7369953a91f93b5541f0f2be31d1a2331dfa73c307f31d0ba0259",
+  "stdout": "",
+  "stderr": "test_comments_never_create_fields (test_driver_ops.OpsTests.test_comments_never_create_fields) ... ok\ntest_conditional_layout_omits_disabled_pm (test_driver_ops.OpsTests.test_conditional_layout_omits_disabled_pm) ... ok\ntest_layout_mismatch_refused (test_driver_ops.OpsTests.test_layout_mismatch_refused) ... ok\ntest_rate_mixed_layout_retains_scalar_slots (test_driver_ops.OpsTests.test_rate_mixed_layout_retains_scalar_slots) ... ok\ntest_section_relocation_recovers_local_callback (test_driver_ops.OpsTests.test_section_relocation_recovers_local_callback) ... ok\ntest_undefined_function_import_and_true_null_distinct (test_driver_ops.OpsTests.test_undefined_function_import_and_true_null_distinct) ... ok\ntest_unsupported_abi_condition_refused (test_driver_ops.OpsTests.test_unsupported_abi_condition_refused) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.002s\n\nOK\n"
+}

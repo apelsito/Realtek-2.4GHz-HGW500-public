@@ -1,0 +1,38 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/core.c
++++ b/drivers/net/wireless/realtek/rtlwifi/core.c
+@@ -20,5 +20,12 @@ MODULE_PARM_DESC(hgw500_tx_ampdu_disable,
+ 		 "Disable TX A-MPDU only on MitraStar HGW-500BNA-QCv2 lab runs");
+ 
++bool rtl_hgw500_honest_tx_ack;
++module_param_named(hgw500_honest_tx_ack, rtl_hgw500_honest_tx_ack,
++		   bool, 0444);
++MODULE_PARM_DESC(hgw500_honest_tx_ack,
++		 "Do not advertise or fabricate TX ACK status on HGW-500BNA-QCv2 lab runs");
++EXPORT_SYMBOL_GPL(rtl_hgw500_honest_tx_ack);
++
+ u8 channel5g[CHANNEL_MAX_NUMBER_5G] = {
+ 	36, 38, 40, 42, 44, 46, 48,		/* Band 1 */
+ 	52, 54, 56, 58, 60, 62, 64,		/* Band 2 */
+--- a/drivers/net/wireless/realtek/rtlwifi/base.c
++++ b/drivers/net/wireless/realtek/rtlwifi/base.c
+@@ -11,4 +11,5 @@
+ #include <linux/ip.h>
+ #include <linux/module.h>
++#include <linux/of.h>
+ #include <linux/udp.h>
+ 
+@@ -375,7 +376,13 @@ int rtl_init_core(struct ieee80211_hw *hw)
+ 	ieee80211_hw_set(hw, RX_INCLUDES_FCS);
+ 	ieee80211_hw_set(hw, AMPDU_AGGREGATION);
+ 	ieee80211_hw_set(hw, MFP_CAPABLE);
+-	ieee80211_hw_set(hw, REPORTS_TX_ACK_STATUS);
++	if (rtl_hgw500_honest_tx_ack &&
++	    of_machine_is_compatible("mitrastar,hgw-500bna-qcv2") &&
++	    rtlhal->hw_type == HARDWARE_TYPE_RTL8192EE) {
++		pr_info_once("OMRTLACK stage=policy-active reports_tx_ack=0 inject_ack=0 ampdu=unchanged\n");
++	} else {
++		ieee80211_hw_set(hw, REPORTS_TX_ACK_STATUS);
++	}
+ 	ieee80211_hw_set(hw, SUPPORTS_AMSDU_IN_AMPDU);
+ 	ieee80211_hw_set(hw, SUPPORT_FAST_XMIT);
+ 

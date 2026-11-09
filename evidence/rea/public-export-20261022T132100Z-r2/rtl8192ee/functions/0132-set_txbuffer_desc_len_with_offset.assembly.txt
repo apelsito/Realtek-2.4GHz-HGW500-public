@@ -1,0 +1,7 @@
+0x18cc0: asl_s r1, r1, 0x4
+0x18cc2: extw_s r2, r2
+0x18cc4: ld.a r1, r0, r1
+0x18cc8: and r1, r1, 0xffff0000
+0x18cd0: or_s r1, r1, r2
+0x18cd2: st_s r1, r0
+0x18cd4: j_s blink

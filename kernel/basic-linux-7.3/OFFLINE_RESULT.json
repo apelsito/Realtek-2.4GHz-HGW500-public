@@ -1,0 +1,67 @@
+{
+  "schema": "realtek.basic-kernel-milestone/v1",
+  "status": "BUILD_PASS_PAIRED_RAM_BOOT_UNRUN",
+  "kernel": "7.3.0-openmitrastar-basic73",
+  "upstream_commit": "c03c1a14507dfaf8b856c2608f9ac216021fc222",
+  "artifacts": [
+    {
+      "name": "vmlinux",
+      "bytes": 2418080,
+      "sha256": "6c13ee940002b1e4512624e676cc158bc4dd3a51f7299592281fac52b39db220"
+    },
+    {
+      "name": "basic73.raw.bin",
+      "bytes": 1958208,
+      "sha256": "444eeafa263d3745cc4a730d16399ab3b32c0f5f1226a8c187c38496c452ebf3"
+    },
+    {
+      "name": "topaz_mitrastar_basic73.dtb",
+      "bytes": 1901,
+      "sha256": "6ec8dd89f2bb018fab80cce69dcdca58eace5733e18f219aee67a2284687b8b7"
+    },
+    {
+      "name": ".config",
+      "bytes": 24521,
+      "sha256": "0560f3aa62e754356e5bb09058304c72f73a8a66adc2a9c9cd3a4d1f7194ddbe"
+    },
+    {
+      "name": "basic73-RAM-ONLY-NO-GO.uImage",
+      "bytes": 663868,
+      "sha256": "17e10621f239cebf46f3abe754a2d4a52681e1edaaffbb515aabff328cb0ba17"
+    },
+    {
+      "name": "basic73-RAM-ONLY-NO-GO.ras.bin",
+      "bytes": 671996,
+      "sha256": "948b5cdc9ee05218055626d2b05ecfa91dd46c562c50ec48b84676c10b78455a"
+    },
+    {
+      "name": "basic73.lzma",
+      "bytes": 663804,
+      "sha256": "7b3df2a27e1a8c196a1669081c98518834450efef6ae6e7a08d0bde99fa0b0c3"
+    }
+  ],
+  "paired_identical": true,
+  "forbidden_instructions": 0,
+  "physical_boot": "UNRUN",
+  "hardware_mutated": false,
+  "source_changed_files": 16,
+  "read_only_cpu_profile": {
+    "cpu": "ARC750 family0x33",
+    "mmu": "v2",
+    "page_size": 8192,
+    "clock_hz": 500000000,
+    "icache": {
+      "bytes": 16384,
+      "ways": 2,
+      "line_bytes": 32
+    },
+    "dcache": {
+      "bytes": 16384,
+      "ways": 4,
+      "line_bytes": 32
+    }
+  },
+  "drivers_added": false,
+  "compressed_v6_status": "NO_GO_CROSS_DECODER_KNOWN_SIZE_END_MARKER_CONFLICT",
+  "selected_ram_packaging": "RAM_PACKAGING_V7.json"
+}

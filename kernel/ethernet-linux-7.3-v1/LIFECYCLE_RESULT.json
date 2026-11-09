@@ -1,0 +1,26 @@
+{
+  "schema": "openmitrastar.eth73-lifecycle-fixture/v1",
+  "status": "PASS_EXTRACTED_LIFECYCLE",
+  "hardware_accessed": false,
+  "pins": {
+    "/workspace/user-home/Desktop/MitraStar/work/kernel-port/linux-7.3-ethernet-v1/candidate/driver/qtn-topaz-emac-eth73.c": "cf9441d47c168a050d6df9fefb834bfd5697e7340a33739d33b56b1ccbe9220a",
+    "/workspace/user-home/Desktop/MitraStar/work/kernel-port/linux-7.3-ethernet-v1/candidate/driver/topaz-ethernet.h": "59e06f782d8afa0eb0da5db7a9723d28c82678fe422dd51f34d7914b8a9f18c9",
+    "/home/rea/openmitrastar-linux73-20261022T135100Z/eth73-offline-v2/source/linux-7.3/include/linux/iopoll.h": "9edf274f8555e266233ba151942af51e83ad175d885478556075258044dd3a0b",
+    "/workspace/user-home/Desktop/MitraStar/tools/test_f374_ethernet_rx_quiesce.py": "a45d3118d48b5b45455491931f6216751b23a8f0470a134fe51a8769011c1704",
+    "/workspace/user-home/Desktop/MitraStar/work/kernel-port/linux-7.3-ethernet-v1/test_lifecycle.py": "43c148dfe960499b17cca6b69242e9a093d55c41aa6812f12aa191269992799d"
+  },
+  "functions": [
+    "qtn_emac_disable_irqs",
+    "qtn_emac_quiesce",
+    "qtn_emac_free_rx_buffers",
+    "qtn_emac_free_tx_buffers",
+    "qtn_emac_free_rings",
+    "qtn_emac_open",
+    "qtn_emac_stop"
+  ],
+  "output": "ETH73_LIFECYCLE_PASS cases=18 assertions=18340 hardware_accessed=0\n",
+  "limits": [
+    "Fake MMIO, IRQ, NAPI and work cancellation; no real DMA traffic or CPU execution.",
+    "Actual open/stop/free functions executed; driver probe/remove and full worker are not executed here."
+  ]
+}

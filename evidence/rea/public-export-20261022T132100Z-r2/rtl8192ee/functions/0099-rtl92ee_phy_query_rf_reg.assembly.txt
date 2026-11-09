@@ -1,0 +1,14 @@
+0x16d50: push_s blink
+0x16d52: push_s r14
+0x16d54: push_s r13
+0x16d56: mov_s r13, r3
+0x16d58: jl 0x14ce8
+0x16d60: mov_s r14, r0
+0x16d62: mov_s r0, r13
+0x16d64: jl 0x151f8
+0x16d6c: and_s r13, r13, r14
+0x16d6e: lsr r0, r13, r0
+0x16d72: pop_s r13
+0x16d74: pop_s r14
+0x16d76: pop_s blink
+0x16d78: j_s blink

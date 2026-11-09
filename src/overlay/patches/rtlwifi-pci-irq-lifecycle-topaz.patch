@@ -1,0 +1,12 @@
+diff --git a/drivers/net/wireless/realtek/rtlwifi/pci.h b/drivers/net/wireless/realtek/rtlwifi/pci.h
+--- a/drivers/net/wireless/realtek/rtlwifi/pci.h
++++ b/drivers/net/wireless/realtek/rtlwifi/pci.h
+@@ -168,6 +168,8 @@ struct rtl8192_rx_ring {
+ struct rtl_pci {
+ 	struct pci_dev *pdev;
+ 	bool irq_enabled;
++	bool irq_line_lifecycle_managed;
++	bool irq_line_disabled;
+ 
+ 	bool driver_is_goingto_unload;
+ 	bool up_first_time;

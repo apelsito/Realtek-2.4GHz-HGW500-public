@@ -1,0 +1,6 @@
+{
+  "CONFIG_PM": false,
+  "CONFIG_MAC80211_DEBUGFS": false,
+  "CONFIG_NL80211_TESTMODE": false,
+  "CONFIG_IPV6": true
+}

@@ -1,0 +1,35 @@
+diff --git a/drivers/net/wireless/realtek/rtlwifi/core.c b/drivers/net/wireless/realtek/rtlwifi/core.c
+--- a/drivers/net/wireless/realtek/rtlwifi/core.c
++++ b/drivers/net/wireless/realtek/rtlwifi/core.c
+@@ -11,4 +11,5 @@
+ #include "btcoexist/rtl_btc.h"
+ #include <linux/firmware.h>
+ #include <linux/export.h>
++#include <linux/of.h>
+ #include <net/cfg80211.h>
+@@ -1566,6 +1567,7 @@ static int rtl_op_set_key(struct ieee80211_hw *hw, enum set_key_cmd cmd,
+ 			  struct ieee80211_key_conf *key)
+ {
+ 	struct rtl_priv *rtlpriv = rtl_priv(hw);
++	struct rtl_hal *rtlhal = rtl_hal(rtlpriv);
+ 	u8 key_type = NO_ENCRYPTION;
+ 	u8 key_idx;
+ 	bool group_key = false;
+@@ -1577,6 +1579,17 @@ static int rtl_op_set_key(struct ieee80211_hw *hw, enum set_key_cmd cmd,
+ 	rtlpriv->btcoexist.btc_info.in_4way = false;
+ 
+ 	if (rtlpriv->cfg->mod_params->sw_crypto || rtlpriv->sec.use_sw_sec) {
++		/* mac80211 treats 1 as an explicit software-key fallback.  The
++		 * generic -ENOSPC route is rejected during AP bring-up on this
++		 * Topaz/RTL818b combination even though CCMP software crypto is
++		 * available.  Keep the exception narrow and auditable.
++		 */
++		if (of_machine_is_compatible("mitrastar,hgw-500bna-qcv2") &&
++		    rtlhal->hw_type == HARDWARE_TYPE_RTL8192EE &&
++		    vif->type == NL80211_IFTYPE_AP) {
++			pr_info_once("OMRTL stage=ap-swcrypto-fallback accepted\n");
++			return 1;
++		}
+ 		rtl_dbg(rtlpriv, COMP_ERR, DBG_WARNING,
+ 			"not open hw encryption\n");
+ 		return -ENOSPC;	/*User disabled HW-crypto */

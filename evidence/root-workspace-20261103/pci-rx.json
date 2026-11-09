@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "Host execution of production RX and C2H functions with fault injection",
+  "hardware_accessed": false,
+  "source_sha256": {
+    "pci.c": "5b56c147b517ac1a59ab0a9869b1d08bf994b75263b03128075f0158b618c8c3",
+    "base.c": "aac3819360ea1a03893c13eb76dde8d26404dcc9ac6598fc9df96ffc5e6d60ee"
+  },
+  "sanitizers": [
+    "address",
+    "undefined",
+    "leak"
+  ],
+  "run_output": "PASS real RTL PCI RX mapping, ownership, framing, C2H bounds\n",
+  "exit_code": 0
+}

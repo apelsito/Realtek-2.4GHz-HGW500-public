@@ -1,0 +1,38 @@
+{
+  "schema": "openmitrastar.basic73-uncompressed-ram/v1",
+  "status": "PASS_OFFLINE_UNCOMPRESSED_FORMAT_RAM_BOOT_UNRUN",
+  "source_raw_sha256": "444eeafa263d3745cc4a730d16399ab3b32c0f5f1226a8c187c38496c452ebf3",
+  "source_kernel_sha256": "6c13ee940002b1e4512624e676cc158bc4dd3a51f7299592281fac52b39db220",
+  "same_kernel_and_initramfs": true,
+  "compression": 0,
+  "artifact": {
+    "path": "basic73-RAM-ONLY-NO-GO.ras.bin",
+    "bytes": 1966400,
+    "sha256": "24a085a69296c7f8c31dc587a231231750f66928b3480ff777f0d741aa48fbfb",
+    "crc32": "0f700813"
+  },
+  "header": {
+    "magic": "0x27051956",
+    "hcrc": "0x6cebb8b6",
+    "calculated_hcrc": "0x6cebb8b6",
+    "timestamp": 1792365298,
+    "payload_size": 1958208,
+    "load": "0x8493a000",
+    "entry": "0x8493e000",
+    "dcrc": "0x7a07df5e",
+    "os": 5,
+    "arch": 19,
+    "type": 2,
+    "compression": 0,
+    "name": "OpenMitraStar 7.3 BASIC UART",
+    "calculated_ras_payload_dcrc": "0x7a07df5e"
+  },
+  "checks": {
+    "bootbase_contract": true,
+    "payload_matches_raw": true,
+    "staging_before_scratch": true
+  },
+  "hardware_accessed": false,
+  "physical_boot": "UNRUN",
+  "reason": "Basic RAM boot avoids disputed known-size LZMA end-marker behavior; no decoder waiver."
+}

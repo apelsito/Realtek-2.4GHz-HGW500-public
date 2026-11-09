@@ -1,0 +1,2561 @@
+{
+  "schema": "realtek.build-context/v1",
+  "reference": "F363 retained output",
+  "compiler": "ARCompact ARC700 GCC15.2.0 build10504",
+  "files": [
+    {
+      "path": "include/config/arc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/auto.conf",
+      "sha256": "aff4896fa365f4977ef1166ac9668534ed3a2faea64c831b5cd79ec7a574a271",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/auto.conf.cmd",
+      "sha256": "f4cb3d670d20a2de75e500eb07e87404487b731ebb255119d5103d1ed603744b",
+      "role": "NORMALIZED_GENERATED_CONFIG_DEPENDENCIES",
+      "original_sha256": "6ca879b3461e74969091887117ff28aa2ffa097a72f3097603aafffd8fa74487"
+    },
+    {
+      "path": "include/config/bitreverse.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/block.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/bpf.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/bql.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/bridge.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/bug.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cfg80211.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crc32.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/devtmpfs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/dql.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/dtc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/elfcore.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/embedded.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/epoll.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/ethernet.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/eventfd.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/expert.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/flatmem.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/gpiolib.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/hwmon.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/hz.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/i2c.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/inet.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/input.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/ipv6.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/irqchip.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/kernel.release",
+      "sha256": "696e0d630e255efbed39176a4e65a149113d544156a1ba7d73df4b6a9566c7c7",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/kernfs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/libfdt.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/llc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/localversion.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/lsm.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mac80211.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mmu.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/modules.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/multiuser.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/net.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/netdevices.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/nlattr.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/of.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/packet.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/pci.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/printk.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/rational.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/rtl8192ee.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/rtlbtcoexist.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/rtlwifi.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/sbitmap.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/shmem.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/signalfd.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/slub.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/squashfs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/srcu.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/stacktrace.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/stp.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/swap.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/sysctl.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/sysfs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/timerfd.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/tmpfs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/tty.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/unix.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/watchdog.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/wireless.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/wlan.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/cache.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/timers.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/as/version.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/base/small.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/bcma/possible.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/binfmt/elf.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/binfmt/script.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/blk/dev.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/build/salt.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/clang/version.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/clkdev/lookup.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/clone/backwards.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/common/clk.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cpu/mitigations.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crc32/sliceby8.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/acomp2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/aead.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/aead2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/aes.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/akcipher2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/algapi.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/algapi2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/ccm.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/cmac.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/ctr.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/gcm.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/gf128mul.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/ghash.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/hash.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/hash2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/jitterentropy.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/kpp2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/manager.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/manager2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/null.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/null2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/rng.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/rng2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/skcipher.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/skcipher2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/debug/kernel.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/default/hostname.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/default/init.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/devtmpfs/mount.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/dma/remap.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/dw/watchdog.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/efi/partition.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/extra/firmware.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/frame/warn.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/fw/loader.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/gcc/version.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/allocator.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/atomic64.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/clockevents.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/csum.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/hweight.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/has/dma.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/has/iomem.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/clk.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/kprobes.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/kretprobes.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/oprofile.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/pci.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/hz/periodic.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/i2c/boardinfo.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/initramfs/source.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/input/evdev.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/input/leds.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/ip/multicast.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/irq/domain.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/irq/work.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/isa/arcompact.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/jffs2/fs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/jffs2/rtime.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/jffs2/zlib.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/kernel/gzip.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/ld/version.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/leds/class.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/lib/memneq.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/lld/version.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/lockdep/support.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/magic/sysrq.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/memfd/create.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/misc/filesystems.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/module/unload.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/msdos/partition.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/blkdevs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/physmap.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/rom.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/net/sched.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/new/leds.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/of/address.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/of/flattree.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/of/gpio.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/of/irq.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/of/kobj.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/of/net.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/panic/timeout.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/pci/syscall.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/pgtable/levels.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/posix/timers.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/preempt/none.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/proc/fs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/proc/sysctl.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/rt/mutexes.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/rtl/cards.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/rtlwifi/pci.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/scsi/mod.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/8250.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/core.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/earlycon.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/set/fs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/sgl/alloc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/squashfs/xz.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/ssb/possible.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/stacktrace/support.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/timer/of.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/timer/probe.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/tiny/rcu.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/tiny/srcu.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/tracing/support.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/unix/scm.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/unix98/ptys.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/vlan/8021q.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/watchdog/core.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/watchdog/nowayout.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/watchdog/sysfs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/wext/core.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/wext/priv.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/wext/proc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/wireless/ext.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/xz/dec.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/zlib/deflate.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/zlib/inflate.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/cache/pages.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/cant/llsc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/cpu/750d.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/has/dcache.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/has/icache.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/kvaddr/size.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/mmu/v2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/plat/topaz.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/tune/mcpu.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/builtin/dtb/name.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/cache/line/shift.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arc/page/size/8k.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arch/flatmem/enable.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arch/32bit/off/t.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arch/has/pte/special.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arch/has/cache/line/size.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arch/has/debug/vm/pgtable.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arch/has/dma/prep/coherent.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arch/has/setup/dma/ops.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arch/has/sync/dma/for/cpu.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/arch/has/sync/dma/for/device.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/as/is/gnu.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/blk/dev/bsg.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/blk/dev/initrd.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/blk/mq/pci.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/blk/scsi/request.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/bridge/igmp/snooping.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/broken/on/smp.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/buildtime/table/sort.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/can/link.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/is/gcc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/version/text.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/can/link/static.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/has/asm/goto.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/has/asm/inline.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/has/asm/goto/output.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/has/asm/goto/tied/output.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/has/auto/var/init/pattern.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/has/auto/var/init/zero.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/has/auto/var/init/zero/bare.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/has/sancov/trace/pc.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/has/working/nosanitize/address.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cc/optimize/for/size.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cfg80211/certification/onus.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/console/loglevel/default.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/console/loglevel/quiet.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/cpu/no/efficient/ffs.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/lib/aes.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/lib/arc4.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/user/api.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/lib/blake2s/generic.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/lib/poly1305/rsize.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/user/api/rng.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/crypto/user/api/enable/obsolete.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/default/security/dac.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/default/tcp/cong.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/default/mmap/min/addr.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/dma/coherent/pool.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/dma/declare/coherent.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/dma/direct/remap.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/dma/noncoherent/mmap.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/flat/node/mem/map.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/force/max/zoneorder.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/calibrate/delay.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/irq/show.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/net/utils.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/pci/iomap.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/sched/clock.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/find/first/bit.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/generic/smp/idle/thread.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/gpiolib/fastpath/limit.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/handle/domain/irq.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/arch/kgdb.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/arch/tracehook.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/clk/prepare.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/debug/kmemleak.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/debug/stackoverflow.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/ioremap/prot.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/kcsan/compiler.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/kernel/gzip.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/kernel/lzma.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/net/dsa.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/perf/events.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/hardened/usercopy/allocator.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/have/mod/arch/specific.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/inet/table/perturb/order.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/init/env/arg/limit.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/init/stack/all/zero.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/inline/read/unlock.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/inline/write/unlock.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/inline/read/unlock/irq.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/inline/spin/unlock/irq.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/inline/write/unlock/irq.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/jffs2/fs/debug.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/jffs2/fs/writebuffer.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/linux/link/base.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/linux/ram/base.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/lock/debugging/support.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/log/buf/shift.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mac80211/rc/default.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mac80211/sta/hash/max/size.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/magic/sysrq/serial.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/magic/sysrq/default/enable.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/magic/sysrq/serial/sequence.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/message/loglevel/default.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/modules/use/elf/rela.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mq/iosched/deadline.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mq/iosched/kyber.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/block/ro.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/cfi/i1.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/cfi/i2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/of/parts.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/physmap/of.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/map/bank/width/1.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/map/bank/width/2.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/mtd/map/bank/width/4.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/need/dma/map/state.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/need/per/cpu/km.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/net/sch/fifo.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/net/vendor/quantenna.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/net/rx/busy/poll.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/no/ioport/map.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/of/early/flattree.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/of/reserved/mem.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/openmitrastar/hgw500/controls.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/openmitrastar/qdrv/compat.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/panic/on/oops/value.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/pcie/bus/default.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/pcie/qtn/topaz.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/printk/safe/log/buf/shift.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/proc/mem/always/force.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/qtn/topaz/emac.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/qtn/topaz/irqchip.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/qtn/topaz/recovery.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/sched/omit/frame/pointer.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/8250/console.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/8250/dw.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/8250/dwlib.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/core/console.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/mctrl/gpio.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/of/platform.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/8250/nr/uarts.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/serial/8250/runtime/uarts.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/split/ptlock/cpus.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/squashfs/decomp/single.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/squashfs/file/cache.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/squashfs/fragment/cache/size.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/tcp/cong/cubic.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/tick/cpu/accounting.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/trace/irqflags/support.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/usb/ohci/little/endian.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/watchdog/open/timeout.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/config/wlan/vendor/realtek.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/generated/asm-offsets.h",
+      "sha256": "6620066b27757c9e6adbf5988449c7145b788c526c7da4ffc3341a59c0d7a4ae",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/generated/autoconf.h",
+      "sha256": "01cc2a1f9375ad4f0b7d27cb6f8d8b4b5ee998459d7dc5e28201fab329edbe0d",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/generated/bounds.h",
+      "sha256": "8ac4825da92e8ca192400f819c3d8076fa837c54782de6103abf926f7045e50f",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/generated/compile.h",
+      "sha256": "8848493dc9330d87cb47d1a8ef698d50715e3330092403ce455a5eaa92e370ae",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/generated/timeconst.h",
+      "sha256": "082496c45ab93af811732da56000caf5ffc9e6734ff633a2b348291f160ceb7e",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/generated/utsrelease.h",
+      "sha256": "9a34afd965b4ad664cd8bf6fcd322155b4b383ec580035a8a35fec05f4e4ca9b",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "include/generated/uapi/linux/version.h",
+      "sha256": "37bdd2f7496575b0ab9aac896ec2bc9c7bbf2f86e9f5583fb85d480fb74d6ac3",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/bugs.h",
+      "sha256": "676d957b86a8fd361fead416c26a3a1388134a825e44a06dc5c645c198f2111c",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/compat.h",
+      "sha256": "4232258bf75085bdd0f0da270ae417926539f37fc3dfc2c575b3412031527344",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/device.h",
+      "sha256": "b035c2ea7c26c62e7f976f68c1758b1511656e15230ba00f75537cf05ae3aba2",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/div64.h",
+      "sha256": "97ccc134b0429468cde24a9c8afa1349b4b4381e872338fe8b7c74bbd5f7de12",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/dma-mapping.h",
+      "sha256": "baeec6773c94f0636f44de880eeeba13691e5a20e8b96ad545f9b1a93d10c3ec",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/emergency-restart.h",
+      "sha256": "5642952058f28bed9a4d77ad962165c563ff729160442e64ee0f1ff3fb60fc4f",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/extable.h",
+      "sha256": "8df85897a300d36bb85c7c1a8551c98e41f80c8eb33e8210dfed460f52d1eec9",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/ftrace.h",
+      "sha256": "090ef1fb685ab050d81952c87d8d9a2db269258e4935ee3a713cf870665cd7a9",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/hardirq.h",
+      "sha256": "36ea2e73b6f7cbd93f14004fda727aab8d2690880cf259744d8191094cdf5743",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/hw_irq.h",
+      "sha256": "20913592e6680e3c927121c6de5674ff59071bcf5b8caa7740fda9425689e2ee",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/irq_regs.h",
+      "sha256": "436a9c327f7568c64cbdb7f7083365fe5ca2bb2ce3dd0d718bef9483efdf6ae5",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/irq_work.h",
+      "sha256": "120cb70ce9a902e2104f0445b596adc067e37b80c850e898a4213cb9d67584b4",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/kvm_para.h",
+      "sha256": "e2bc44e87ae07d97aa6a00572733f32973fa22a08f2ce0c9ecdb85255c1afe57",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/local.h",
+      "sha256": "31f22d5b78e1510bc885571c49556f4d9a7ca49ead96deb0dd22c04ca903d99d",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/local64.h",
+      "sha256": "60fcbd6c2f3f7207d61791f97406e59efeb90d071c82492f56a386ee54ab8c5e",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/mcs_spinlock.h",
+      "sha256": "dd864107295503e102ea339e0fd4496204c697bdd5c1b1a35864dfefe504a990",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/mm-arch-hooks.h",
+      "sha256": "782ce66804d000472b3c601978fa9bd98dcf3b2750d608c684dc52dd1aa0eb7e",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/mmiowb.h",
+      "sha256": "562185c822e79d362de4f9f76a1a7016e1529a01d88a7da9552140f666c6a947",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/module.lds.h",
+      "sha256": "396cd13655f6bb5df6a53bc76aa32db3366f55916ab3538fbc78804a8a1a289b",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/msi.h",
+      "sha256": "1bb3801c1b6cf9d36bef650e297aff61dc1cbbb9789d0e667fea057a262e39e8",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/parport.h",
+      "sha256": "5a0c506d76807836a6be8de40a88a4a09bdd96b87ae3df209c851e3e8cf539d1",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/percpu.h",
+      "sha256": "2142646e5ed33557713af004d94de3a43a3046dd36a0c0064c387565dedad6f9",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/preempt.h",
+      "sha256": "6100b67666a4d14507fd43f105a251be7d713303af0581a5bd3b0d787c0a2aa9",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/rwonce.h",
+      "sha256": "e65428b6b0334c3fa3b08c940356e87132ccb205a984bb0d561110b122738963",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/simd.h",
+      "sha256": "70753fce99f09c1f15c8865014811dbbad3a05b367e22ae7059b236cdcb8dc36",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/topology.h",
+      "sha256": "cb84810da7b9a2de6d22f24c45a77541e2ff9a5f775946ece3456353ff8ee7fb",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/trace_clock.h",
+      "sha256": "70c29b678515c2c164b72a070538d1569a09354f7c3aacf9a7184806a9532281",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/user.h",
+      "sha256": "7fcdaa6505d18e1aa9ba4e973a461c726b7e640f471f0649bb0b25fc8a3233f1",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/vga.h",
+      "sha256": "bacc52c22478d12fc815d315215e426d255b29d15e26e5f722535ad8ad714d43",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/word-at-a-time.h",
+      "sha256": "f4830b5dc2ca09ed7bc1e7c77986be6fab417f57bc12df00dfd2da1d5fcc6d78",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/asm/xor.h",
+      "sha256": "b240fc442ea8f8628e6c804507cae3fa462a95b4240c742f6a96f0e1039e2550",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/auxvec.h",
+      "sha256": "8b55a03b786a9bbfa104726eccc7fbad5e4d772aee834eabd142ffa155217814",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/bitsperlong.h",
+      "sha256": "07cfe8e5f1188e41649907f107c4ed411a61102c2a53ca50a5b954b5644befb6",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/bpf_perf_event.h",
+      "sha256": "bfb40dfccf983dce09e3ee0f570f3bcc969d4bab8c1f3d4572ecf3b5da7f936d",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/errno.h",
+      "sha256": "4ee384515a4325315992e61dd957f0fa91f3858fe7c079de59f56edded51de86",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/fcntl.h",
+      "sha256": "716ef40c102b1701970c7b0c34e6633d8a0ea1c89e7527252fcb07e63074221d",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/ioctl.h",
+      "sha256": "9c6ca9e365296a6b66747cbebdcf76972b8cce7aab91e55bf4ab1f3581df9c2a",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/ioctls.h",
+      "sha256": "857d11a8415a18e7a6ccf23640cf9bddf245a5f90c43b3014d08d3ae19faf952",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/ipcbuf.h",
+      "sha256": "7d7b26fc15cfa914dc6e03d976570242ea37377491f3619ab287e6169025df66",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/mman.h",
+      "sha256": "b3190d3e10f0b603a6a873690438ef191f74245bc7109aa9a0c7525d2cf3b015",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/msgbuf.h",
+      "sha256": "832154fea591ff628377c8622f8d87a4b673afe06c3d8737d3c1692dcb1e9091",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/param.h",
+      "sha256": "6bf1865f0ddba5c80877463ad6650d7fee66931486956a07884f53deaa13e2b8",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/poll.h",
+      "sha256": "0b6ca981303acc042195061225039c080c900169b231ab343c7e9ec6530864ea",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/posix_types.h",
+      "sha256": "0eec9b08451df7cd7ab038cdd2c4ef547551faef0fd11d18052cb513bf006e70",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/resource.h",
+      "sha256": "6d9c7f1ca98f275aafe3c5533d274aec702ea6029f8036bdb577b0c53e08f7d9",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/sembuf.h",
+      "sha256": "1b9471b621e0c1a31cafca4a94dfa01cf27aaba40391ffd744be455aa37de5b3",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/shmbuf.h",
+      "sha256": "c1f17a01e81ed720ebd0c5c18afb0d43c4c1b1928b4583595c4ca35df07645a7",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/siginfo.h",
+      "sha256": "175b80f0fd759d48de2f33001630dc4905ee3786cc6097fce981632661195691",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/socket.h",
+      "sha256": "48e0940e8a6e8861eaaaf90853a685fa803c4e039166060a3c921c8d79001e3c",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/sockios.h",
+      "sha256": "ac496b3bcc37452f0caa104b2205a8a19dde0196a7791988b3b74e23c2174c1e",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/stat.h",
+      "sha256": "fea0c6173cb0d956cc37a0750834fc83974bdeef818c3f8cd20164235baa1035",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/statfs.h",
+      "sha256": "16fa4547451bf5656a8624083945404367142c2a1e93b9e46c479ca81ce2b15d",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/termbits.h",
+      "sha256": "cba6faa5749f84248b3e73894fb6731dc558af01f8f5a626d8f44ba6fad46977",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/termios.h",
+      "sha256": "0c0899ba44a3545c5e137ead0f121480c1d6d3851c8d481f1d6822e39a4cc60d",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/types.h",
+      "sha256": "b6bdcd528bce555b2ecb58e8a1624e3e13e09312c31318023c4e86b957e2b01f",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": "arch/arc/include/generated/uapi/asm/ucontext.h",
+      "sha256": "f83f9327fc81e7b8b6d6972e5e7487d89c3518155b2703e4fafcec02a6e26721",
+      "role": "GENERATED_HEADER_OR_CONFIG"
+    },
+    {
+      "path": ".config",
+      "sha256": "ee4c4d98622b2c5caf94bebd4e4e3afa7888f1eb4630b4e86958dbbffdb7a61a",
+      "role": "GENERATED_BUILD_CONTEXT"
+    },
+    {
+      "path": "Module.symvers",
+      "sha256": "cfc88cd447ab24ae4b4b72ce7dbb795474d6c44547fe96d3c7b4765ae067c7ec",
+      "role": "GENERATED_BUILD_CONTEXT"
+    },
+    {
+      "path": "scripts/module.lds",
+      "sha256": "ad7c02175ba1b3e2d8bad822416d48561ab5ff6efb71ff1ce252824753668053",
+      "role": "GENERATED_BUILD_CONTEXT"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtlwifi.mod",
+      "sha256": "ecda8cf7955dc0cd6290a88cbd493d40713dc7dfce0eb7ea194224b2f86d344c",
+      "role": "GENERATED_MODULE_SOURCE"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtlwifi.mod.c",
+      "sha256": "6410c46e9dcb5373bad7f1abe589f72a0a17f972e4038de3a43c62e0d38a7bc0",
+      "role": "GENERATED_MODULE_SOURCE"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl_pci.mod",
+      "sha256": "e55990d980d40827cb1e1bfbd9897a477a1aa38f17ae4771a7c8a228fa168130",
+      "role": "GENERATED_MODULE_SOURCE"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl_pci.mod.c",
+      "sha256": "804fa78624d01b4f6bf6f916543aef433c6414ea9edb19f1ed9ea41f432f300a",
+      "role": "GENERATED_MODULE_SOURCE"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.mod",
+      "sha256": "89df3ed35471e0a2b67efbef05fa4772af31de41ab345f752f91bc47d4659a9e",
+      "role": "GENERATED_MODULE_SOURCE"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.mod.c",
+      "sha256": "dd18e8b9dad09d877efbdc7d198cad051ca6030d2b673aacb67e87bbda8646d1",
+      "role": "GENERATED_MODULE_SOURCE"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.mod",
+      "sha256": "079b4b2bd26ff0b72a13ce31a5f075cd41470a6cf4d8043386bc3223ba25f05a",
+      "role": "GENERATED_MODULE_SOURCE"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.mod.c",
+      "sha256": "fd5759d389317f622e81b111e95605fdd1ad853c6bd20e70244203ea8fd97859",
+      "role": "GENERATED_MODULE_SOURCE"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.base.o.cmd",
+      "original_sha256": "d3597f1b722d8df47ade9e560199a7d7bca8fa48ae2f4b8a7a2301c93df47403",
+      "sha256": "9ea37cad14e1a6d9e6e83f5bd876e6b6e052597f940e228142c5d1d79a5b4d2f",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.btcoexist.ko.cmd",
+      "original_sha256": "83c46d85e21fcc1f234ceec9b6d99f854af86129bc9fc1dfa59eb6728bcc7224",
+      "sha256": "b738ced0304202528e7eea271b4dd4a45271d0feb807ba4a4c913e9b64262c3e",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.btcoexist.mod.o.cmd",
+      "original_sha256": "bb60ca83f7a2a136b2a7abfc270def4c60920ac51c9633407c7d06978826b1ef",
+      "sha256": "65748234794ed39f73dbf661163b3299013af4a0fe8cdfa1fa661e2636f5dc8a",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.btcoexist.o.cmd",
+      "original_sha256": "2783cc24682eb8fdec619b07bca165a4a5ec0c6666b203d9cd7b371e90fdc546",
+      "sha256": "ddb8eabcdaabd990c1497b83ead2da7e71b67a14fb6fe9b68fd8c69c5256c65f",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.halbtc8192e2ant.o.cmd",
+      "original_sha256": "c4ef82d6547b4f9ae7a1bbc79e7186d16098e4fa77c3611369772e85c26cafb6",
+      "sha256": "d0efe5504d46543d59f69c7a75be2611bbd1e081f15b50e1587db5f37bbaf34b",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.halbtc8723b1ant.o.cmd",
+      "original_sha256": "ae32e8f25260dbb20dc8cebd9fe9465fd16bf9cd7c088d63fb9bf8fc98b4f11f",
+      "sha256": "61611b745bf4d0a484415cf5db800daa502fb8527a76e9c8f73043d583f13d25",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.halbtc8723b2ant.o.cmd",
+      "original_sha256": "4b710718492311a4006ff8d82f45180bd1b3d7ab64f9e440208e543f86b17817",
+      "sha256": "3d1ea2b9a40ceead7146582816821899f184223e2b3254588f7f4bb334bcc0b7",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.halbtc8821a1ant.o.cmd",
+      "original_sha256": "f09b3c29efb2ad2fa08750cdacb06f94db92924e9639860c590b672925b0d592",
+      "sha256": "a95ea8a1b917a3019c3d7456cde71e4daa38e4961f710eede9bbe36636abe37e",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.halbtc8821a2ant.o.cmd",
+      "original_sha256": "2b81e8849b1524a9cc656b259ef330bf900b9b4bb99df793d47eab6f858865ca",
+      "sha256": "e19177924797dd73a2f4fa7aea30d82e164adee0cc9a866b84762ff3153aa7fc",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.halbtcoutsrc.o.cmd",
+      "original_sha256": "a93f68e7cc317b68cdb90861b3b1ee3d43476367d37b8025d76c48e2cd06b146",
+      "sha256": "2b9b493bc6c6b10c1ae60d25af9a3865fdda806fc9dae89e6b528b9c43d1c725",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/.rtl_btc.o.cmd",
+      "original_sha256": "96c8f8eb2f065b36ad17125c3f532628855e7a40d36915746b61097cdaf775b3",
+      "sha256": "bc9121ce01b59b96dbb806a96e351f9b34b3cc3e1b21603e9b51df7ea698ade6",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.cam.o.cmd",
+      "original_sha256": "3917cf17cae8b7d11ba8d99bb24ede8598b4a42bbaa854de95fc442107c564db",
+      "sha256": "8c7d4187c90c8e86b9ad71bfda5ef7c6158db4b018e8288f2808303689d43e6d",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.core.o.cmd",
+      "original_sha256": "62f7c7fdd0cb98058e48ae67da03cd9772c9fbc0b64957573bf6cfd3d0685fe5",
+      "sha256": "696fa1ffbbceabe5e3fbffe3505f54f5974a5a65648f2e9adbe189c365db3e68",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.debug.o.cmd",
+      "original_sha256": "bf18de012ff4979c136e5a0c4c61aec5b543d2e4ed1297c08b7452a2a6caae06",
+      "sha256": "b821a312a4c98be8f53a1e63a18b2f96863999c49e4741f49f1ea5bb99f2d0d6",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.efuse.o.cmd",
+      "original_sha256": "f730f4604df63c6d9e92aff274f1e771e4e0df58f98109eafd302107f7d41157",
+      "sha256": "dd99cbb00fd167d8616422d92eb867f024683916297bac76f80e7513f47ce96e",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.pci.o.cmd",
+      "original_sha256": "f3162e0318e89e810c652f3c32e51d3b6cd7602469a3a3646568211edd590b9e",
+      "sha256": "ef22fc4a32678ca3e723937583aedec09c96a47a36e8f0ffd081a0e67ae87b34",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.ps.o.cmd",
+      "original_sha256": "2b641e44f5040df3c20ea1100ccce4c0b940ec6126667103fe853d21dbf9df24",
+      "sha256": "d5e1a9141693cbb6c0a4dac4ed25ada114ced5f907dd72100ffa4287730e91f3",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.rc.o.cmd",
+      "original_sha256": "fb95d7a9570cc2d4d2d48d0d7942cf5a261206123ae4f02db5134274a852fc58",
+      "sha256": "e186aa4061b31170887690786e67eaf91bebecd374b59bac9b7342483e8be791",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.regd.o.cmd",
+      "original_sha256": "a32b7b1c520fd81acea400e1730fe3c1b1a11748bd7653433b1f69c65d1ca69e",
+      "sha256": "aac9bf731dcc10d5564cf8ac3f2a899ab8e26668ad790ce2fc89b5601cd17f3e",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.dm.o.cmd",
+      "original_sha256": "c6a22e4909af81a3aad7675d1171c28b39b41a342d3cbbbd2ab83dbe10dcd1b0",
+      "sha256": "a0b72db98f2de6eb4416bd9accc99df22a73cc452cdc5d86f8d0548287a9f53f",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.fw.o.cmd",
+      "original_sha256": "557e554e898aea2bf44f76af13012fd80bd7e815d04238fb757bbae000627d07",
+      "sha256": "28d239afed88c34143e6a826f136bea40714fb8bb90a070aeda5d5d425a8fa7e",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.hw.o.cmd",
+      "original_sha256": "504b0d0e35f234cdfbc08496ef245e532ed35cd0edc744a48acab4651857ea2a",
+      "sha256": "c9735296318ea338e6b9f134a41ec1645d2e3358303f8237e32d6f494a4810b6",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.led.o.cmd",
+      "original_sha256": "4adb784bc359bd31a2ad03493b2b295f59e326a2c0b2868f329a0c914b0a0d93",
+      "sha256": "3a6a5087d25283710b5efb4f4ca17d16db2696e22ecba20c386eaf123e15904b",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.phy.o.cmd",
+      "original_sha256": "549f783507b9c6a6958696266221f990520ada0608793367debdf6e74f21045c",
+      "sha256": "bf94df5e16277b3c2e369ae40e4b4c50ffae40048b6a791c8b21d1d639e314f4",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.pwrseq.o.cmd",
+      "original_sha256": "938ef9d33214bbbefa200d14fa9a1062486fc0b0ec6c10c567999c93f20d9c12",
+      "sha256": "8992f88d61907f3b70374d9aeb6d26efe35672caf9d7f958083f1ed6f87ecb95",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.rf.o.cmd",
+      "original_sha256": "7cef06ea1eff6dae7f2d3f004001d9db64875585eea57a7a7528fec36dc9b3a1",
+      "sha256": "2489bec038503226457a2002cab55df023aab5863dfe77523dc73afb6327dfd3",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.rtl8192ee.ko.cmd",
+      "original_sha256": "e45d6d32ac9ce8b1bc5b9b6dc60e822b82b6c27eda5b8cdf45e01d0ec4c82246",
+      "sha256": "0f6f648ec230ecadfab44d763fa931987087d563a7ca4037ba063bd735e1d3d0",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.rtl8192ee.mod.o.cmd",
+      "original_sha256": "802b711c83598b3b3e8df05922d5a6c178227fe5874c305c0def93c6bca2d390",
+      "sha256": "b47d8bfa28a741d2b25234ae40290e8242283a111eac551cb86628b10bf4ac33",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.rtl8192ee.o.cmd",
+      "original_sha256": "cc46ef395275f9dfdb713bd24617d46ebd658df93b439dfa50aa29b859205f21",
+      "sha256": "0ff9e9b8fa61ae5d57477129635543f4d366801180c7740eeead407849c154e4",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.sw.o.cmd",
+      "original_sha256": "29fd7e08fe04fe39c9ed65c7da148214f08fcd12d260dbb5cf7ad4a7f65b7cc3",
+      "sha256": "576695deb08b0474f2765cc034d5237f78457d73879ea63e8011d08c73d1f08e",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.table.o.cmd",
+      "original_sha256": "91a838e06be96e1df5df9b53a05c6ceb6a09858186a1fb9be85e3602123d2d8d",
+      "sha256": "bccbadcad81904eed52126b8156706463b4ebccd3ee1cd64d82309b4fd8619b8",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/.trx.o.cmd",
+      "original_sha256": "8a67fb86e19bb6ebf68c2e6fa295c29d3b51e02120dbb1aad875ad042739428a",
+      "sha256": "a612bbbc206af468e3283ad717d7e98299f561793a0034e0f96639696abddbf5",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.rtl_pci.ko.cmd",
+      "original_sha256": "e57875bc763f37017074136f2c2520663ad37472d3840866c0f4e39acb98125d",
+      "sha256": "f6ed94f6a4259bdf41c47d04c50260f8fbb6c36321df55cb127029fbffe8496f",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.rtl_pci.mod.o.cmd",
+      "original_sha256": "949f9a80086f00dee3f46a9552c8737580d0ccf46ed39ae74e2aea33c6da9b3b",
+      "sha256": "dc74e854a5ad2bee8189388020a5e15aa0f835371eed9cb02f562b4e0eb90abf",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.rtl_pci.o.cmd",
+      "original_sha256": "c1612fd17e6478d126e0444ea48cb5bb686d2133c2ba13d68c2f5ffc3796a4ff",
+      "sha256": "7c0f7506229f87e71765f104ac298af7866c71532bf89b9d1c44ab0ccdadbfd6",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.rtlwifi.ko.cmd",
+      "original_sha256": "72a4bc5015d699e0326e640dc28aa8024c0553079776974b90aebb3a3b1781f5",
+      "sha256": "b7aa7c06b5dd02b69f87e96a4637efbdc2aecdd1db8f88a621ca2861ec0c2727",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.rtlwifi.mod.o.cmd",
+      "original_sha256": "c26d44ac7ea2360e20723dcd038913b7565173e8259529af1a7165d1d6fe3c23",
+      "sha256": "8de63d80ab668752183ae6379362029e6426297f0ae24667b69d382e77853204",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.rtlwifi.o.cmd",
+      "original_sha256": "fe876822bf90832632c981e49ebd20492e4ee24ca847c92c0609a6bf9fc1baa3",
+      "sha256": "94252a4994c7ca4813ef7f687d9ccb94cdf5a9040ed7624c667521e79ae9a123",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/.stats.o.cmd",
+      "original_sha256": "b90a75f122b6796142d21edc95fb461c957b88d826ae092ddffac8aefb17d156",
+      "sha256": "2c641cb21d997027547d7853de00d3babd0207a38e29db0441478790389b146c",
+      "role": "NORMALIZED_RETAINED_COMPILE_COMMAND"
+    }
+  ],
+  "reference_artifacts": {
+    "drivers/net/wireless/realtek/rtlwifi/base.o": {
+      "sha256": "10a05f637ebfaf5cb4d8f5db9cb06ef8151f190129b4a4ebd4bf1a4f0274185a",
+      "bytes": 30392
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.ko": {
+      "sha256": "c299e80b7b210c8b394815f56b68a1c1eba9e54ea5e807a4738f9b4bec19573f",
+      "bytes": 115760
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.mod.o": {
+      "sha256": "61d18f9196190dabd6be8e36f05324033029bea518e2ada064d7c5a447f8e09c",
+      "bytes": 1848
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.o": {
+      "sha256": "de394c6dd2754e8500087bb550febe4438e220876125a1993997fe6f6541426e",
+      "bytes": 114640
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8192e2ant.o": {
+      "sha256": "0e5dafceb1a6383daae92376d8c839ce58194c249715de631183f19ba45537a4",
+      "bytes": 17416
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8723b1ant.o": {
+      "sha256": "2b57debc9e12eb7d43e2555a0917273b25700684726a9bf68a14dd991e4d6f15",
+      "bytes": 23024
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8723b2ant.o": {
+      "sha256": "2363a9cdb8f621fac0375b118a0404922636fe89ac972fe2a45b9cc2865de1be",
+      "bytes": 22340
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8821a1ant.o": {
+      "sha256": "e27a231d6d17c0ce86a86047ea71557fa5b1028abfa63f67fd694ae1c578b260",
+      "bytes": 17792
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtc8821a2ant.o": {
+      "sha256": "df7caa4a3a5163c506f7039f55a23cb13460a8755bf5556c66b48fcfef3bdb8c",
+      "bytes": 19920
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/halbtcoutsrc.o": {
+      "sha256": "0f030e4e4c030fbc29b7a1d369f95132313603adc0efc9a2e7279af42c3ca0a1",
+      "bytes": 17384
+    },
+    "drivers/net/wireless/realtek/rtlwifi/btcoexist/rtl_btc.o": {
+      "sha256": "9b3be8df7dbf223c09bed22c0f945f91721ec2e9fa69f70eb0e94a115108d5bb",
+      "bytes": 6836
+    },
+    "drivers/net/wireless/realtek/rtlwifi/cam.o": {
+      "sha256": "bea7a0e22ca3491f6b9503cded55b207e91f841a79fd8e16c57d35101d3b39d0",
+      "bytes": 5380
+    },
+    "drivers/net/wireless/realtek/rtlwifi/core.o": {
+      "sha256": "c4ba3016ca9285994438f4fde94ed282257e7e527f0e15d9e281938fad31df74",
+      "bytes": 22468
+    },
+    "drivers/net/wireless/realtek/rtlwifi/debug.o": {
+      "sha256": "f937a30ab1451da3860c0d2bd05f0c27f7f01c19dfb9a24ee5b5d8ee5c210a8e",
+      "bytes": 780
+    },
+    "drivers/net/wireless/realtek/rtlwifi/efuse.o": {
+      "sha256": "b35f6fb6f2e6fe74c0ef4d439c06e25985690cfcf464b78947cbc6f54371b472",
+      "bytes": 13476
+    },
+    "drivers/net/wireless/realtek/rtlwifi/pci.o": {
+      "sha256": "e6e1c49bb2a8796b5b398edcbe441f75713f778f6f2ede37a3fcf7266ef763ad",
+      "bytes": 44768
+    },
+    "drivers/net/wireless/realtek/rtlwifi/ps.o": {
+      "sha256": "d47a7494e47c587485dbf674fe714c6f4eaabe09197920fa4327d2b2a15ab349",
+      "bytes": 10012
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rc.o": {
+      "sha256": "372d75fa5641af8fb7e227e18b6df3780f341a5930ce923199bc5b7c278245b5",
+      "bytes": 3388
+    },
+    "drivers/net/wireless/realtek/rtlwifi/regd.o": {
+      "sha256": "8c8dd35d14b33d6dad77e5b3484d7b1e6c0883f52042f41e4ec2be8d08575102",
+      "bytes": 4988
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/dm.o": {
+      "sha256": "3777a9887d62c25ca06be71e33047c0f734bd522e1131590786fab5070cd78bf",
+      "bytes": 7224
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.o": {
+      "sha256": "fdd285f8684bcb54daa19b6c678c9d04034b3ae2a4d1612c4a846b3f0acbaab9",
+      "bytes": 9712
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.o": {
+      "sha256": "7d9b828a6e8fc3985d70255c71d0bebd4c27ae4aff2ef6001b5f10a6378f36f4",
+      "bytes": 22588
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/led.o": {
+      "sha256": "d58286ca148ba16afc8d3f50d782e849ea9f85d8b389cb78a93a7ee7c4c96e08",
+      "bytes": 1404
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/phy.o": {
+      "sha256": "719c1b1c9e67af36e2673d95256b89f60011a8cfc83eb10962739be2d1c231fe",
+      "bytes": 22132
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/pwrseq.o": {
+      "sha256": "e4aaee546dbad67425e9396e982d444e0456c4d29954df4d791d5a7527758fa1",
+      "bytes": 3304
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rf.o": {
+      "sha256": "9c6cc312335cfbf05f078bfbc72fb86af93128f406587afdab12a94f8c0acfc3",
+      "bytes": 2000
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.ko": {
+      "sha256": "f014ad53084e1eb3cf7a9083913388ac907f0d254478dd63b0bc9ca054394e85",
+      "bytes": 102736
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.mod.o": {
+      "sha256": "fcef131fcbe32183e5c6fea69ba06e91f10d262dacd04587964a8b4506483e21",
+      "bytes": 1964
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.o": {
+      "sha256": "6da3c10edc537ae80f7e69b5c1ed0cfa7d59800a5495f5fd70c955b47f6a9f4c",
+      "bytes": 101508
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/sw.o": {
+      "sha256": "6d0e71849dec6c093dbcc4c81305972a8d67459afafb35dcbb22d21a4b192a8c",
+      "bytes": 10668
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/table.o": {
+      "sha256": "9a65cdb76decf9aae2fb784873c7d37171512efb3df7b97d83d742778d740b54",
+      "bytes": 8160
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.o": {
+      "sha256": "0f39d5c12ded42f8cac223c97d84e39f4fd9c97a2ae9ed061af9953e01382307",
+      "bytes": 26504
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko": {
+      "sha256": "6f85efa424c6aa5b693982ae074d268d2312a3f9262238e8c6f5eda16199df63",
+      "bytes": 45680
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl_pci.mod.o": {
+      "sha256": "85ef1f3ee8893a3bcc24f4a0cc798b8b664f6e0db71b10f40b5dba086007690b",
+      "bytes": 1732
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtl_pci.o": {
+      "sha256": "fe79ca53ce8ec88e32df2ef7cd8aa7f3a8782cc1a5d7a14251d9abf72cfd6873",
+      "bytes": 44772
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko": {
+      "sha256": "9b7988816abb5065cd5a2a39defba608d073646aac15c75e244ac5cd95e096ee",
+      "bytes": 77412
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtlwifi.mod.o": {
+      "sha256": "977e486a78fab9459b55f73dffe958051623cfa64e918262a21df605742c719d",
+      "bytes": 1856
+    },
+    "drivers/net/wireless/realtek/rtlwifi/rtlwifi.o": {
+      "sha256": "efa19b35748642c447345efb47b4096f3b551d77465413669a0bed06673764c9",
+      "bytes": 84956
+    },
+    "drivers/net/wireless/realtek/rtlwifi/stats.o": {
+      "sha256": "54b0c68f73916a344be9a641448548739e1ccd6494e78a1fd5c45dc6152dbd5b",
+      "bytes": 3688
+    }
+  },
+  "binaries_included": false,
+  "normalized_markers": [
+    "@TOOLCHAIN_ROOT@",
+    "@KERNEL_SOURCE@",
+    "@HISTORICAL_OUTPUT@"
+  ]
+}

@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/realtek/rtlwifi/rtl_pci.o := @TOOLCHAIN_ROOT@/bin/arc-snps-linux-uclibc-ld -z noexecstack --no-warn-rwx-segments   -r -o drivers/net/wireless/realtek/rtlwifi/rtl_pci.o drivers/net/wireless/realtek/rtlwifi/pci.o

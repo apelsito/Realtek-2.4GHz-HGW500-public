@@ -1,0 +1,2 @@
+0x17288: ld_s r0, r0, 0x40
+0x1728a: j_s blink

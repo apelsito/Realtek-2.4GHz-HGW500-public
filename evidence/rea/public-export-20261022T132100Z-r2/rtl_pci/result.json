@@ -1,0 +1,3375 @@
+{
+  "schema": "realtek.rea-sanitized-module/v1",
+  "module": "rtl_pci",
+  "original_sha256": "6f85efa424c6aa5b693982ae074d268d2312a3f9262238e8c6f5eda16199df63",
+  "original_bytes": 45680,
+  "defined_code_symbols": 47,
+  "pseudocode_entries": 47,
+  "source_equivalence": "UNPROVEN",
+  "entries": [
+    {
+      "address": "0x10000",
+      "aliases": [
+        "arch_local_irq_save"
+      ],
+      "elf_size_bytes": 18,
+      "dossier": "functions/0001-arch_local_irq_save.json.gz",
+      "pseudocode": "functions/0001-arch_local_irq_save.c",
+      "assembly": "functions/0001-arch_local_irq_save.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "arch_local_irq_save",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10000",
+            "end": "0x10011"
+          }
+        ],
+        "total_bytes": 18,
+        "span_bytes": 18,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 5,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "b7baa848a32d090c2ba0d2705ab651caa83aa23a670ed7faa89f132c82b45d0c",
+      "assembly_sha256": "467ca08628aa3302a8b6711463a9e94fd1d74ed9006a26ec1d66f3196407e7c2",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "87d2dbea02f734ce79874918f112cb1439594ce3b4d054b697d3750e9fabdd11"
+    },
+    {
+      "address": "0x10014",
+      "aliases": [
+        "is_power_of_2"
+      ],
+      "elf_size_bytes": 18,
+      "dossier": "functions/0002-is_power_of_2.json.gz",
+      "pseudocode": "functions/0002-is_power_of_2.c",
+      "assembly": "functions/0002-is_power_of_2.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "is_power_of_2",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10014",
+            "end": "0x10025"
+          }
+        ],
+        "total_bytes": 18,
+        "span_bytes": 18,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 8,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "888453b599d8d71154685d177fa0d13ecb325bb52d2d833ff1108bd72b0dad40",
+      "assembly_sha256": "09bbab9ccde9208c695199882bdcad71535671ef3c89e32e0674b98dd8c7a80e",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "b193b0660b58ca698efe861eed0ca7efac38eefdd420e2256514dac8e531a575"
+    },
+    {
+      "address": "0x10028",
+      "aliases": [
+        "__skb_dequeue"
+      ],
+      "elf_size_bytes": 42,
+      "dossier": "functions/0003-__skb_dequeue.json.gz",
+      "pseudocode": "functions/0003-__skb_dequeue.c",
+      "assembly": "functions/0003-__skb_dequeue.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "__skb_dequeue",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10028",
+            "end": "0x10051"
+          }
+        ],
+        "total_bytes": 42,
+        "span_bytes": 42,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 19,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "fdf39a029148183ccf6c58e0fd76abcf39bcce31a57bb6091ab58665073d4505",
+      "assembly_sha256": "a52d207fe503b5a96c3fe5c8c3e715092a4cc8ca31f4fb6cb96b497dedd0bc28",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "0e842ca4af2b6216887bad2b0ba253b0d505d5f22ef940287250e98f4373f9b8"
+    },
+    {
+      "address": "0x10054",
+      "aliases": [
+        "__udelay"
+      ],
+      "elf_size_bytes": 60,
+      "dossier": "functions/0004-__udelay.json.gz",
+      "pseudocode": "functions/0004-__udelay.c",
+      "assembly": "functions/0004-__udelay.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "__udelay",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10054",
+            "end": "0x1008f"
+          }
+        ],
+        "total_bytes": 60,
+        "span_bytes": 60,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 15,
+      "warning_lines": [
+        "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      ],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "843a5f10433e9c8e4b0a45e7ec5bf8f7d0d68142ca364245c81920f6b47e4af8",
+      "assembly_sha256": "84a3cf61162312d9ab06a7121128fa948be3eaa052ce318114777446f4061e69",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "2ab8e202f4f8e892df22ea9dedd70ed0a3c739e91124184927c732d8ad61c1ce"
+    },
+    {
+      "address": "0x10090",
+      "aliases": [
+        "pci_read8_sync"
+      ],
+      "elf_size_bytes": 18,
+      "dossier": "functions/0005-pci_read8_sync.json.gz",
+      "pseudocode": "functions/0005-pci_read8_sync.c",
+      "assembly": "functions/0005-pci_read8_sync.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "pci_read8_sync",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10090",
+            "end": "0x100a1"
+          }
+        ],
+        "total_bytes": 18,
+        "span_bytes": 18,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 6,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "95f8bee1547539318f6269a50004405070d67736431e0358f722a6305e0e2daf",
+      "assembly_sha256": "18750825f90b9e7eb2f90d167021bb5bf551be2315b7e204a022e035c1554996",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "9f9e57871feb63c9a8b97f245ee50749d9ae3b5e03d29942f4f2bf893e54590f"
+    },
+    {
+      "address": "0x100a4",
+      "aliases": [
+        "pci_read16_sync"
+      ],
+      "elf_size_bytes": 18,
+      "dossier": "functions/0006-pci_read16_sync.json.gz",
+      "pseudocode": "functions/0006-pci_read16_sync.c",
+      "assembly": "functions/0006-pci_read16_sync.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "pci_read16_sync",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x100a4",
+            "end": "0x100b5"
+          }
+        ],
+        "total_bytes": 18,
+        "span_bytes": 18,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 6,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "fef8b10978734923098b5f50451ffcb617a55b3e696d115d267fb52689231f6d",
+      "assembly_sha256": "2d100f8d65c05a5a8e9ba2c22e54b55b4995ebd8f2e4fa0cf20a09b8c52b0562",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "da7011084a272a700f69400354ce07f1a5f0a0eaf9afc735e0980ec69ba1b74c"
+    },
+    {
+      "address": "0x100b8",
+      "aliases": [
+        "pci_read32_sync"
+      ],
+      "elf_size_bytes": 16,
+      "dossier": "functions/0007-pci_read32_sync.json.gz",
+      "pseudocode": "functions/0007-pci_read32_sync.c",
+      "assembly": "functions/0007-pci_read32_sync.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "pci_read32_sync",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x100b8",
+            "end": "0x100c7"
+          }
+        ],
+        "total_bytes": 16,
+        "span_bytes": 16,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 5,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "b27eae13f0e2340701c63ea8de347e1d7a2d09271bf7bcfb6e0dbbc74e55fd6b",
+      "assembly_sha256": "88a4d98bb9d48793d524fd972456ecd89f0e90673e496e543cd10e3381b0754d",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "47a9cc9859be3d2e7ccf472acbe9a6e64393dec99630894f623a46512be113bc"
+    },
+    {
+      "address": "0x100c8",
+      "aliases": [
+        "pci_write8_async"
+      ],
+      "elf_size_bytes": 16,
+      "dossier": "functions/0008-pci_write8_async.json.gz",
+      "pseudocode": "functions/0008-pci_write8_async.c",
+      "assembly": "functions/0008-pci_write8_async.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "pci_write8_async",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x100c8",
+            "end": "0x100d7"
+          }
+        ],
+        "total_bytes": 16,
+        "span_bytes": 16,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 5,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "b182f17c00eaaebba7cd8c68422a66d3748c2e6680154ff14e6dc126bfc754e2",
+      "assembly_sha256": "ef9dd85c0a22d6be62070fb4df7be982f51d69f32956effb7876a52783135c7e",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "dcb12f9e22501ec8c3db573f9d611becfe5af9ab012c67f8f56654f29fcc9b1d"
+    },
+    {
+      "address": "0x100d8",
+      "aliases": [
+        "pci_write16_async"
+      ],
+      "elf_size_bytes": 16,
+      "dossier": "functions/0009-pci_write16_async.json.gz",
+      "pseudocode": "functions/0009-pci_write16_async.c",
+      "assembly": "functions/0009-pci_write16_async.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "pci_write16_async",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x100d8",
+            "end": "0x100e7"
+          }
+        ],
+        "total_bytes": 16,
+        "span_bytes": 16,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 5,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "3b179ea1e6a79423a6ed60f45b9e9eaaa9f1feb76796549d1b6b5693fca99fc7",
+      "assembly_sha256": "471f2c0eb69a378f934af8f6ea5ef5a2e7bc2ffcfba777b7cde0409605ec2f14",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "c575124bb244912309f5988a3af163d04fd6de8f8c3da1b8887600080ea82c92"
+    },
+    {
+      "address": "0x100e8",
+      "aliases": [
+        "pci_write32_async"
+      ],
+      "elf_size_bytes": 16,
+      "dossier": "functions/0010-pci_write32_async.json.gz",
+      "pseudocode": "functions/0010-pci_write32_async.c",
+      "assembly": "functions/0010-pci_write32_async.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "pci_write32_async",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x100e8",
+            "end": "0x100f7"
+          }
+        ],
+        "total_bytes": 16,
+        "span_bytes": 16,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 5,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "00605f6795d08a8351379538392e8bdac19ab402a6c821764e57961237c60477",
+      "assembly_sha256": "701e51c8b9c35cdea2252c27b013c9f595e075671d77889e7f1f1027a33707fc",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "d2a298234e7363a771fd360029fe0e0840d1114bf66b1fd398d21014385e6117"
+    },
+    {
+      "address": "0x100f8",
+      "aliases": [
+        "rtl_pci_hgw500_be_summary_should_log"
+      ],
+      "elf_size_bytes": 62,
+      "dossier": "functions/0011-rtl_pci_hgw500_be_summary_should_log.json.gz",
+      "pseudocode": "functions/0011-rtl_pci_hgw500_be_summary_should_log.c",
+      "assembly": "functions/0011-rtl_pci_hgw500_be_summary_should_log.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_hgw500_be_summary_should_log",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x100f8",
+            "end": "0x10135"
+          }
+        ],
+        "total_bytes": 62,
+        "span_bytes": 62,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 20,
+      "warning_lines": [
+        "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      ],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "cfc81857b01743308a4a83a2d1f6dece073a78b7bf45a34f92951d930d7c22a7",
+      "assembly_sha256": "83138c2692873cbf3b478157a4da7a336d9b03f64cbb5199e59bc341a91f87f6",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "2cb5dd34251c238c89282ec51d9e63438723250793f385fcfc507b62141445ad"
+    },
+    {
+      "address": "0x10138",
+      "aliases": [
+        "_rtl_pci_tx_buffer_addr"
+      ],
+      "elf_size_bytes": 54,
+      "dossier": "functions/0012-_rtl_pci_tx_buffer_addr.json.gz",
+      "pseudocode": "functions/0012-_rtl_pci_tx_buffer_addr.c",
+      "assembly": "functions/0012-_rtl_pci_tx_buffer_addr.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_tx_buffer_addr",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10138",
+            "end": "0x1016d"
+          }
+        ],
+        "total_bytes": 54,
+        "span_bytes": 54,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 19,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 1 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "372e065fd2f2c936d22cc558c7dccb454303a34e4f1f7219822cbb11e3bd0509",
+      "assembly_sha256": "37ab342936b16a8f4ff15cedb652cc1abb05b426669419112f02ffc52a996ecf",
+      "unresolved_calls": [
+        {
+          "address": "0x10168",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "b53629aca03e4461b7b18d6c591d6a48739dc3f62e63cd31c06e1ac90ad7112a"
+    },
+    {
+      "address": "0x10170",
+      "aliases": [
+        "rtl_pci_reset_trx_ring"
+      ],
+      "elf_size_bytes": 638,
+      "dossier": "functions/0013-rtl_pci_reset_trx_ring.json.gz",
+      "pseudocode": "functions/0013-rtl_pci_reset_trx_ring.c",
+      "assembly": "functions/0013-rtl_pci_reset_trx_ring.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_reset_trx_ring",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10170",
+            "end": "0x103ed"
+          }
+        ],
+        "total_bytes": 638,
+        "span_bytes": 638,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 187,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 9 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "c21420e1d0188e8800ea9567146a23fcd49c243464df3f947866ae359151ad17",
+      "assembly_sha256": "9751a5e15116a03c9a4a512779d0f29d4e9b413197980b928596c6f58c8688bd",
+      "unresolved_calls": [
+        {
+          "address": "0x10210",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x102f6",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10300",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1032a",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10346",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10362",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x103b4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x103c0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x103d6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "f837a3e26460c59d0ec41c5b1a0afe6212cb243f42556b239bd2e4dff5551c44"
+    },
+    {
+      "address": "0x103f0",
+      "aliases": [
+        "rtl_pci_hgw500_be_summary_active"
+      ],
+      "elf_size_bytes": 64,
+      "dossier": "functions/0014-rtl_pci_hgw500_be_summary_active.json.gz",
+      "pseudocode": "functions/0014-rtl_pci_hgw500_be_summary_active.c",
+      "assembly": "functions/0014-rtl_pci_hgw500_be_summary_active.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_hgw500_be_summary_active",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x103f0",
+            "end": "0x1042f"
+          }
+        ],
+        "total_bytes": 64,
+        "span_bytes": 64,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 20,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 1 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "10e96eb8df8771d5e0fc3262cb37fa6376ed6f60c065f9e8f28cdc36309ae717",
+      "assembly_sha256": "6f4fa732c62e921089d152808a70702f713e6bb0be3d39846d752d5201b55f56",
+      "unresolved_calls": [
+        {
+          "address": "0x1040c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "918d25b7af8590b0903776791ad110e77c30b386f28a3230be64f0d2dc7c1f34"
+    },
+    {
+      "address": "0x10430",
+      "aliases": [
+        "dev_kfree_skb_any"
+      ],
+      "elf_size_bytes": 10,
+      "dossier": "functions/0015-dev_kfree_skb_any.json.gz",
+      "pseudocode": "functions/0015-dev_kfree_skb_any.c",
+      "assembly": "functions/0015-dev_kfree_skb_any.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "dev_kfree_skb_any",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10430",
+            "end": "0x10439"
+          }
+        ],
+        "total_bytes": 10,
+        "span_bytes": 10,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 2,
+      "warning_lines": [
+        "/* WARNING: Control flow encountered bad instruction data */",
+        "                    /* WARNING: Bad instruction - Truncating control flow here */",
+        "  halt_baddata();"
+      ],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "a6c9b2491608c890f9e0b551ef3e4a63d337f24e2ba062abd045c24eeb432e29",
+      "assembly_sha256": "7c29775ae2387e491245c6b48e6f2c9833bd39b05b3264fc21d77e0d6b1ffa80",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "762f2e9f86396be0ec7e86a006837e6019fb8aab2d9b0e3ba99c996034baf7e5"
+    },
+    {
+      "address": "0x1043c",
+      "aliases": [
+        "rtl_pci_flush"
+      ],
+      "elf_size_bytes": 146,
+      "dossier": "functions/0016-rtl_pci_flush.json.gz",
+      "pseudocode": "functions/0016-rtl_pci_flush.c",
+      "assembly": "functions/0016-rtl_pci_flush.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_flush",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1043c",
+            "end": "0x104cd"
+          }
+        ],
+        "total_bytes": 146,
+        "span_bytes": 146,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 44,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 1 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "97b80087f43ad80b4de4d18e88ebf2966beac2945c88b3c74a44f41ef2e2a9c1",
+      "assembly_sha256": "5fdd36db5e3ec4e0cedf61d0240a64006501cfc1d8232ee4959d92aec2502879",
+      "unresolved_calls": [
+        {
+          "address": "0x10490",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "9271a6330bb2740c77c5dd7ad41f456b041c98ceddbc6c2c0182d97dbedd82b1"
+    },
+    {
+      "address": "0x104d0",
+      "aliases": [
+        "rtl_pci_hgw500_match_eapol"
+      ],
+      "elf_size_bytes": 280,
+      "dossier": "functions/0017-rtl_pci_hgw500_match_eapol.json.gz",
+      "pseudocode": "functions/0017-rtl_pci_hgw500_match_eapol.c",
+      "assembly": "functions/0017-rtl_pci_hgw500_match_eapol.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_hgw500_match_eapol",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x104d0",
+            "end": "0x105e7"
+          }
+        ],
+        "total_bytes": 280,
+        "span_bytes": 280,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 104,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 3 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "fa37548dada91697ff16b3b12b3ae9187c502da71e6c1ce5451f2bd5907c780e",
+      "assembly_sha256": "c07ad2de3496b46b1b6586255591961b2a3ac842603d389e15b9f80396e3646c",
+      "unresolved_calls": [
+        {
+          "address": "0x104ec",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10510",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10568",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "3b755e43612ad7f49be6f7d0e2cd9cdee45d01e70deb509d9ce9001a5ff8874c"
+    },
+    {
+      "address": "0x105e8",
+      "aliases": [
+        "_rtl_mac_to_hwqueue"
+      ],
+      "elf_size_bytes": 214,
+      "dossier": "functions/0018-_rtl_mac_to_hwqueue.json.gz",
+      "pseudocode": "functions/0018-_rtl_mac_to_hwqueue.c",
+      "assembly": "functions/0018-_rtl_mac_to_hwqueue.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_mac_to_hwqueue",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x105e8",
+            "end": "0x106bd"
+          }
+        ],
+        "total_bytes": 214,
+        "span_bytes": 214,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 64,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 2 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "430933336500989485f1501f3a43886228adb4c83306cb84b785e83fe9c68b20",
+      "assembly_sha256": "8918ac2f4e7ceb9a899cc4bd0f847787f96247637843c5ca3aa6c90a60c2d869",
+      "unresolved_calls": [
+        {
+          "address": "0x1063a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1066c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "5b4960a9f429d77c9e7476c8d6fe79f044b1c631cac20431c7f986a940443664"
+    },
+    {
+      "address": "0x106c0",
+      "aliases": [
+        "rtl_pci_hgw500_eapol_should_log.constprop.0"
+      ],
+      "elf_size_bytes": 42,
+      "dossier": "functions/0019-rtl_pci_hgw500_eapol_should_log.constprop.0.json.gz",
+      "pseudocode": "functions/0019-rtl_pci_hgw500_eapol_should_log.constprop.0.c",
+      "assembly": "functions/0019-rtl_pci_hgw500_eapol_should_log.constprop.0.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_hgw500_eapol_should_log.constprop.0",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x106c0",
+            "end": "0x106e9"
+          }
+        ],
+        "total_bytes": 42,
+        "span_bytes": 42,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 15,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [
+        "Ghidra Listing reports a terminal call at 0x106d6 to 0x10014 is_power_of_2 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+      ],
+      "pseudocode_sha256": "624b6b99bf8fb7f36f715374306e0a9cc4a9c5760e9e52cdcf50857642ee12a6",
+      "assembly_sha256": "036d9334f3372196be289291a2728614e4859e6dff89d0cdbaba799d23fba740",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "abd3900e5e6acb4a4a896de97b3178a8b62604427b4e37c20c076f139bf82afe"
+    },
+    {
+      "address": "0x106ec",
+      "aliases": [
+        "_rtl_pci_init_one_rxdesc"
+      ],
+      "elf_size_bytes": 476,
+      "dossier": "functions/0020-_rtl_pci_init_one_rxdesc.json.gz",
+      "pseudocode": "functions/0020-_rtl_pci_init_one_rxdesc.c",
+      "assembly": "functions/0020-_rtl_pci_init_one_rxdesc.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_init_one_rxdesc",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x106ec",
+            "end": "0x108c7"
+          }
+        ],
+        "total_bytes": 476,
+        "span_bytes": 476,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 137,
+      "warning_lines": [
+        "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 9 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "5f7cbec5e0c4d6986815482729db14c2b0ee6d6334dda3e4e15af8216a952c95",
+      "assembly_sha256": "353f1269d8328d2dfd0101e4e9ca18f013663276e3ea4e9f6a9be5b58b8672b1",
+      "unresolved_calls": [
+        {
+          "address": "0x10750",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x107a6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x107dc",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1082c",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10848",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10860",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x1087a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x108a8",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x108be",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "0cc35968cf15b4155f52a756f0c8fdb0a66000be7258950e115bd33a6af6a05d"
+    },
+    {
+      "address": "0x108c8",
+      "aliases": [
+        "tasklet_schedule"
+      ],
+      "elf_size_bytes": 52,
+      "dossier": "functions/0021-tasklet_schedule.json.gz",
+      "pseudocode": "functions/0021-tasklet_schedule.c",
+      "assembly": "functions/0021-tasklet_schedule.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "tasklet_schedule",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x108c8",
+            "end": "0x108fb"
+          }
+        ],
+        "total_bytes": 52,
+        "span_bytes": 52,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 18,
+      "warning_lines": [
+        "/* WARNING: Control flow encountered bad instruction data */",
+        "                    /* WARNING: Bad instruction - Truncating control flow here */",
+        "    halt_baddata();"
+      ],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "5748f734a392c4c92cb99acce78ac678f044147f376f4c6d3b18722667eb6ba7",
+      "assembly_sha256": "135571bed23eab50158e6edb823ccdce68df0f4f4da8dab9d9db9e3f35372731",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "169c4a9dea366cd05ad8a3022d813c3dfad0084cb4bef6c8a2d5f255ca4ac4f1"
+    },
+    {
+      "address": "0x108fc",
+      "aliases": [
+        "rtl_pci_irq_line_release.isra.0"
+      ],
+      "elf_size_bytes": 122,
+      "dossier": "functions/0022-rtl_pci_irq_line_release.isra.0.json.gz",
+      "pseudocode": "functions/0022-rtl_pci_irq_line_release.isra.0.c",
+      "assembly": "functions/0022-rtl_pci_irq_line_release.isra.0.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_irq_line_release.isra.0",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x108fc",
+            "end": "0x10975"
+          }
+        ],
+        "total_bytes": 122,
+        "span_bytes": 122,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 35,
+      "warning_lines": [
+        "/* WARNING: Control flow encountered bad instruction data */",
+        "                    /* WARNING: Bad instruction - Truncating control flow here */",
+        "    halt_baddata();"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 1 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "52f33f38d01b9fa468264b3c526354822f129b7c9c030e9a14bd9e1a1a91de2e",
+      "assembly_sha256": "c33c0f8f842211e9a0ee47fa05c080f807d377e9aa55c460bc79932b73988be3",
+      "unresolved_calls": [
+        {
+          "address": "0x1093a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "0271880281efaadcc83a68d711b2854a9f063a946de815c7e0e2760bae702f0b"
+    },
+    {
+      "address": "0x10978",
+      "aliases": [
+        "rtl_pci_start"
+      ],
+      "elf_size_bytes": 268,
+      "dossier": "functions/0023-rtl_pci_start.json.gz",
+      "pseudocode": "functions/0023-rtl_pci_start.c",
+      "assembly": "functions/0023-rtl_pci_start.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_start",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10978",
+            "end": "0x10a83"
+          }
+        ],
+        "total_bytes": 268,
+        "span_bytes": 268,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 82,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 9 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "a79bdf0482ddea6e948adf70d0f53619d39dd6238328fbcf8646d00eb18d17b5",
+      "assembly_sha256": "99b542782cc755f6a8cfea86dfac24af1786f96f3f777a89f73f207236cfc6ce",
+      "unresolved_calls": [
+        {
+          "address": "0x109c2",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x109d4",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x109dc",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x109e8",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x109fc",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10a02",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10a36",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10a42",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10a46",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "a993c44296c5ad44bba5ae0a6189e3ec6a02debc2b5d54377dfa93bc108b83c6"
+    },
+    {
+      "address": "0x10a84",
+      "aliases": [
+        "rtl_pci_hgw500_be_reclaim_rearm.isra.0"
+      ],
+      "elf_size_bytes": 250,
+      "dossier": "functions/0024-rtl_pci_hgw500_be_reclaim_rearm.isra.0.json.gz",
+      "pseudocode": "functions/0024-rtl_pci_hgw500_be_reclaim_rearm.isra.0.c",
+      "assembly": "functions/0024-rtl_pci_hgw500_be_reclaim_rearm.isra.0.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_hgw500_be_reclaim_rearm.isra.0",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10a84",
+            "end": "0x10b7d"
+          }
+        ],
+        "total_bytes": 250,
+        "span_bytes": 250,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 68,
+      "warning_lines": [
+        "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 3 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "038f1587d1db9f04a3fe167702718518137736975ecc9cba7e8359ce379cb030",
+      "assembly_sha256": "6d9642c76f45f14105d1da61e4e5e23b32dd2d4371762bebea9252bbb3bedd9b",
+      "unresolved_calls": [
+        {
+          "address": "0x10ad4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10b26",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10b74",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "5fefe351dc707500777e2fa814f4634492bcc0d7adb1737295e14c6e116ced50"
+    },
+    {
+      "address": "0x10b80",
+      "aliases": [
+        "_rtl_pci_irq_tasklet"
+      ],
+      "elf_size_bytes": 430,
+      "dossier": "functions/0025-_rtl_pci_irq_tasklet.json.gz",
+      "pseudocode": "functions/0025-_rtl_pci_irq_tasklet.c",
+      "assembly": "functions/0025-_rtl_pci_irq_tasklet.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_irq_tasklet",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10b80",
+            "end": "0x10d2d"
+          }
+        ],
+        "total_bytes": 430,
+        "span_bytes": 430,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 125,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 6 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "90a950cb1bc007c6122f10d2ab735d9a8a363bbafdcec332e920a07172af61d5",
+      "assembly_sha256": "c0f572a42589d7e0ef985591536fc26718144e5baa001e380a33c7d1d7144d8d",
+      "unresolved_calls": [
+        {
+          "address": "0x10bc2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10c04",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10c12",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10c4c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10ce0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10cfc",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "e5115a91a9ec9617914aa73cd75bd9c0577365ff5499afb1a55c567aafbcc2bf"
+    },
+    {
+      "address": "0x10d30",
+      "aliases": [
+        "_rtl_pci_switch_clk_req.isra.0"
+      ],
+      "elf_size_bytes": 64,
+      "dossier": "functions/0026-_rtl_pci_switch_clk_req.isra.0.json.gz",
+      "pseudocode": "functions/0026-_rtl_pci_switch_clk_req.isra.0.c",
+      "assembly": "functions/0026-_rtl_pci_switch_clk_req.isra.0.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_switch_clk_req.isra.0",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10d30",
+            "end": "0x10d6f"
+          }
+        ],
+        "total_bytes": 64,
+        "span_bytes": 64,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 19,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 1 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [
+        "Ghidra Listing reports a terminal call at 0x10d62 to 0x10054 __udelay (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+      ],
+      "pseudocode_sha256": "20e207450f5519d6e819d27200c67073be7302b1d622aa408e6bf6c5edd714a6",
+      "assembly_sha256": "2a6cf3d90007e1ed7d15264152aa46cbf4cddd80cec96230d883b431b8b30db7",
+      "unresolved_calls": [
+        {
+          "address": "0x10d48",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "463426ab76e292d2a25e4b2d51551dfff2f1d55dea45656e3ef6ef5a79eaf3e0"
+    },
+    {
+      "address": "0x10d70",
+      "aliases": [
+        "_rtl_pci_platform_switch_device_pci_aspm.isra.0"
+      ],
+      "elf_size_bytes": 46,
+      "dossier": "functions/0027-_rtl_pci_platform_switch_device_pci_aspm.isra.0.json.gz",
+      "pseudocode": "functions/0027-_rtl_pci_platform_switch_device_pci_aspm.isra.0.c",
+      "assembly": "functions/0027-_rtl_pci_platform_switch_device_pci_aspm.isra.0.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_platform_switch_device_pci_aspm.isra.0",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10d70",
+            "end": "0x10d9d"
+          }
+        ],
+        "total_bytes": 46,
+        "span_bytes": 46,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 10,
+      "warning_lines": [
+        "/* WARNING: Control flow encountered bad instruction data */",
+        "                    /* WARNING: Bad instruction - Truncating control flow here */",
+        "  halt_baddata();"
+      ],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "3f3f3bc1eab83029196cb742ea3644970d2ae290c830ff6f282bb7029cc0f113",
+      "assembly_sha256": "548e3e5f56f206653abcaf8f66e76944e5b16f238073585183eaa96ff20853b5",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "d33c7f6690901aefbecee494a5f4175768f8faa01738dabd0b8d5c3c8481d606"
+    },
+    {
+      "address": "0x10da0",
+      "aliases": [
+        "rtl_pci_disable_aspm"
+      ],
+      "elf_size_bytes": 152,
+      "dossier": "functions/0028-rtl_pci_disable_aspm.json.gz",
+      "pseudocode": "functions/0028-rtl_pci_disable_aspm.c",
+      "assembly": "functions/0028-rtl_pci_disable_aspm.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_disable_aspm",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10da0",
+            "end": "0x10e37"
+          }
+        ],
+        "total_bytes": 152,
+        "span_bytes": 152,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 43,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 1 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "5cfe234ab697208b0e4b34f39a9ca1274d91584931265563c2765c04a0512979",
+      "assembly_sha256": "b945d20c4744bb8d11f2179278de65d140b653b9e08f21e3be1113937f3147ce",
+      "unresolved_calls": [
+        {
+          "address": "0x10e12",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "23f5036ed721100dbd7c8b5bbd3a613c19d6bf8cac4f7a7884f97addb38ab6c0"
+    },
+    {
+      "address": "0x10e38",
+      "aliases": [
+        "rtl_pci_enable_aspm"
+      ],
+      "elf_size_bytes": 128,
+      "dossier": "functions/0029-rtl_pci_enable_aspm.json.gz",
+      "pseudocode": "functions/0029-rtl_pci_enable_aspm.c",
+      "assembly": "functions/0029-rtl_pci_enable_aspm.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_enable_aspm",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10e38",
+            "end": "0x10eb7"
+          }
+        ],
+        "total_bytes": 128,
+        "span_bytes": 128,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 38,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [
+        "Ghidra Listing reports a terminal call at 0x10ea8 to 0x10054 __udelay (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+      ],
+      "pseudocode_sha256": "be36723e327b2b978b6e9bfbf5bd12d62e1ec6975007507d83d5cb446033fbe2",
+      "assembly_sha256": "cd7e6999a890b90d5d5e28d1f99204c643d3dc329ee9e441f4c95e25d944a598",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "618e5fe7c960d5701e48005213e7b11e94c9f9d5376efc3acd303527a09cbda0"
+    },
+    {
+      "address": "0x10eb8",
+      "aliases": [
+        "rtl_pci_stop"
+      ],
+      "elf_size_bytes": 406,
+      "dossier": "functions/0030-rtl_pci_stop.json.gz",
+      "pseudocode": "functions/0030-rtl_pci_stop.c",
+      "assembly": "functions/0030-rtl_pci_stop.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_stop",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10eb8",
+            "end": "0x1104d"
+          }
+        ],
+        "total_bytes": 406,
+        "span_bytes": 406,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 116,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 10 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [
+        "Ghidra Listing reports a terminal call at 0x11016 to 0x10e38 rtl_pci_enable_aspm (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+      ],
+      "pseudocode_sha256": "9e2ede860cd614be4e4c36aca29461501ba43450590f27dd9f9c10e7056a4c2c",
+      "assembly_sha256": "fde70089e513782fc081f85a456e2db3c2a7096aefbc81539b900c35fa36c843",
+      "unresolved_calls": [
+        {
+          "address": "0x10f06",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10f2e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10f40",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10f4c",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10f58",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10f82",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10f88",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10f94",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x10fd8",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x10fee",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "f191db714691a29535aaef1e497b213fecf846b6d4140ae0cdf095b2c48df3c6"
+    },
+    {
+      "address": "0x11050",
+      "aliases": [
+        "rtl_pci_hgw500_guard_high.isra.0"
+      ],
+      "elf_size_bytes": 28,
+      "dossier": "functions/0031-rtl_pci_hgw500_guard_high.isra.0.json.gz",
+      "pseudocode": "functions/0031-rtl_pci_hgw500_guard_high.isra.0.c",
+      "assembly": "functions/0031-rtl_pci_hgw500_guard_high.isra.0.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_hgw500_guard_high.isra.0",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x11050",
+            "end": "0x1106b"
+          }
+        ],
+        "total_bytes": 28,
+        "span_bytes": 28,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 8,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "complete",
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "5d90099f823e4e3d9b96086cca02907a78e5e7d099225a66301041f61de2236a",
+      "assembly_sha256": "42d5fdcf5b3e5c4e1a0a2d0cc66ef477b06f236b7fa12f6ed88919b2218eb44d",
+      "unresolved_calls": [],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "85293fee0afbd212246f60402ea2fac8666b18d4751a92a46e3ca0e4e7e2fd41"
+    },
+    {
+      "address": "0x1106c",
+      "aliases": [
+        "rtl_pci_tx_chk_waitq_insert"
+      ],
+      "elf_size_bytes": 220,
+      "dossier": "functions/0032-rtl_pci_tx_chk_waitq_insert.json.gz",
+      "pseudocode": "functions/0032-rtl_pci_tx_chk_waitq_insert.c",
+      "assembly": "functions/0032-rtl_pci_tx_chk_waitq_insert.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_tx_chk_waitq_insert",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1106c",
+            "end": "0x11147"
+          }
+        ],
+        "total_bytes": 220,
+        "span_bytes": 220,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 61,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 2 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "3e5a47eae612eb5538ab98e159d81a0df996178bfd05001dd1c1d3f24ff33fac",
+      "assembly_sha256": "249f6e610c88f239fc9c203ef79705ef11db8171f0ff1cceb0a7de3bac1c783c",
+      "unresolved_calls": [
+        {
+          "address": "0x1112a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1113e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "c105792ed50d972bcdf58165f68aac73e75c317958b940da9ba0662fca641a75"
+    },
+    {
+      "address": "0x11148",
+      "aliases": [
+        "_rtl_pci_prepare_bcn_tasklet"
+      ],
+      "elf_size_bytes": 506,
+      "dossier": "functions/0033-_rtl_pci_prepare_bcn_tasklet.json.gz",
+      "pseudocode": "functions/0033-_rtl_pci_prepare_bcn_tasklet.c",
+      "assembly": "functions/0033-_rtl_pci_prepare_bcn_tasklet.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_prepare_bcn_tasklet",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x11148",
+            "end": "0x11341"
+          }
+        ],
+        "total_bytes": 506,
+        "span_bytes": 506,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 149,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 9 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "3e3f92d1a0e10c20b11447bd21955119820de17ec86d2533b7daa18280527683",
+      "assembly_sha256": "9e847190a727a36e72b524bcc7963fcd04f44ceb9168bb4ebfc1153b61802f30",
+      "unresolved_calls": [
+        {
+          "address": "0x1118c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1119a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11208",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11212",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11224",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11272",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x112be",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x112f6",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x1130a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "b1fd15caa9fa90005a842f6bea5ecb126a1f7b19804fa88c4aea86e50f5b3e49"
+    },
+    {
+      "address": "0x11344",
+      "aliases": [
+        "_rtl_pci_tx_isr"
+      ],
+      "elf_size_bytes": 1770,
+      "dossier": "functions/0034-_rtl_pci_tx_isr.json.gz",
+      "pseudocode": "functions/0034-_rtl_pci_tx_isr.c",
+      "assembly": "functions/0034-_rtl_pci_tx_isr.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_tx_isr",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x11344",
+            "end": "0x11a2d"
+          }
+        ],
+        "total_bytes": 1770,
+        "span_bytes": 1770,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 499,
+      "warning_lines": [
+        "/* WARNING: Control flow encountered bad instruction data */",
+        "                    /* WARNING: Bad instruction - Truncating control flow here */",
+        "          halt_baddata();"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 17 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "0049c7972a99ea94323ec29010f7f39215168cbce86311b2c8bb947b82cf6d9b",
+      "assembly_sha256": "ef60b9722cf4ec2ed361d2f14893cc6221d7e8e3764fc37912f0b12f950e0853",
+      "unresolved_calls": [
+        {
+          "address": "0x1140a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11458",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x1146e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x114ac",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x114ca",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x114d8",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1163c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11718",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x117d2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x117de",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x117ee",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1189a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x118f2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11928",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x119aa",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x119ba",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x119ee",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "94b4e472ab903f89c6be7aa7d4828bfcdec7cc1c5fe5c0a64338dc41aa5483da"
+    },
+    {
+      "address": "0x11a30",
+      "aliases": [
+        "_rtl_pci_topaz_tx_complete"
+      ],
+      "elf_size_bytes": 320,
+      "dossier": "functions/0035-_rtl_pci_topaz_tx_complete.json.gz",
+      "pseudocode": "functions/0035-_rtl_pci_topaz_tx_complete.c",
+      "assembly": "functions/0035-_rtl_pci_topaz_tx_complete.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_topaz_tx_complete",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x11a30",
+            "end": "0x11b6f"
+          }
+        ],
+        "total_bytes": 320,
+        "span_bytes": 320,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 91,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 1 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "77798ece43f04050ce0474b8fbc06d1f4ac6549c92160480994a37e220f51764",
+      "assembly_sha256": "4f32aa2f559db449438332f87d18eb7463c6d92d7d1563f107b6a3a6bdc13110",
+      "unresolved_calls": [
+        {
+          "address": "0x11b1a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "b52f2438988ae48bd1a93f81c837df3bde38b0d8974b678774c43ffcd4f6c160"
+    },
+    {
+      "address": "0x11b70",
+      "aliases": [
+        "_rtl_pci_rx_interrupt"
+      ],
+      "elf_size_bytes": 1740,
+      "dossier": "functions/0036-_rtl_pci_rx_interrupt.json.gz",
+      "pseudocode": "functions/0036-_rtl_pci_rx_interrupt.c",
+      "assembly": "functions/0036-_rtl_pci_rx_interrupt.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_rx_interrupt",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x11b70",
+            "end": "0x1223b"
+          }
+        ],
+        "total_bytes": 1740,
+        "span_bytes": 1740,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 514,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 39 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "afc3f42325e133b411ac1e841e03b983275cb317f1c35db05efa301a5f7e84ad",
+      "assembly_sha256": "ff4bc0a210036c9b3ecab6b5495178b43a178c8baa9aa5db66631a3ca01fe4a3",
+      "unresolved_calls": [
+        {
+          "address": "0x11bba",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11bdc",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11c2e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11c7a",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x11cb6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11cc8",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11ce0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11cf8",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x11d0e",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x11d22",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x11d38",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11d7c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11dc0",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x11dd6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11de6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11df2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11e12",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11e2c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11e6a",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x11e7e",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x11ee0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11f34",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11f88",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11fa6",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x11fba",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11fc6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11fd6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11fe6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x11ff6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x120ea",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1212c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12136",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12150",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1217a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12190",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x121a0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x121b4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x121e4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12236",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "3c8ee77230c5db2d08030f6c475655d75019f1d0987c4480b77d5b9a2b5f9618"
+    },
+    {
+      "address": "0x1223c",
+      "aliases": [
+        "_rtl_pci_rx_work"
+      ],
+      "elf_size_bytes": 784,
+      "dossier": "functions/0037-_rtl_pci_rx_work.json.gz",
+      "pseudocode": "functions/0037-_rtl_pci_rx_work.c",
+      "assembly": "functions/0037-_rtl_pci_rx_work.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_rx_work",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1223c",
+            "end": "0x1254b"
+          }
+        ],
+        "total_bytes": 784,
+        "span_bytes": 784,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 214,
+      "warning_lines": [
+        "/* WARNING: Control flow encountered bad instruction data */",
+        "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */",
+        "                    /* WARNING: Bad instruction - Truncating control flow here */",
+        "  halt_baddata();"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 7 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "e33249b10b6c70ba699a1a58ad02b1c08349244debd3c7d44294f9fe1b80abb0",
+      "assembly_sha256": "8a332443894060f3f6a6d9ef28e7692d0133c5bf29631e59d3fadbb348531448",
+      "unresolved_calls": [
+        {
+          "address": "0x1229c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x122f8",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x12304",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12344",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x123a2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12422",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12478",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "9cc6decb01af4d2c2b677a424773962a3a709ba22f78531970bf9db0e0ae88c6"
+    },
+    {
+      "address": "0x1254c",
+      "aliases": [
+        "_rtl_pci_free_rx_ring.isra.0"
+      ],
+      "elf_size_bytes": 218,
+      "dossier": "functions/0038-_rtl_pci_free_rx_ring.isra.0.json.gz",
+      "pseudocode": "functions/0038-_rtl_pci_free_rx_ring.isra.0.c",
+      "assembly": "functions/0038-_rtl_pci_free_rx_ring.isra.0.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_free_rx_ring.isra.0",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1254c",
+            "end": "0x12625"
+          }
+        ],
+        "total_bytes": 218,
+        "span_bytes": 218,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 60,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 4 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "4a1a415741b656e81bb1a95f3f8a21d96358c0e7082094da7bc824210a20c3e8",
+      "assembly_sha256": "c8d4aea905b4769aebcedf332f0a4784211db0c5e592812619238fbe7f45b35f",
+      "unresolved_calls": [
+        {
+          "address": "0x125b2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12600",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1260a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12620",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "80c49ac144bdeb0b3acaabbdc3d0dd4eb0c19a7fa01f0de8791326990e2edc77"
+    },
+    {
+      "address": "0x12628",
+      "aliases": [
+        "_rtl_pci_free_tx_ring"
+      ],
+      "elf_size_bytes": 388,
+      "dossier": "functions/0039-_rtl_pci_free_tx_ring.json.gz",
+      "pseudocode": "functions/0039-_rtl_pci_free_tx_ring.c",
+      "assembly": "functions/0039-_rtl_pci_free_tx_ring.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_free_tx_ring",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x12628",
+            "end": "0x127ab"
+          }
+        ],
+        "total_bytes": 388,
+        "span_bytes": 388,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 103,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 5 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "5fabb8be691ae04accb613b86bf45d523738f1fffbcd1acad157a1ee4903939c",
+      "assembly_sha256": "721a9836fb88069b02896de258fc03034c4763ea9b70fc1a5ffcded636cdd09f",
+      "unresolved_calls": [
+        {
+          "address": "0x126a4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x126ee",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12774",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1277e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12794",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "dc47a296f69ea2ec2bc28dcb798c0b691b109d318892cfc146a7496e363d2e42"
+    },
+    {
+      "address": "0x127ac",
+      "aliases": [
+        "rtl_pci_deinit"
+      ],
+      "elf_size_bytes": 134,
+      "dossier": "functions/0040-rtl_pci_deinit.json.gz",
+      "pseudocode": "functions/0040-rtl_pci_deinit.c",
+      "assembly": "functions/0040-rtl_pci_deinit.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_deinit",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x127ac",
+            "end": "0x12831"
+          }
+        ],
+        "total_bytes": 134,
+        "span_bytes": 134,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 39,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 5 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "1b831b2c2c5192147e28d91e88528a82ad8ca11fe891857bcc97175437493345",
+      "assembly_sha256": "fd6c53706588a9cdee6146ded4bace8ee82dc94614d4084e8ff42cb77a17c851",
+      "unresolved_calls": [
+        {
+          "address": "0x127d4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x127e0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x127ec",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x127f2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x127f8",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "54812ed9efba2515d2d1f08360d759d60d96d62b7167cd9e4a35664e6e1d087f"
+    },
+    {
+      "address": "0x12834",
+      "aliases": [
+        "rtl_pci_disconnect"
+      ],
+      "elf_size_bytes": 324,
+      "dossier": "functions/0041-rtl_pci_disconnect.json.gz",
+      "pseudocode": "functions/0041-rtl_pci_disconnect.c",
+      "assembly": "functions/0041-rtl_pci_disconnect.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_disconnect",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x12834",
+            "end": "0x12977"
+          }
+        ],
+        "total_bytes": 324,
+        "span_bytes": 324,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 87,
+      "warning_lines": [
+        "/* WARNING: Control flow encountered bad instruction data */",
+        "                    /* WARNING: Bad instruction - Truncating control flow here */",
+        "  halt_baddata();"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 11 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "8cb0127c4598a23e543cd221ea93969a46ff73df781ca0e387895533f8803ca7",
+      "assembly_sha256": "147ce292a145c312d42829800e203e40dc2fa8302ce7f81492a856ba63e39670",
+      "unresolved_calls": [
+        {
+          "address": "0x12852",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1288c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x128b0",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x128b4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x128c8",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x128da",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x128fe",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1291c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12926",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1295e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12974",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "72c839521531c509388e7e18c7096497b284070b9f2553ffec5e24a105341bc3"
+    },
+    {
+      "address": "0x12978",
+      "aliases": [
+        "rtl_pci_tx"
+      ],
+      "elf_size_bytes": 2532,
+      "dossier": "functions/0042-rtl_pci_tx.json.gz",
+      "pseudocode": "functions/0042-rtl_pci_tx.c",
+      "assembly": "functions/0042-rtl_pci_tx.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_tx",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x12978",
+            "end": "0x1335b"
+          }
+        ],
+        "total_bytes": 2532,
+        "span_bytes": 2532,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 719,
+      "warning_lines": [
+        "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 32 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "a8d9753a14310e63205527448e10a87edd881d9a1cbfa5711fd5a9b920050010",
+      "assembly_sha256": "552b8e0754780a8efb7c1004776a8cea202286159ca03274e078da6bc3572ee2",
+      "unresolved_calls": [
+        {
+          "address": "0x129f8",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12a54",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12a76",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12ab2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12b6c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12bce",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x12bea",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12c9e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12cd6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12cf8",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x12d92",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x12dbc",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x12dea",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12e24",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12e3a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12e9c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12ede",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x12f7e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1303e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13078",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x130c0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13124",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13134",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x131d8",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x131e6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13218",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13238",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13282",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1329a",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x132c4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x132fe",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13344",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "17d03df84d9ab4501248375bfb1da80de32c52018f2964116b04dd8384069c02"
+    },
+    {
+      "address": "0x1335c",
+      "aliases": [
+        "_rtl_pci_interrupt"
+      ],
+      "elf_size_bytes": 986,
+      "dossier": "functions/0043-_rtl_pci_interrupt.json.gz",
+      "pseudocode": "functions/0043-_rtl_pci_interrupt.c",
+      "assembly": "functions/0043-_rtl_pci_interrupt.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "_rtl_pci_interrupt",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1335c",
+            "end": "0x13735"
+          }
+        ],
+        "total_bytes": 986,
+        "span_bytes": 986,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 282,
+      "warning_lines": [
+        "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 15 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "3ad85435b6e1bce89252b1195f17737599ba19e182616df2d8e9827d1678ce0d",
+      "assembly_sha256": "df702ce4e1fa4cc41094f1948ca52cba08fb24fbed8c4d5dc9350b03656fa971",
+      "unresolved_calls": [
+        {
+          "address": "0x13392",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x133c0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x133f2",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x1342a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13448",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13492",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x134a0",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x134e4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13508",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x135e0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13606",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13634",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1367c",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x13698",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x136aa",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "a7e0a8bf1daef41ec4fd6acf156faebd75787c687ef7f4e3bc89882b5e71ffd5"
+    },
+    {
+      "address": "0x13740",
+      "aliases": [
+        "rtl_pci_hgw500_be_summary_log"
+      ],
+      "elf_size_bytes": 108,
+      "dossier": "functions/0044-rtl_pci_hgw500_be_summary_log.json.gz",
+      "pseudocode": "functions/0044-rtl_pci_hgw500_be_summary_log.c",
+      "assembly": "functions/0044-rtl_pci_hgw500_be_summary_log.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_hgw500_be_summary_log",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x13740",
+            "end": "0x137ab"
+          }
+        ],
+        "total_bytes": 108,
+        "span_bytes": 108,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 38,
+      "warning_lines": [
+        "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 1 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "ecf41f7daec525928c379e5d72850ece1417bf43cec81e6b3008d06ee9b4d5ae",
+      "assembly_sha256": "415d5c4ee1d7f931f10de2853d782d51c7dbf2e1cdd37e7fff0b44020dbd3533",
+      "unresolved_calls": [
+        {
+          "address": "0x1379e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "6e6a10af0904ac4dc0cd2adf6ab2c118eeb817bd403a157dddbaadb0eec8d970"
+    },
+    {
+      "address": "0x137ac",
+      "aliases": [
+        "platform_enable_dma64"
+      ],
+      "elf_size_bytes": 82,
+      "dossier": "functions/0045-platform_enable_dma64.json.gz",
+      "pseudocode": "functions/0045-platform_enable_dma64.c",
+      "assembly": "functions/0045-platform_enable_dma64.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "platform_enable_dma64",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x137ac",
+            "end": "0x137fd"
+          }
+        ],
+        "total_bytes": 82,
+        "span_bytes": 82,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 25,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 2 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "a4cf8551cb66de823c88d2c6d5f1e53e7d6836b98c50cb998d226188291c3bc3",
+      "assembly_sha256": "c52fe727427b1c4158605fcd1442dd25ae1bfdc7515f4b76248bebb6970dc6a9",
+      "unresolved_calls": [
+        {
+          "address": "0x137c6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x137ea",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "3369a4aee815a4cf227caeb0a3ad330b477a6f475b0d3ac3adda3ded5dfc7691"
+    },
+    {
+      "address": "0x13800",
+      "aliases": [
+        "rtl_pci_intr_mode_legacy"
+      ],
+      "elf_size_bytes": 176,
+      "dossier": "functions/0046-rtl_pci_intr_mode_legacy.json.gz",
+      "pseudocode": "functions/0046-rtl_pci_intr_mode_legacy.c",
+      "assembly": "functions/0046-rtl_pci_intr_mode_legacy.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_intr_mode_legacy",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x13800",
+            "end": "0x138af"
+          }
+        ],
+        "total_bytes": 176,
+        "span_bytes": 176,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "assembly_instructions": 48,
+      "warning_lines": [
+        "  int unaff_r14;",
+        "    unaff_r14 = 1;",
+        "    iVar3 = unaff_r14 << 0x13;"
+      ],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 2 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "b4dfe0b88d74a7036443403a648fa4ea742d766d8a1535bc9818be89a368f189",
+      "assembly_sha256": "29103d8b763fee2a3274697c36a3d9e1ef2f450e153cfda2ef6555da3c114df9",
+      "unresolved_calls": [
+        {
+          "address": "0x13856",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13890",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": false,
+      "native_signature_source": "default",
+      "dossier_sha256": "3f71a918eb244f70342542a8f43facd8ab022c87f63771426fcf74b2aabf30d3"
+    },
+    {
+      "address": "0x138b0",
+      "aliases": [
+        "rtl_pci_probe"
+      ],
+      "elf_size_bytes": 4334,
+      "dossier": "functions/0047-rtl_pci_probe.json.gz",
+      "pseudocode": "functions/0047-rtl_pci_probe.c",
+      "assembly": "functions/0047-rtl_pci_probe.assembly.txt",
+      "status": "PSEUDOCODE_EXPORTED_UNVALIDATED",
+      "ghidra_name": "rtl_pci_probe",
+      "ghidra_body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x138b0",
+            "end": "0x1404f"
+          },
+          {
+            "start": "0x14054",
+            "end": "0x1499d"
+          }
+        ],
+        "total_bytes": 4330,
+        "span_bytes": 4334,
+        "non_contiguous": true,
+        "contains_entry": true
+      },
+      "assembly_instructions": 1143,
+      "warning_lines": [],
+      "relationship_coverage": {
+        "status": "partial",
+        "limitations": [
+          "Ghidra's callee inventory omits targets of 83 call reference(s) or decoded call(s) without destinations."
+        ],
+        "limited_directions": [
+          "callees"
+        ],
+        "diagnostics": [
+          "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals."
+        ]
+      },
+      "boundary_limitations": [],
+      "pseudocode_sha256": "bf5933f69ec8f5133e47801e362960c28ce7c7fb6c81ebc5db3feb6c94549b99",
+      "assembly_sha256": "66e71b35f8ed6cb35abf9b38ab066536fe36ba891f6e544afa54d21d4b0e2df8",
+      "unresolved_calls": [
+        {
+          "address": "0x13902",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13908",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1394e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x139ae",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x139be",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x139f2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13a00",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13a18",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13a32",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13a78",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13a8a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13a96",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13b08",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13b4a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13b5c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13b94",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13b9e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13bc8",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13bea",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13c12",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13c2a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13c34",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13c3e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13c48",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13c80",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13c8a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13e34",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13e40",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13e56",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13e7a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13e98",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13ea6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13eb6",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13f08",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13f16",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x13f28",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13f3c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13f4a",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x13f58",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13fe0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x13ff0",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140a0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x140ee",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1413e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14144",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1415a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14160",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14172",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x141b0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x141c4",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x141fc",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14296",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x142b2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1439c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x143b0",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x143ea",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14474",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14496",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x144b2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14566",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x145c2",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x145ec",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14608",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14658",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14668",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14672",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x146ba",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14706",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x14790",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x147ac",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14822",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14836",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1483c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14852",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1486e",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x148a2",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x148c8",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x148dc",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x14902",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1492c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1493a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1494c",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        },
+        {
+          "address": "0x1497a",
+          "reason": "A call destination has no known containing Ghidra procedure"
+        }
+      ],
+      "native_value_flow_truncated": true,
+      "native_signature_source": "default",
+      "dossier_sha256": "5312c35c831653e524b2e08805cc3b7c41a93c9981cd9807c95ef5a1e682df6a"
+    }
+  ]
+}

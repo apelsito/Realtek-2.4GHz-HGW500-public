@@ -1,0 +1,20 @@
+diff --git a/drivers/net/wireless/realtek/rtlwifi/pci.c b/drivers/net/wireless/realtek/rtlwifi/pci.c
+--- a/drivers/net/wireless/realtek/rtlwifi/pci.c
++++ b/drivers/net/wireless/realtek/rtlwifi/pci.c
+@@ -852,9 +852,14 @@ static irqreturn_t _rtl_pci_interrupt(int irq, void *dev_id)
+ 
+ 	if (rtlpci->irq_enabled == 0) {
+ 		if (rtlpci->irq_line_lifecycle_managed) {
++			/* Topaz INTx is level-triggered.  A temporary HIMR-off
++			 * window must still acknowledge the latched device status or
++			 * the generic level flow immediately retriggers forever.
++			 */
++			rtlpriv->cfg->ops->interrupt_recognized(hw, &intvec);
+ 			if (trace)
+-				pr_info("OMRTL stage=irq-deferred-handled id=%u irq=%d reason=managed-deferred\n",
+-					trace_id, irq);
++				pr_info("OMRTL stage=irq-deferred-acked id=%u irq=%d inta=%#x intb=%#x\n",
++					trace_id, irq, intvec.inta, intvec.intb);
+ 			return IRQ_HANDLED;
+ 		}
+ 		if (trace)

@@ -1,0 +1,14 @@
+* text=auto eol=lf
+original/** -text whitespace=-blank-at-eol,-blank-at-eof,-cr-at-eol
+*.py text eol=lf
+*.sh text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.md text eol=lf
+docs/ORIGINAL_COMMENTS.md whitespace=-blank-at-eol,-cr-at-eol
+evidence/** -text whitespace=-blank-at-eol,-blank-at-eof,-cr-at-eol
+src/** -text whitespace=-blank-at-eol,-blank-at-eof,-cr-at-eol
+build-context/** -text whitespace=-blank-at-eol,-blank-at-eof,-cr-at-eol
+*.patch whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,-cr-at-eol
+kernel/ethernet-linux-7.3-v1/candidate/manifest.json -text whitespace=-cr-at-eol
+kernel/ethernet-linux-7.3-v1/*_RESULT.json -text

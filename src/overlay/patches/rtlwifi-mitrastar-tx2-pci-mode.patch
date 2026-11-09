@@ -1,0 +1,8 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/pci.h
++++ b/drivers/net/wireless/realtek/rtlwifi/pci.h
+@@ -180,4 +180,5 @@ struct rtl_pci {
+ 	/*Tx */
+ 	struct rtl8192_tx_ring tx_ring[RTL_PCI_MAX_TX_QUEUE_COUNT];
+ 	int txringcount[RTL_PCI_MAX_TX_QUEUE_COUNT];
++	bool txbd_compact32;
+ 	u32 transmit_config;

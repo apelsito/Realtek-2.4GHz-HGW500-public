@@ -1,0 +1,10 @@
+{
+  "schema": "realtek.rea-public-export-verification/v1",
+  "status": "PASS",
+  "payload_files": 1104,
+  "payload_bytes": 7366373,
+  "hash_failures": [],
+  "unexpected_files": [],
+  "literal_findings": [],
+  "forbidden_artifacts": []
+}

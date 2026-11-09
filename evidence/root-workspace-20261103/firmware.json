@@ -1,0 +1,18 @@
+{
+  "status": "PASS_ACTUAL_RTL8192EE_FIRMWARE_ENTRYPOINTS_ASAN_UBSAN",
+  "hardware_accessed": false,
+  "cases": 65564,
+  "invalid_image_mmio_calls": 0,
+  "pins": {
+    "/workspace/OpenMitraStar/Realtek-2.4GHz-HGW500/scripts/test_linux73_firmware.py": "a6f6c3b1ff9aeb71128da63a2f612587ccdd09470fe109cfcdbb9f5bec3208a4",
+    "/workspace/OpenMitraStar/Realtek-2.4GHz-HGW500/kernel/radio2g-linux-7.3-v1/overlay/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.c": "320c847c036f40b6f08a03454aaabf890a56d2475b8e2f15e5f49e189bea3609",
+    "/workspace/OpenMitraStar/Realtek-2.4GHz-HGW500/kernel/radio2g-linux-7.3-v1/overlay/drivers/net/wireless/realtek/rtlwifi/wifi.h": "3f9bc9a00265cd133c06965ec677ed6fbceb5dccfcbc0537388c7412efb7f139",
+    "/workspace/build/evidence/hgw500-realtek-root-20261103/firmware/firmware-entrypoints.c": "08cce664625e83ee1325fd98343ac8f049dd8d79636588eb198afd0d0e400de8",
+    "/workspace/build/evidence/hgw500-realtek-root-20261103/firmware/firmware-entrypoints": "62863a53c6779269c79a1c07b2b82d95eef58b70127aa50aa3b9c051339ea8e8",
+    "/workspace/OpenMitraStar/hgw500-2ghz-driver-microfirmware/firmware/rtl8192eu_nic-35.7.bin": "b15bc955fba2fc3abc093affe62c9f7284a0b84d4f13f8ce55366488dc9aad8b"
+  },
+  "limits": [
+    "Actual driver C bodies with mocked register access, download and mailbox writes.",
+    "No MCU execution, radio traffic or physical acceptance."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ACTUAL_RTL8192EE_RX_QUERY_ASAN_UBSAN",
+  "hardware_accessed": false,
+  "cases": 16612,
+  "rejected_record_phy_calls": 0,
+  "pins": {
+    "/workspace/OpenMitraStar/Realtek-2.4GHz-HGW500/scripts/test_linux73_rx_query.py": "f8d2c85087f0673591c13cb39dccc6d007f7780d15ab37f235dcf1f73ca5a28f",
+    "/workspace/OpenMitraStar/Realtek-2.4GHz-HGW500/kernel/radio2g-linux-7.3-v1/overlay/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c": "7abe8f02b8579a5be548ca2a9782dcce2ce1fa9b219334d5c8bd111ca28d2140",
+    "/workspace/OpenMitraStar/Realtek-2.4GHz-HGW500/kernel/radio2g-linux-7.3-v1/overlay/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.h": "d503f281ff213fb189fa02312c204462c377214fe1e4d8abe422a06bafcaa82e",
+    "/workspace/build/evidence/hgw500-realtek-root-20261103/rx-query/rx-query.c": "836e498369a3353fb651b1fae4bce851004f7e5a1289a7e924cd951877294f5b",
+    "/workspace/build/evidence/hgw500-realtek-root-20261103/rx-query/rx-query": "fb2f930bd1c6cd3d4b6d979b6f6e9991c4cba09230ce90568ca9d3aa7f7f43cc"
+  },
+  "limits": [
+    "Real descriptor getters, query and PHY frame parsing with mocked mac80211 notifications.",
+    "No actual DMA, device register access or radio traffic."
+  ]
+}

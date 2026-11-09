@@ -1,0 +1,14 @@
+{
+  "schema": "openmitrastar.eth73-ethernet-continuity/v1",
+  "status": "PASS_BOUNDED_ICMP_CONTINUITY",
+  "started_utc": "2026-10-22T17:01:33.024332+00:00",
+  "finished_utc": "2026-10-22T17:02:03.319828+00:00",
+  "target": "HGW-500BNA-QCv2 A2 at 192.168.1.90",
+  "requests": 31,
+  "responses_ttl64": 31,
+  "exit_code": 0,
+  "uart_opened": false,
+  "flash_writes": 0,
+  "bootenv_writes": 0,
+  "scope": "About 30 seconds of ICMP continuity after completed physical ETH73 trial; no long-soak or second-port acceptance"
+}

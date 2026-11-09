@@ -1,0 +1,11 @@
+{
+  "sha256": "ee4c4d98622b2c5caf94bebd4e4e3afa7888f1eb4630b4e86958dbbffdb7a61a",
+  "selection": {
+    "CONFIG_PM": false,
+    "CONFIG_MAC80211_DEBUGFS": false,
+    "CONFIG_NL80211_TESTMODE": false,
+    "CONFIG_IPV6": true
+  },
+  "config_file_not_exported": true,
+  "source_reference_relative": "f363/f363-components-20260921T203041Z/kernel/.config"
+}

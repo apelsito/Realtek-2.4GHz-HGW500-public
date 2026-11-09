@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/pci.c",
+      "source_workspace_relative": "work/kernel-port/linux-5.10/drivers/net/wireless/realtek/rtlwifi/pci.c",
+      "sha256": "5155d5bb5aae02152d00b22c22f62e350dd477f0e4cceb0e284c2a501537b7c1",
+      "bytes": 102471,
+      "role": "CURRENT_PORT_OVERLAY_NOT_YET_PROVEN_EXACT_F363"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/wifi.h",
+      "source_workspace_relative": "work/kernel-port/linux-5.10/drivers/net/wireless/realtek/rtlwifi/wifi.h",
+      "sha256": "7095a8ce959958bc0cb525a654eab1462a01ac70ae9873f86976c310f2d9b419",
+      "bytes": 73762,
+      "role": "CURRENT_PORT_OVERLAY_NOT_YET_PROVEN_EXACT_F363"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.c",
+      "source_workspace_relative": "work/kernel-port/linux-5.10/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/fw.c",
+      "sha256": "272c57264c3b6b434ca8921fcf046327ae02a337ec42421c755db0202bb1869d",
+      "bytes": 30145,
+      "role": "CURRENT_PORT_OVERLAY_NOT_YET_PROVEN_EXACT_F363"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c",
+      "source_workspace_relative": "work/kernel-port/linux-5.10/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c",
+      "sha256": "47b2d7956e0881745b91033814799ecb60573a47e075e723471a49f07a530b57",
+      "bytes": 55887,
+      "role": "CURRENT_PORT_OVERLAY_NOT_YET_PROVEN_EXACT_F363"
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.h",
+      "source_workspace_relative": "work/kernel-port/linux-5.10/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.h",
+      "sha256": "913ec61faf4c507db83a2070a134ef7f0d53ea30e304ea934fa2c439344c2ac3",
+      "bytes": 17036,
+      "role": "CURRENT_PORT_OVERLAY_NOT_YET_PROVEN_EXACT_F363"
+    }
+  ],
+  "original_bytes_preserved": true
+}

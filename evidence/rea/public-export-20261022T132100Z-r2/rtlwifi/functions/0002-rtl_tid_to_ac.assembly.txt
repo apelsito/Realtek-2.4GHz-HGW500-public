@@ -1,0 +1,3 @@
+0x10014: extb_s r0, r0
+0x10016: ldb r0, r0, 0x188d0
+0x1001e: j_s blink

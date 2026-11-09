@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config ARC_PLAT_TOPAZ_BASIC
+    bool "OpenMitraStar Topaz BASIC UART board"
+    depends on ISA_ARCOMPACT && !SMP
+    select QTN_TOPAZ_UART_BASIC_IRQCHIP
+    help
+      Source-only ARC700 board proposal: timer, RAM and UART0 only.
+      Does not select HAVE_PCI, networking, storage, radio or watchdog.
+      MMUv2 restoration and CPU/toolchain qualification remain separate.
+
+config QTN_TOPAZ_ETH73
+    bool "Topaz direct Ethernet IRQ gates 19/20"
+    depends on ARC_PLAT_TOPAZ_BASIC && NET
+    select ARCH_NO_PREEMPT
+
+config PCIE_QTN_TOPAZ
+    bool "HGW500 Topaz PCIe host"
+    depends on ARC_PLAT_TOPAZ_BASIC && PCI && OF
+
+config QTN_TOPAZ_RADIO73
+    bool "HGW500 PCIe and RTL8192EE port"
+    depends on ARC_PLAT_TOPAZ_BASIC
+    select HAVE_PCI

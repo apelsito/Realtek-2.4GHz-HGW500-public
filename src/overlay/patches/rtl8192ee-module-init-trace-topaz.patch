@@ -1,0 +1,27 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/sw.c
++++ b/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/sw.c
+@@ -380,4 +380,23 @@
+ 	.driver.pm = &rtlwifi_pm_ops,
+ };
+ 
+-module_pci_driver(rtl92ee_driver);
++static int __init rtl92ee_module_init(void)
++{
++	pr_info("OMRTL92 stage=module-init-enter msi=%u dma64=%u aspm=%d ips=%u fwlps=%u debug=%d\n",
++		(unsigned int)rtl92ee_mod_params.msi_support,
++		(unsigned int)rtl92ee_mod_params.dma64,
++		rtl92ee_mod_params.aspm_support,
++		(unsigned int)rtl92ee_mod_params.inactiveps,
++		(unsigned int)rtl92ee_mod_params.fwctrl_lps,
++		rtl92ee_mod_params.debug_level);
++	return pci_register_driver(&rtl92ee_driver);
++}
++
++static void __exit rtl92ee_module_exit(void)
++{
++	pr_info("OMRTL92 stage=module-exit\n");
++	pci_unregister_driver(&rtl92ee_driver);
++}
++
++module_init(rtl92ee_module_init);
++module_exit(rtl92ee_module_exit);

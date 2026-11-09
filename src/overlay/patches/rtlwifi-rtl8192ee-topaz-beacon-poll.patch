@@ -1,0 +1,28 @@
+diff --git a/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c b/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c
+--- a/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c
++++ b/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/trx.c
+@@ -1089,9 +1089,24 @@ void rtl92ee_tx_polling(struct ieee80211_hw *hw, u8 hw_queue)
+ 	struct rtl8192_tx_ring *ring = &rtlpci->tx_ring[hw_queue];
+ 	u32 desc_address = get_desc_addr_fr_q_idx(hw_queue);
+ 	static unsigned int poll_trace_count;
++	static unsigned int beacon_trigger_count;
+ 	unsigned int trace_id = ++poll_trace_count;
+ 	bool trace = trace_id <= 32;
+ 
++	/* The 92EE new-flow queues ring their index register from set_desc(),
++	 * except BCNQ: its fixed descriptor 0 is downloaded by PCIe poll bit 4.
++	 */
++	if (hw_queue == BEACON_QUEUE &&
++	    rtlpci->irq_line_lifecycle_managed) {
++		unsigned int trigger_id = ++beacon_trigger_count;
++
++		rtl_write_word(rtlpriv, REG_PCIE_CTRL_REG, BIT(4));
++		if (trigger_id <= 8)
++			pr_info("OMRTL92 stage=tx-poll-beacon-trigger id=%u pcie=%08x\n",
++				trigger_id,
++				rtl_read_dword(rtlpriv, REG_PCIE_CTRL_REG));
++	}
++
+ 	if (!trace)
+ 		return;
+ 

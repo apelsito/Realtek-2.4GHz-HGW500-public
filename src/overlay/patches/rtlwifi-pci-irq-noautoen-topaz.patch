@@ -1,0 +1,56 @@
+diff --git a/drivers/net/wireless/realtek/rtlwifi/pci.c b/drivers/net/wireless/realtek/rtlwifi/pci.c
+--- a/drivers/net/wireless/realtek/rtlwifi/pci.c
++++ b/drivers/net/wireless/realtek/rtlwifi/pci.c
+@@ -2126,6 +2126,12 @@ static int rtl_pci_intr_mode_msi(struct ieee80211_hw *hw)
+ 	struct rtl_pci *rtlpci = rtl_pcidev(pcipriv);
+ 	int ret;
+ 
++	if (rtlpci->irq_line_lifecycle_managed) {
++		pr_info("OMRTL stage=irq-msi-refused reason=topaz-lifecycle irq=%u\n",
++			rtlpci->pdev->irq);
++		return -EOPNOTSUPP;
++	}
++
+ 	ret = pci_enable_msi(rtlpci->pdev);
+ 	if (ret < 0)
+ 		return ret;
+@@ -2151,14 +2157,24 @@ static int rtl_pci_intr_mode_legacy(struct ieee80211_hw *hw)
+ 	struct rtl_priv *rtlpriv = rtl_priv(hw);
+ 	struct rtl_pci_priv *pcipriv = rtl_pcipriv(hw);
+ 	struct rtl_pci *rtlpci = rtl_pcidev(pcipriv);
++	unsigned long irqflags = IRQF_SHARED;
+ 	int ret;
+ 
++	if (rtlpci->irq_line_lifecycle_managed)
++		irqflags = IRQF_NO_AUTOEN;
+ 	ret = request_irq(rtlpci->pdev->irq, &_rtl_pci_interrupt,
+-			  IRQF_SHARED, KBUILD_MODNAME, hw);
++			  irqflags, KBUILD_MODNAME, hw);
+ 	if (ret < 0)
+ 		return ret;
+ 	rtlpci->irq_alloc = 1;
+-	rtl_pci_irq_line_hold(hw, "request-legacy");
++	if (rtlpci->irq_line_lifecycle_managed) {
++		/* IRQF_NO_AUTOEN owns the initial disable depth.  Do not call
++		 * disable_irq() here: start-ready performs the first enable_irq().
++		 */
++		rtlpci->irq_line_disabled = true;
++		pr_info("OMRTL stage=irq-line-noautoen where=request-legacy irq=%u flags=%#lx\n",
++			rtlpci->pdev->irq, irqflags);
++	}
+ 
+ 	rtlpci->using_msi = false;
+ 	rtl_dbg(rtlpriv, COMP_INIT | COMP_INTR, DBG_DMESG,
+@@ -2172,6 +2188,12 @@ static int rtl_pci_intr_mode_decide(struct ieee80211_hw *hw)
+ 	struct rtl_pci *rtlpci = rtl_pcidev(pcipriv);
+ 	int ret;
+ 
++	if (rtlpci->irq_line_lifecycle_managed) {
++		pr_info("OMRTL stage=irq-mode-force-legacy-noautoen irq=%u\n",
++			rtlpci->pdev->irq);
++		return rtl_pci_intr_mode_legacy(hw);
++	}
++
+ 	if (rtlpci->msi_support) {
+ 		ret = rtl_pci_intr_mode_msi(hw);
+ 		if (ret < 0)

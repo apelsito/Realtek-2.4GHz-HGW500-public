@@ -1,0 +1,11 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/wifi.h
++++ b/drivers/net/wireless/realtek/rtlwifi/wifi.h
+@@ -1907,7 +1907,7 @@ struct rtl_efuse {
+ 	u8 board_type;
+ 	u8 external_pa;
+ 
+-	u8 dev_addr[6];
++	u8 dev_addr[ETH_ALEN] __aligned(2);
+ 	u8 wowlan_enable;
+ 	u8 antenna_div_cfg;
+ 	u8 antenna_div_type;

@@ -1,0 +1,5 @@
+0x100e8: add3 r0, r0, 0x100
+0x100ec: ld r0, [r0, -0xc8]
+0x100f0: add_s r1, r1, r0
+0x100f2: st r2, [r1]
+0x100f6: j_s blink

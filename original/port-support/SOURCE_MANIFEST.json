@@ -1,0 +1,11 @@
+{
+  "files": [
+    {
+      "path": "include/linux/openmitrastar_qtn_skb.h",
+      "source_workspace_relative": "work/kernel-port/linux-5.10/include/linux/openmitrastar_qtn_skb.h",
+      "bytes": 1834,
+      "sha256": "2a61b183457bbe9bc05d13a99e88202e9d94c307948c0b2b5c970389c012b5cc",
+      "role": "GPL_SHARED_KERNEL_ABI_SOURCE"
+    }
+  ]
+}

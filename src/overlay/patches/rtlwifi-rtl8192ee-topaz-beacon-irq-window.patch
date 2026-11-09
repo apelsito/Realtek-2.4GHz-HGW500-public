@@ -1,0 +1,36 @@
+diff --git a/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c b/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c
+--- a/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c
++++ b/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c
+@@ -1699,10 +1699,23 @@ void rtl92ee_set_beacon_related_registers(struct ieee80211_hw *hw)
+ 	struct rtl_priv *rtlpriv = rtl_priv(hw);
+ 	struct rtl_mac *mac = rtl_mac(rtl_priv(hw));
+ 	struct rtl_pci *rtlpci = rtl_pcidev(rtl_pcipriv(hw));
++	bool topaz_restore_irq = rtlpci->irq_line_lifecycle_managed &&
++				 !rtlpci->irq_line_disabled &&
++				 rtlpci->irq_enabled;
+ 	u16 bcn_interval, atim_window;
+ 
+ 	bcn_interval = mac->beacon_interval;
+ 	atim_window = 2;	/*FIX MERGE */
++	/* On the MitraStar Topaz route, IRQ28 is level triggered.  Do not let a
++	 * pending RTL818b INTx preempt this temporary HIMR-off window: the V5
++	 * handler deliberately defers while irq_enabled is false, so the generic
++	 * level flow would otherwise unmask the still-asserted line forever.
++	 */
++	if (topaz_restore_irq) {
++		disable_irq(rtlpci->pdev->irq);
++		pr_info_once("OMRTL stage=beacon-irq-window protected irq=%u\n",
++			     rtlpci->pdev->irq);
++	}
+ 	rtl92ee_disable_interrupt(hw);
+ 	rtl_write_word(rtlpriv, REG_ATIMWND, atim_window);
+ 	rtl_write_word(rtlpriv, REG_BCN_INTERVAL, bcn_interval);
+@@ -1712,4 +1725,8 @@ void rtl92ee_set_beacon_related_registers(struct ieee80211_hw *hw)
+ 	rtl_write_byte(rtlpriv, 0x606, 0x30);
+ 	rtlpci->reg_bcn_ctrl_val |= BIT(3);
+ 	rtl_write_byte(rtlpriv, REG_BCN_CTRL, (u8)rtlpci->reg_bcn_ctrl_val);
++	if (topaz_restore_irq) {
++		rtl92ee_enable_interrupt(hw);
++		enable_irq(rtlpci->pdev->irq);
++	}
+ }

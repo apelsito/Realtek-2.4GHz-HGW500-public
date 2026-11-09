@@ -1,0 +1,6 @@
+0x10090: add3 r0, r0, 0x100
+0x10094: ld r0, [r0, -0xc8]
+0x10098: add_s r1, r1, r0
+0x1009a: ldb r0, [r1]
+0x1009e: extb_s r0, r0
+0x100a0: j_s blink

@@ -1,0 +1,228 @@
+diff --git a/include/linux/skbuff.h b/include/linux/skbuff.h
+--- a/include/linux/skbuff.h
++++ b/include/linux/skbuff.h
+@@ -19,6 +19,9 @@
+ #include <linux/rbtree.h>
+ #include <linux/socket.h>
+ #include <linux/refcount.h>
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++#include <linux/openmitrastar_qtn_skb.h>
++#endif
+ 
+ #include <linux/atomic.h>
+ #include <asm/types.h>
+@@ -795,6 +798,19 @@ struct sk_buff {
+ 	__u32			headers_start[0];
+ 	/* public: */
+ 
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++	/* Native Topaz qdrv packet contract; copied with the header block. */
++	struct qtn_skb_cb	qtn_cb;
++	struct net_device	*orig_dev;
++	struct qtn_skb_recycle_list *recycle_list;
++	__u32			src_port;
++	__u32			dest_port;
++	__u8			is_recyclable:1,
++				cache_is_cleaned:1,
++				hbm_no_free:1,
++				ext_l2_filter:1;
++#endif
++
+ /* if you move pkt_type around you also must adapt those constants */
+ #ifdef __BIG_ENDIAN_BITFIELD
+ #define PKT_TYPE_MAX	(7 << 5)
+diff --git a/include/linux/netdevice.h b/include/linux/netdevice.h
+--- a/include/linux/netdevice.h
++++ b/include/linux/netdevice.h
+@@ -196,6 +196,13 @@ struct rtnl_link_stats64 {
+ 	NET_DEV_STAT(tx_window_errors);
+ 	NET_DEV_STAT(rx_compressed);
+ 	NET_DEV_STAT(tx_compressed);
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++	NET_DEV_STAT(rx_unicast_packets);
++	NET_DEV_STAT(tx_unicast_packets);
++	NET_DEV_STAT(tx_multicast_packets);
++	NET_DEV_STAT(rx_broadcast_packets);
++	NET_DEV_STAT(tx_broadcast_packets);
++#endif
+ };
+ #undef NET_DEV_STAT
+ 
+@@ -2204,6 +2211,11 @@ struct net_device {
+ 
+ 	/* protected by rtnl_lock */
+ 	struct bpf_xdp_entity	xdp_state[__MAX_XDP_MODE];
++
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++	/* Native Quantenna qdrv per-interface policy bits. */
++	u32			qtn_flags;
++#endif
+ };
+ #define to_net_dev(d) container_of(d, struct net_device, dev)
+ 
+diff --git a/net/core/dev.c b/net/core/dev.c
+--- a/net/core/dev.c
++++ b/net/core/dev.c
+@@ -10369,7 +10369,12 @@ void netdev_stats_to_stats64(struct rtnl_link_stats64 *stats64,
+ 	const atomic_long_t *src = (atomic_long_t *)netdev_stats;
+ 	u64 *dst = (u64 *)stats64;
+ 
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++	/* Quantenna appends private unicast/broadcast counters to this struct. */
++	n = min_t(size_t, n, sizeof(*stats64) / sizeof(u64));
++#else
+ 	BUILD_BUG_ON(n > sizeof(*stats64) / sizeof(u64));
++#endif
+ 	for (i = 0; i < n; i++)
+ 		dst[i] = (unsigned long)atomic_long_read(&src[i]);
+ 	/* zero out counters that only exist in rtnl_link_stats64 */
+diff --git a/net/bridge/br_fdb.c b/net/bridge/br_fdb.c
+--- a/net/bridge/br_fdb.c
++++ b/net/bridge/br_fdb.c
+@@ -20,6 +20,7 @@
+ #include <linux/atomic.h>
+ #include <asm/unaligned.h>
+ #include <linux/if_vlan.h>
++#include <linux/openmitrastar_bridge.h>
+ #include <net/switchdev.h>
+ #include <trace/events/bridge.h>
+ #include "br_private.h"
+@@ -504,6 +505,83 @@ int br_fdb_fillbuf(struct net_bridge *br, void *buf,
+ 	return num;
+ }
+ 
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++int openmitrastar_br_fdb_fillbuf(struct net_device *dev,
++		struct openmitrastar_fdb_entry *entries, unsigned long maxnum)
++{
++	const struct net_bridge_port *source;
++	const struct net_bridge_port *dst;
++	struct net_bridge_fdb_entry *fdb;
++	int num = 0;
++
++	if (!dev || !entries)
++		return -EINVAL;
++
++	memset(entries, 0, maxnum * sizeof(*entries));
++
++	rcu_read_lock();
++	source = br_port_get_rcu(dev);
++	if (!source) {
++		num = -ENODEV;
++		goto out;
++	}
++
++	hlist_for_each_entry_rcu(fdb, &source->br->fdb_list, fdb_node) {
++		if (num >= maxnum)
++			break;
++		if (has_expired(source->br, fdb))
++			continue;
++
++		dst = READ_ONCE(fdb->dst);
++		if (!dst)
++			continue;
++
++		ether_addr_copy(entries[num].mac_addr, fdb->key.addr.addr);
++		entries[num].is_local = test_bit(BR_FDB_LOCAL, &fdb->flags);
++#ifdef CONFIG_WEXT_CORE
++		entries[num].is_wlan = !!dst->dev->wireless_handlers;
++#endif
++		if (!test_bit(BR_FDB_STATIC, &fdb->flags))
++			entries[num].ageing_timer_value =
++				jiffies_delta_to_clock_t(jiffies - fdb->updated);
++		num++;
++	}
++out:
++	rcu_read_unlock();
++	return num;
++}
++EXPORT_SYMBOL_GPL(openmitrastar_br_fdb_fillbuf);
++
++void openmitrastar_br_fdb_update_const(struct net_device *dev,
++		const unsigned char *addr, u16 sub_port)
++{
++	struct net_bridge_fdb_entry *fdb;
++	struct net_bridge_port *source;
++
++	if (!dev || !is_valid_ether_addr(addr))
++		return;
++
++	/* Mainline bridge FDBs do not encode Quantenna's hardware sub-port. */
++	(void)sub_port;
++
++	rcu_read_lock();
++	source = br_port_get_rcu(dev);
++	if (!source)
++		goto out;
++
++	br_fdb_update(source->br, source, addr, 0,
++		BIT(BR_FDB_STATIC) | BIT(BR_FDB_ADDED_BY_USER));
++	fdb = br_fdb_find_rcu(source->br, addr, 0);
++	if (fdb) {
++		set_bit(BR_FDB_STATIC, &fdb->flags);
++		set_bit(BR_FDB_ADDED_BY_USER, &fdb->flags);
++	}
++out:
++	rcu_read_unlock();
++}
++EXPORT_SYMBOL_GPL(openmitrastar_br_fdb_update_const);
++#endif /* CONFIG_OPENMITRASTAR_QDRV_COMPAT */
++
+ static struct net_bridge_fdb_entry *fdb_create(struct net_bridge *br,
+ 					       struct net_bridge_port *source,
+ 					       const unsigned char *addr,
+diff --git a/net/bridge/br_forward.c b/net/bridge/br_forward.c
+--- a/net/bridge/br_forward.c
++++ b/net/bridge/br_forward.c
+@@ -15,8 +15,41 @@
+ #include <linux/skbuff.h>
+ #include <linux/if_vlan.h>
+ #include <linux/netfilter_bridge.h>
++#include <linux/openmitrastar_bridge.h>
+ #include "br_private.h"
+ 
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++static int br_ap_isolate_enabled;
++
++void br_set_ap_isolate(int enable)
++{
++	WRITE_ONCE(br_ap_isolate_enabled, !!enable);
++}
++EXPORT_SYMBOL(br_set_ap_isolate);
++
++int br_get_ap_isolate(void)
++{
++	return READ_ONCE(br_ap_isolate_enabled);
++}
++EXPORT_SYMBOL(br_get_ap_isolate);
++
++static bool openmitrastar_br_ap_isolate_should_forward(
++		const struct net_bridge_port *p, const struct sk_buff *skb)
++{
++	if (skb->dev == p->dev)
++		return !br_get_ap_isolate() &&
++			!QTN_FLAG_IS_INTRA_BSS(skb->dev->qtn_flags);
++
++	if ((QTN_FLAG_IS_BSS_ISOLATE(skb->dev->qtn_flags) &&
++			(p->dev->qtn_flags & QTN_FLAG_WIFI_DEVICE)) ||
++		((skb->dev->qtn_flags & QTN_FLAG_WIFI_DEVICE) &&
++			QTN_FLAG_IS_BSS_ISOLATE(p->dev->qtn_flags)))
++		return false;
++
++	return true;
++}
++#endif
++
+ /* Don't forward packets to originating port or forwarding disabled */
+ static inline int should_deliver(const struct net_bridge_port *p,
+ 				 const struct sk_buff *skb)
+@@ -27,6 +60,9 @@ static inline int should_deliver(const struct net_bridge_port *p,
+ 	return ((p->flags & BR_HAIRPIN_MODE) || skb->dev != p->dev) &&
+ 		p->state == BR_STATE_FORWARDING && br_allowed_egress(vg, skb) &&
+ 		nbp_switchdev_allowed_egress(p, skb) &&
++#ifdef CONFIG_OPENMITRASTAR_QDRV_COMPAT
++		openmitrastar_br_ap_isolate_should_forward(p, skb) &&
++#endif
+ 		!br_skb_isolated(p, skb);
+ }
+ 

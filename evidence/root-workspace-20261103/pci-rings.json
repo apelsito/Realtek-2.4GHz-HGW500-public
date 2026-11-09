@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Host execution of production PCI ring functions with 150 injected allocation/mapping failures",
+  "hardware_accessed": false,
+  "source_sha256": "5b56c147b517ac1a59ab0a9869b1d08bf994b75263b03128075f0158b618c8c3",
+  "sanitizers": [
+    "address",
+    "undefined",
+    "leak"
+  ],
+  "run_output": "PASS real RTL PCI rings: 150 injected failures, exact-size frees, retry and idempotent release\n",
+  "exit_code": 0
+}

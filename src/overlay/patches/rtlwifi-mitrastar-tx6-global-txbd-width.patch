@@ -1,0 +1,23 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c
++++ b/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/hw.c
+@@ -915,9 +915,17 @@ static bool _rtl92ee_init_mac(struct ieee80211_hw *hw)
+ 	rtl_write_word(rtlpriv, REG_HI7Q_TXBD_NUM,
+ 		       TX_DESC_NUM_92E | ((RTL8192EE_SEG_NUM << 12) & 0x3000));
+ 	/*Rx*/
+-	rtl_write_word(rtlpriv, REG_RX_RXBD_NUM,
+-		       RX_DESC_NUM_92E |
+-		       ((RTL8192EE_SEG_NUM << 13) & 0x6000) | 0x8000);
++	wordtmp = RX_DESC_NUM_92E |
++		  ((RTL8192EE_SEG_NUM << 13) & 0x6000);
++	/* REG_RX_RXBD_NUM bit 15 selects one global TXBD segment width:
++	 * clear means 32-bit/8-byte segments, set means 64-bit/16-byte
++	 * segments. Keep every software TX ring consistent with this setting.
++	 */
++	if (!rtlpci->txbd_compact32)
++		wordtmp |= BIT(15);
++	rtl_write_word(rtlpriv, REG_RX_RXBD_NUM, wordtmp);
++	pr_info("OMRTLTX6 stage=txbd-system-width compact32=%u bit15=%u reg=%04x\n",
++		rtlpci->txbd_compact32, !!(wordtmp & BIT(15)), wordtmp);
+ 
+ 	rtl_write_dword(rtlpriv, REG_TSFTIMER_HCI, 0XFFFFFFFF);
+ 

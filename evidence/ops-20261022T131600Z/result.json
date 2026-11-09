@@ -1,0 +1,3872 @@
+{
+  "schema": "openmitrastar.realtek-ops-inventory/v1",
+  "created_utc": "2026-10-22T13:12:16.776721+00:00",
+  "status": "PASS_OFFLINE_SYMBOL_RELOCATION_INVENTORY",
+  "hardware_accessed": false,
+  "original_modules_unchanged": true,
+  "function_symbols": 370,
+  "unique_function_ranges": 366,
+  "core_module_bytes": 225828,
+  "total_relocations": 2326,
+  "populated_callback_slots": 91,
+  "unique_callback_targets": 91,
+  "source_definition_union_matches": 342,
+  "abi_config": {
+    "CONFIG_PM": false,
+    "CONFIG_MAC80211_DEBUGFS": false,
+    "CONFIG_NL80211_TESTMODE": false,
+    "CONFIG_IPV6": true
+  },
+  "modules": [
+    {
+      "name": "rtl8192ee",
+      "path": "outputs\\rea\\arc700-20261021-r2\\current-radio2g\\rtl8192ee.ko",
+      "sha256": "f014ad53084e1eb3cf7a9083913388ac907f0d254478dd63b0bc9ca054394e85",
+      "bytes": 102736,
+      "symbols": 448,
+      "function_symbols": 156,
+      "unique_function_ranges": 154,
+      "code_allocated_bytes": 50792,
+      "relocations": 950,
+      "code_relocations": 791,
+      "code_relocations_without_function_owner": 0,
+      "object_symbols": 197,
+      "compilation_units": [
+        "dm.c",
+        "fw.c",
+        "hw.c",
+        "led.c",
+        "phy.c",
+        "pwrseq.c",
+        "rf.c",
+        "sw.c",
+        "table.c",
+        "trx.c",
+        "rtl8192ee.mod.c"
+      ],
+      "imports": [
+        "___ratelimit",
+        "__divsi3",
+        "__local_bh_enable_ip",
+        "__modsi3",
+        "__netdev_alloc_skb",
+        "__pci_register_driver",
+        "__udivsi3",
+        "channel5g",
+        "channel5g_80m",
+        "dev_driver_string",
+        "disable_irq",
+        "dma_map_page_attrs",
+        "efuse_one_byte_read",
+        "enable_irq",
+        "ieee80211_find_sta",
+        "ieee80211_hdrlen",
+        "is_vmalloc_addr",
+        "jiffies",
+        "jiffies_to_msecs",
+        "kfree",
+        "kmalloc_caches",
+        "kmem_cache_alloc",
+        "loops_per_jiffy",
+        "mem_map",
+        "memcpy",
+        "memset",
+        "mod_timer",
+        "of_machine_is_compatible",
+        "param_ops_bool",
+        "param_ops_int",
+        "param_ops_uint",
+        "param_ops_ullong",
+        "pci_unregister_driver",
+        "printk",
+        "request_firmware_nowait",
+        "rtl_btc_get_ops_pointer",
+        "rtl_cam_add_one_entry",
+        "rtl_cam_del_entry",
+        "rtl_cam_delete_one_entry",
+        "rtl_cam_empty_entry",
+        "rtl_cam_get_free_entry",
+        "rtl_cam_mark_invalid",
+        "rtl_cam_reset_all_entry",
+        "rtl_cmd_send_packet",
+        "rtl_dm_diginit",
+        "rtl_evm_db_to_percentage",
+        "rtl_fill_dummy",
+        "rtl_fw_cb",
+        "rtl_fw_page_write",
+        "rtl_get_hwinfo",
+        "rtl_get_tcb_desc",
+        "rtl_hal_pwrseqcmdparsing",
+        "rtl_pci_disconnect",
+        "rtl_pci_probe",
+        "rtl_process_phyinfo",
+        "rtl_ps_disable_nic",
+        "rtl_ps_enable_nic",
+        "rtl_query_rxpwrpercentage",
+        "rtl_set_tx_report",
+        "rtl_signal_scale_mapping",
+        "rtlwifi_rate_mapping",
+        "skb_push",
+        "skb_put",
+        "vfree",
+        "vzalloc",
+        "warn_slowpath_fmt"
+      ],
+      "callback_tables": [
+        {
+          "name": "rtl8192ee_hal_ops",
+          "section": ".data",
+          "offset": 3396,
+          "bytes": 280,
+          "layout_fields_proven": true,
+          "slots": [
+            {
+              "slot": 0,
+              "byte_offset": 0,
+              "field": "init_sw_vars",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 35240,
+                  "addend": 35240,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_init_sw_vars"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 1,
+              "byte_offset": 4,
+              "field": "deinit_sw_vars",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 35196,
+                  "addend": 35196,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_deinit_sw_vars"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 2,
+              "byte_offset": 8,
+              "field": "read_chip_version",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 3,
+              "byte_offset": 12,
+              "field": "read_eeprom_info",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_read_eeprom_info",
+                  "section": ".text",
+                  "offset": 18404,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_read_eeprom_info"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 4,
+              "byte_offset": 16,
+              "field": "interrupt_recognized",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_interrupt_recognized",
+                  "section": ".text",
+                  "offset": 16604,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_interrupt_recognized"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 5,
+              "byte_offset": 20,
+              "field": "hw_init",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_hw_init",
+                  "section": ".text.unlikely",
+                  "offset": 212,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_hw_init"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 6,
+              "byte_offset": 24,
+              "field": "hw_disable",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_card_disable",
+                  "section": ".text",
+                  "offset": 16220,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_card_disable"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 7,
+              "byte_offset": 28,
+              "field": "hw_suspend",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_suspend",
+                  "section": ".text",
+                  "offset": 19084,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_suspend"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 8,
+              "byte_offset": 32,
+              "field": "hw_resume",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_resume",
+                  "section": ".text",
+                  "offset": 19088,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_resume"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 9,
+              "byte_offset": 36,
+              "field": "enable_interrupt",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_enable_interrupt",
+                  "section": ".text",
+                  "offset": 16084,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_enable_interrupt"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 10,
+              "byte_offset": 40,
+              "field": "disable_interrupt",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_disable_interrupt",
+                  "section": ".text",
+                  "offset": 16160,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_disable_interrupt"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 11,
+              "byte_offset": 44,
+              "field": "set_network_type",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_set_network_type",
+                  "section": ".text",
+                  "offset": 15820,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_set_network_type"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 12,
+              "byte_offset": 48,
+              "field": "set_chk_bssid",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_set_check_bssid",
+                  "section": ".text",
+                  "offset": 15680,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_set_check_bssid"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 13,
+              "byte_offset": 52,
+              "field": "set_bw_mode",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_phy_set_bw_mode",
+                  "section": ".text",
+                  "offset": 31664,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_phy_set_bw_mode"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 14,
+              "byte_offset": 56,
+              "field": "switch_channel",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_phy_sw_chnl",
+                  "section": ".text",
+                  "offset": 31844,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_phy_sw_chnl"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 15,
+              "byte_offset": 60,
+              "field": "set_qos",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_set_qos",
+                  "section": ".text",
+                  "offset": 15920,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_set_qos"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 16,
+              "byte_offset": 64,
+              "field": "set_bcn_reg",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_set_beacon_related_registers",
+                  "section": ".text",
+                  "offset": 16728,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_set_beacon_related_registers"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 17,
+              "byte_offset": 68,
+              "field": "set_bcn_intv",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_set_beacon_interval",
+                  "section": ".text",
+                  "offset": 17064,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_set_beacon_interval"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 18,
+              "byte_offset": 72,
+              "field": "update_interrupt_mask",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_update_interrupt_mask",
+                  "section": ".text",
+                  "offset": 17092,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_update_interrupt_mask"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 19,
+              "byte_offset": 76,
+              "field": "get_hw_reg",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_get_hw_reg",
+                  "section": ".text",
+                  "offset": 13072,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_get_hw_reg"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 20,
+              "byte_offset": 80,
+              "field": "set_hw_reg",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_set_hw_reg",
+                  "section": ".text",
+                  "offset": 13272,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_set_hw_reg"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 21,
+              "byte_offset": 84,
+              "field": "update_rate_tbl",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_update_hal_rate_tbl",
+                  "section": ".text",
+                  "offset": 17168,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_update_hal_rate_tbl"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 22,
+              "byte_offset": 88,
+              "field": "pre_fill_tx_bd_desc",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_pre_fill_tx_bd_desc",
+                  "section": ".text",
+                  "offset": 39496,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_pre_fill_tx_bd_desc"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 23,
+              "byte_offset": 92,
+              "field": "update_rate_mask",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 24,
+              "byte_offset": 96,
+              "field": "rx_desc_buff_remained_cnt",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_rx_desc_buff_remained_cnt",
+                  "section": ".text",
+                  "offset": 39264,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_rx_desc_buff_remained_cnt"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 25,
+              "byte_offset": 100,
+              "field": "rx_check_dma_ok",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_rx_check_dma_ok",
+                  "section": ".text",
+                  "offset": 39260,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_rx_check_dma_ok"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 26,
+              "byte_offset": 104,
+              "field": "fill_tx_desc",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_tx_fill_desc",
+                  "section": ".text",
+                  "offset": 40588,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_tx_fill_desc"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 27,
+              "byte_offset": 108,
+              "field": "fill_fake_txdesc",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 28,
+              "byte_offset": 112,
+              "field": "fill_tx_cmddesc",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_tx_fill_cmddesc",
+                  "section": ".text",
+                  "offset": 43868,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_tx_fill_cmddesc"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 29,
+              "byte_offset": 116,
+              "field": "fill_tx_special_desc",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 30,
+              "byte_offset": 120,
+              "field": "query_rx_desc",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_rx_query_desc",
+                  "section": ".text",
+                  "offset": 36332,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_rx_query_desc"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 31,
+              "byte_offset": 124,
+              "field": "set_channel_access",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_update_channel_access_setting",
+                  "section": ".text",
+                  "offset": 17700,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_update_channel_access_setting"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 32,
+              "byte_offset": 128,
+              "field": "radio_onoff_checking",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_gpio_radio_on_off_checking",
+                  "section": ".text",
+                  "offset": 17820,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_gpio_radio_on_off_checking"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 33,
+              "byte_offset": 132,
+              "field": "dm_watchdog",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_dm_watchdog",
+                  "section": ".text",
+                  "offset": 1452,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_dm_watchdog"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 34,
+              "byte_offset": 136,
+              "field": "scan_operation_backup",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_phy_scan_operation_backup",
+                  "section": ".text",
+                  "offset": 31180,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_phy_scan_operation_backup"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 35,
+              "byte_offset": 140,
+              "field": "set_rf_power_state",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_phy_set_rf_power_state",
+                  "section": ".text",
+                  "offset": 33964,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_phy_set_rf_power_state"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 36,
+              "byte_offset": 144,
+              "field": "led_control",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_led_control",
+                  "section": ".text",
+                  "offset": 19424,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_led_control"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 37,
+              "byte_offset": 148,
+              "field": "set_desc",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_set_desc",
+                  "section": ".text",
+                  "offset": 44136,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_set_desc"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 38,
+              "byte_offset": 152,
+              "field": "get_desc",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_get_desc",
+                  "section": ".text",
+                  "offset": 45160,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_get_desc"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 39,
+              "byte_offset": 156,
+              "field": "is_tx_desc_closed",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_is_tx_desc_closed",
+                  "section": ".text",
+                  "offset": 45328,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_is_tx_desc_closed"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 40,
+              "byte_offset": 160,
+              "field": "tx_polling",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_tx_polling",
+                  "section": ".text",
+                  "offset": 45904,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_tx_polling"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 41,
+              "byte_offset": 164,
+              "field": "enable_hw_sec",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_enable_hw_security_config",
+                  "section": ".text",
+                  "offset": 15532,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_enable_hw_security_config"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 42,
+              "byte_offset": 168,
+              "field": "set_key",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_set_key",
+                  "section": ".text",
+                  "offset": 17828,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_set_key"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 43,
+              "byte_offset": 172,
+              "field": "init_sw_leds",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_init_sw_leds",
+                  "section": ".text",
+                  "offset": 19376,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_init_sw_leds"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 44,
+              "byte_offset": 176,
+              "field": "deinit_sw_leds",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 45,
+              "byte_offset": 180,
+              "field": "get_bbreg",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_phy_query_bb_reg",
+                  "section": ".text",
+                  "offset": 27840,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_phy_query_bb_reg"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 46,
+              "byte_offset": 184,
+              "field": "set_bbreg",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_phy_set_bb_reg",
+                  "section": ".text",
+                  "offset": 27888,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_phy_set_bb_reg"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 47,
+              "byte_offset": 188,
+              "field": "get_rfreg",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_phy_query_rf_reg",
+                  "section": ".text",
+                  "offset": 27984,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_phy_query_rf_reg"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 48,
+              "byte_offset": 192,
+              "field": "set_rfreg",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_phy_set_rf_reg",
+                  "section": ".text",
+                  "offset": 28028,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_phy_set_rf_reg"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 49,
+              "byte_offset": 196,
+              "field": "linked_set_reg",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 50,
+              "byte_offset": 200,
+              "field": "chk_switch_dmdp",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 51,
+              "byte_offset": 204,
+              "field": "dualmac_switch_to_dmdp",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 52,
+              "byte_offset": 208,
+              "field": "phy_rf6052_config",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 53,
+              "byte_offset": 212,
+              "field": "phy_rf6052_set_cck_txpower",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 54,
+              "byte_offset": 216,
+              "field": "phy_rf6052_set_ofdm_txpower",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 55,
+              "byte_offset": 220,
+              "field": "config_bb_with_headerfile",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 56,
+              "byte_offset": 224,
+              "field": "config_bb_with_pgheaderfile",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 57,
+              "byte_offset": 228,
+              "field": "phy_lc_calibrate",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 58,
+              "byte_offset": 232,
+              "field": "phy_set_bw_mode_callback",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 59,
+              "byte_offset": 236,
+              "field": "dm_dynamic_txpower",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 60,
+              "byte_offset": 240,
+              "field": "c2h_command_handle",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 61,
+              "byte_offset": 244,
+              "field": "bt_wifi_media_status_notify",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 62,
+              "byte_offset": 248,
+              "field": "bt_coex_off_before_lps",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 63,
+              "byte_offset": 252,
+              "field": "fill_h2c_cmd",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_fill_h2c_cmd",
+                  "section": ".text",
+                  "offset": 5800,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_fill_h2c_cmd"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 64,
+              "byte_offset": 256,
+              "field": "set_default_port_id_cmd",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 65,
+              "byte_offset": 260,
+              "field": "get_btc_status",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 35192,
+                  "addend": 35192,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_get_btc_status"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 66,
+              "byte_offset": 264,
+              "field": "is_fw_header",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 67,
+              "byte_offset": 268,
+              "field": "add_wowlan_pattern",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 68,
+              "byte_offset": 272,
+              "field": "get_available_desc",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_get_available_desc",
+                  "section": ".text",
+                  "offset": 39432,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_get_available_desc"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 69,
+              "byte_offset": 276,
+              "field": "c2h_ra_report_handler",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl92ee_c2h_ra_report_handler",
+                  "section": ".text",
+                  "offset": 9236,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl92ee_c2h_ra_report_handler"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            }
+          ],
+          "populated_callback_slots": 48,
+          "null_slots": 22
+        },
+        {
+          "name": "rtlwifi_pm_ops",
+          "section": ".rodata",
+          "offset": 264,
+          "bytes": 92,
+          "layout_fields_proven": false,
+          "slots": [
+            {
+              "slot": 0,
+              "byte_offset": 0,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 1,
+              "byte_offset": 4,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 2,
+              "byte_offset": 8,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 3,
+              "byte_offset": 12,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 4,
+              "byte_offset": 16,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 5,
+              "byte_offset": 20,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 6,
+              "byte_offset": 24,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 7,
+              "byte_offset": 28,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 8,
+              "byte_offset": 32,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 9,
+              "byte_offset": 36,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 10,
+              "byte_offset": 40,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 11,
+              "byte_offset": 44,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 12,
+              "byte_offset": 48,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 13,
+              "byte_offset": 52,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 14,
+              "byte_offset": 56,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 15,
+              "byte_offset": 60,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 16,
+              "byte_offset": 64,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 17,
+              "byte_offset": 68,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 18,
+              "byte_offset": 72,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 19,
+              "byte_offset": 76,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 20,
+              "byte_offset": 80,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 21,
+              "byte_offset": 84,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 22,
+              "byte_offset": 88,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            }
+          ],
+          "populated_callback_slots": 0,
+          "null_slots": 23
+        },
+        {
+          "name": "rtl92ee_driver",
+          "section": ".data",
+          "offset": 3264,
+          "bytes": 132,
+          "layout_fields_proven": false,
+          "slots": [
+            {
+              "slot": 0,
+              "byte_offset": 0,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 1,
+              "byte_offset": 4,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 2,
+              "byte_offset": 8,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".rodata.str1.4",
+                  "offset": 2396,
+                  "addend": 2396,
+                  "relocation_type": 4,
+                  "functions": [],
+                  "imported": false
+                }
+              ],
+              "classification": "DATA_POINTER"
+            },
+            {
+              "slot": 3,
+              "byte_offset": 12,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".rodata",
+                  "offset": 448,
+                  "addend": 448,
+                  "relocation_type": 4,
+                  "functions": [],
+                  "imported": false
+                }
+              ],
+              "classification": "DATA_POINTER"
+            },
+            {
+              "slot": 4,
+              "byte_offset": 16,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl_pci_probe",
+                  "section": "UND",
+                  "offset": 0,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_probe"
+                  ],
+                  "imported": true
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 5,
+              "byte_offset": 20,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl_pci_disconnect",
+                  "section": "UND",
+                  "offset": 0,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_disconnect"
+                  ],
+                  "imported": true
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 6,
+              "byte_offset": 24,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 7,
+              "byte_offset": 28,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 8,
+              "byte_offset": 32,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 9,
+              "byte_offset": 36,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 10,
+              "byte_offset": 40,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 11,
+              "byte_offset": 44,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 12,
+              "byte_offset": 48,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 13,
+              "byte_offset": 52,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 14,
+              "byte_offset": 56,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 15,
+              "byte_offset": 60,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 16,
+              "byte_offset": 64,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 17,
+              "byte_offset": 68,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 18,
+              "byte_offset": 72,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 19,
+              "byte_offset": 76,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 20,
+              "byte_offset": 80,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 21,
+              "byte_offset": 84,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 22,
+              "byte_offset": 88,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 23,
+              "byte_offset": 92,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 24,
+              "byte_offset": 96,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 25,
+              "byte_offset": 100,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 26,
+              "byte_offset": 104,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 27,
+              "byte_offset": 108,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 28,
+              "byte_offset": 112,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".rodata",
+                  "offset": 264,
+                  "addend": 264,
+                  "relocation_type": 4,
+                  "functions": [],
+                  "imported": false
+                }
+              ],
+              "classification": "DATA_POINTER"
+            },
+            {
+              "slot": 29,
+              "byte_offset": 116,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 30,
+              "byte_offset": 120,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 31,
+              "byte_offset": 124,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 32,
+              "byte_offset": 128,
+              "field": null,
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            }
+          ],
+          "populated_callback_slots": 2,
+          "null_slots": 28
+        }
+      ],
+      "current_source_definition_matches": 60,
+      "original_source_definition_matches": 140,
+      "source_definition_union_matches": 145,
+      "symbols_without_available_definition": [
+        "arch_local_irq_save",
+        "__udelay",
+        "__udelay",
+        "__udelay",
+        "__udelay.constprop.0",
+        "rtl92ee_module_init",
+        "rtl92ee_module_exit",
+        "is_power_of_2",
+        "dma_map_single_attrs.constprop.0",
+        "cleanup_module",
+        "init_module"
+      ]
+    },
+    {
+      "name": "rtlwifi",
+      "path": "outputs\\rea\\arc700-20261021-r2\\current-radio2g\\rtlwifi.ko",
+      "sha256": "9b7988816abb5065cd5a2a39defba608d073646aac15c75e244ac5cd95e096ee",
+      "bytes": 77412,
+      "symbols": 549,
+      "function_symbols": 167,
+      "unique_function_ranges": 165,
+      "code_allocated_bytes": 34180,
+      "relocations": 862,
+      "code_relocations": 587,
+      "code_relocations_without_function_owner": 0,
+      "object_symbols": 151,
+      "compilation_units": [
+        "base.c",
+        "cam.c",
+        "core.c",
+        "debug.c",
+        "efuse.c",
+        "ps.c",
+        "rc.c",
+        "regd.c",
+        "stats.c",
+        "rtlwifi.mod.c"
+      ],
+      "imports": [
+        "___ratelimit",
+        "__dev_kfree_skb_any",
+        "__dev_kfree_skb_irq",
+        "__divsi3",
+        "__kmalloc",
+        "__local_bh_enable_ip",
+        "__msecs_to_jiffies",
+        "__mutex_init",
+        "__netdev_alloc_skb",
+        "__udivsi3",
+        "_dev_warn",
+        "alloc_workqueue",
+        "cancel_delayed_work",
+        "cancel_delayed_work_sync",
+        "cfg80211_get_bss",
+        "cfg80211_put_bss",
+        "cfg80211_unlink_bss",
+        "complete",
+        "delayed_work_timer_fn",
+        "destroy_workqueue",
+        "freq_reg_info",
+        "get_random_bytes",
+        "ieee80211_beacon_get_tim",
+        "ieee80211_connection_loss",
+        "ieee80211_find_sta",
+        "ieee80211_get_hdrlen_from_skb",
+        "ieee80211_rate_control_register",
+        "ieee80211_rate_control_unregister",
+        "ieee80211_rx_irqsafe",
+        "ieee80211_start_tx_ba_session",
+        "ieee80211_stop_tx_ba_cb_irqsafe",
+        "ieee80211_tx_status_irqsafe",
+        "init_timer_key",
+        "jiffies",
+        "jiffies_to_msecs",
+        "kfree",
+        "kfree_skb",
+        "kmalloc_caches",
+        "kmem_cache_alloc",
+        "loops_per_jiffy",
+        "memcmp",
+        "memcpy",
+        "memset",
+        "mod_timer",
+        "msleep",
+        "mutex_lock",
+        "mutex_unlock",
+        "of_machine_is_compatible",
+        "param_ops_bool",
+        "printk",
+        "queue_delayed_work_on",
+        "queue_work_on",
+        "release_firmware",
+        "request_firmware",
+        "skb_put",
+        "skb_unlink",
+        "system_wq",
+        "tasklet_kill",
+        "timer_delete_sync",
+        "usleep_range",
+        "warn_slowpath_fmt",
+        "wiphy_apply_custom_regulatory",
+        "wiphy_rfkill_set_hw_state",
+        "wiphy_rfkill_start_polling",
+        "wiphy_rfkill_stop_polling",
+        "wiphy_to_ieee80211_hw"
+      ],
+      "callback_tables": [
+        {
+          "name": "rtl_ops",
+          "section": ".rodata",
+          "offset": 144,
+          "bytes": 400,
+          "layout_fields_proven": true,
+          "slots": [
+            {
+              "slot": 0,
+              "byte_offset": 0,
+              "field": "tx",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 17904,
+                  "addend": 17904,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_tx"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 1,
+              "byte_offset": 4,
+              "field": "start",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text.unlikely",
+                  "offset": 616,
+                  "addend": 616,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_start"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 2,
+              "byte_offset": 8,
+              "field": "stop",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 17676,
+                  "addend": 17676,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_stop"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 3,
+              "byte_offset": 12,
+              "field": "add_interface",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 14232,
+                  "addend": 14232,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_add_interface"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 4,
+              "byte_offset": 16,
+              "field": "change_interface",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 15016,
+                  "addend": 15016,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_change_interface"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 5,
+              "byte_offset": 20,
+              "field": "remove_interface",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 14808,
+                  "addend": 14808,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_remove_interface"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 6,
+              "byte_offset": 24,
+              "field": "config",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text.unlikely",
+                  "offset": 840,
+                  "addend": 840,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_config"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 7,
+              "byte_offset": 28,
+              "field": "bss_info_changed",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 16104,
+                  "addend": 16104,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_bss_info_changed"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 8,
+              "byte_offset": 32,
+              "field": "start_ap",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 9,
+              "byte_offset": 36,
+              "field": "stop_ap",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 10,
+              "byte_offset": 40,
+              "field": "prepare_multicast",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 11,
+              "byte_offset": 44,
+              "field": "configure_filter",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 11796,
+                  "addend": 11796,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_configure_filter"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 12,
+              "byte_offset": 48,
+              "field": "config_iface_filter",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 13,
+              "byte_offset": 52,
+              "field": "set_tim",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 14,
+              "byte_offset": 56,
+              "field": "set_key",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 15084,
+                  "addend": 15084,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_set_key"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 15,
+              "byte_offset": 60,
+              "field": "update_tkip_key",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 16,
+              "byte_offset": 64,
+              "field": "set_rekey_data",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 17,
+              "byte_offset": 68,
+              "field": "set_default_unicast_key",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 18,
+              "byte_offset": 72,
+              "field": "hw_scan",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 19,
+              "byte_offset": 76,
+              "field": "cancel_hw_scan",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 20,
+              "byte_offset": 80,
+              "field": "sched_scan_start",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 21,
+              "byte_offset": 84,
+              "field": "sched_scan_stop",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 22,
+              "byte_offset": 88,
+              "field": "sw_scan_start",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text.unlikely",
+                  "offset": 308,
+                  "addend": 308,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_sw_scan_start"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 23,
+              "byte_offset": 92,
+              "field": "sw_scan_complete",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text.unlikely",
+                  "offset": 0,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_sw_scan_complete"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 24,
+              "byte_offset": 96,
+              "field": "get_stats",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 25,
+              "byte_offset": 100,
+              "field": "get_key_seq",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 26,
+              "byte_offset": 104,
+              "field": "set_frag_threshold",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 27,
+              "byte_offset": 108,
+              "field": "set_rts_threshold",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 28,
+              "byte_offset": 112,
+              "field": "sta_add",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 13916,
+                  "addend": 13916,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_sta_add"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 29,
+              "byte_offset": 116,
+              "field": "sta_remove",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 13804,
+                  "addend": 13804,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_sta_remove"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 30,
+              "byte_offset": 120,
+              "field": "sta_notify",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 12356,
+                  "addend": 12356,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_sta_notify"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 31,
+              "byte_offset": 124,
+              "field": "sta_set_txpwr",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 32,
+              "byte_offset": 128,
+              "field": "sta_state",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 33,
+              "byte_offset": 132,
+              "field": "sta_pre_rcu_remove",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 34,
+              "byte_offset": 136,
+              "field": "sta_rc_update",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 35,
+              "byte_offset": 140,
+              "field": "sta_rate_tbl_update",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 36,
+              "byte_offset": 144,
+              "field": "sta_statistics",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 37,
+              "byte_offset": 148,
+              "field": "conf_tx",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 12656,
+                  "addend": 12656,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_conf_tx"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 38,
+              "byte_offset": 152,
+              "field": "get_tsf",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 12188,
+                  "addend": 12188,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_get_tsf"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 39,
+              "byte_offset": 156,
+              "field": "set_tsf",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 12240,
+                  "addend": 12240,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_set_tsf"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 40,
+              "byte_offset": 160,
+              "field": "offset_tsf",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 41,
+              "byte_offset": 164,
+              "field": "reset_tsf",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 12312,
+                  "addend": 12312,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_reset_tsf"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 42,
+              "byte_offset": 168,
+              "field": "tx_last_beacon",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 43,
+              "byte_offset": 172,
+              "field": "ampdu_action",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 13424,
+                  "addend": 13424,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_ampdu_action"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 44,
+              "byte_offset": 176,
+              "field": "get_survey",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 45,
+              "byte_offset": 180,
+              "field": "rfkill_poll",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 13280,
+                  "addend": 13280,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_rfkill_poll"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 46,
+              "byte_offset": 184,
+              "field": "set_coverage_class",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 47,
+              "byte_offset": 188,
+              "field": "flush",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 12360,
+                  "addend": 12360,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_op_flush"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 48,
+              "byte_offset": 192,
+              "field": "channel_switch",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 49,
+              "byte_offset": 196,
+              "field": "set_antenna",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 50,
+              "byte_offset": 200,
+              "field": "get_antenna",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 51,
+              "byte_offset": 204,
+              "field": "remain_on_channel",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 52,
+              "byte_offset": 208,
+              "field": "cancel_remain_on_channel",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 53,
+              "byte_offset": 212,
+              "field": "set_ringparam",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 54,
+              "byte_offset": 216,
+              "field": "get_ringparam",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 55,
+              "byte_offset": 220,
+              "field": "tx_frames_pending",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 56,
+              "byte_offset": 224,
+              "field": "set_bitrate_mask",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 57,
+              "byte_offset": 228,
+              "field": "event_callback",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 58,
+              "byte_offset": 232,
+              "field": "allow_buffered_frames",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 59,
+              "byte_offset": 236,
+              "field": "release_buffered_frames",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 60,
+              "byte_offset": 240,
+              "field": "get_et_sset_count",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 61,
+              "byte_offset": 244,
+              "field": "get_et_stats",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 62,
+              "byte_offset": 248,
+              "field": "get_et_strings",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 63,
+              "byte_offset": 252,
+              "field": "mgd_prepare_tx",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 64,
+              "byte_offset": 256,
+              "field": "mgd_protect_tdls_discover",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 65,
+              "byte_offset": 260,
+              "field": "add_chanctx",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 66,
+              "byte_offset": 264,
+              "field": "remove_chanctx",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 67,
+              "byte_offset": 268,
+              "field": "change_chanctx",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 68,
+              "byte_offset": 272,
+              "field": "assign_vif_chanctx",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 69,
+              "byte_offset": 276,
+              "field": "unassign_vif_chanctx",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 70,
+              "byte_offset": 280,
+              "field": "switch_vif_chanctx",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 71,
+              "byte_offset": 284,
+              "field": "reconfig_complete",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 72,
+              "byte_offset": 288,
+              "field": "ipv6_addr_change",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 73,
+              "byte_offset": 292,
+              "field": "channel_switch_beacon",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 74,
+              "byte_offset": 296,
+              "field": "pre_channel_switch",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 75,
+              "byte_offset": 300,
+              "field": "post_channel_switch",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 76,
+              "byte_offset": 304,
+              "field": "abort_channel_switch",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 77,
+              "byte_offset": 308,
+              "field": "channel_switch_rx_beacon",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 78,
+              "byte_offset": 312,
+              "field": "join_ibss",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 79,
+              "byte_offset": 316,
+              "field": "leave_ibss",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 80,
+              "byte_offset": 320,
+              "field": "get_expected_throughput",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 81,
+              "byte_offset": 324,
+              "field": "get_txpower",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 82,
+              "byte_offset": 328,
+              "field": "tdls_channel_switch",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 83,
+              "byte_offset": 332,
+              "field": "tdls_cancel_channel_switch",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 84,
+              "byte_offset": 336,
+              "field": "tdls_recv_channel_switch",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 85,
+              "byte_offset": 340,
+              "field": "wake_tx_queue",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 86,
+              "byte_offset": 344,
+              "field": "sync_rx_queues",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 87,
+              "byte_offset": 348,
+              "field": "start_nan",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 88,
+              "byte_offset": 352,
+              "field": "stop_nan",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 89,
+              "byte_offset": 356,
+              "field": "nan_change_conf",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 90,
+              "byte_offset": 360,
+              "field": "add_nan_func",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 91,
+              "byte_offset": 364,
+              "field": "del_nan_func",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 92,
+              "byte_offset": 368,
+              "field": "can_aggregate_in_amsdu",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 93,
+              "byte_offset": 372,
+              "field": "get_ftm_responder_stats",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 94,
+              "byte_offset": 376,
+              "field": "start_pmsr",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 95,
+              "byte_offset": 380,
+              "field": "abort_pmsr",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 96,
+              "byte_offset": 384,
+              "field": "set_tid_config",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 97,
+              "byte_offset": 388,
+              "field": "reset_tid_config",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 98,
+              "byte_offset": 392,
+              "field": "update_vif_offload",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 99,
+              "byte_offset": 396,
+              "field": "sta_set_4addr",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            }
+          ],
+          "populated_callback_slots": 22,
+          "null_slots": 78
+        },
+        {
+          "name": "rtl_rate_ops",
+          "section": ".rodata",
+          "offset": 608,
+          "bytes": 56,
+          "layout_fields_proven": true,
+          "slots": [
+            {
+              "slot": 0,
+              "byte_offset": 0,
+              "field": "capa",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 1,
+              "byte_offset": 4,
+              "field": "name",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".rodata.str1.4",
+                  "offset": 2452,
+                  "addend": 2452,
+                  "relocation_type": 4,
+                  "functions": [],
+                  "imported": false
+                }
+              ],
+              "classification": "DATA_POINTER"
+            },
+            {
+              "slot": 2,
+              "byte_offset": 8,
+              "field": "alloc",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 29320,
+                  "addend": 29320,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_rate_alloc"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 3,
+              "byte_offset": 12,
+              "field": "add_debugfs",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 4,
+              "byte_offset": 16,
+              "field": "free",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 29324,
+                  "addend": 29324,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_rate_free"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 5,
+              "byte_offset": 20,
+              "field": "alloc_sta",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 30200,
+                  "addend": 30200,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_rate_alloc_sta"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 6,
+              "byte_offset": 24,
+              "field": "rate_init",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 29312,
+                  "addend": 29312,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_rate_init"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 7,
+              "byte_offset": 28,
+              "field": "rate_update",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 29316,
+                  "addend": 29316,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_rate_update"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 8,
+              "byte_offset": 32,
+              "field": "free_sta",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 29340,
+                  "addend": 29340,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_rate_free_sta"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 9,
+              "byte_offset": 36,
+              "field": "tx_status_ext",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 10,
+              "byte_offset": 40,
+              "field": "tx_status",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 30260,
+                  "addend": 30260,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_tx_status"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 11,
+              "byte_offset": 44,
+              "field": "get_rate",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 29808,
+                  "addend": 29808,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_get_rate"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 12,
+              "byte_offset": 48,
+              "field": "add_sta_debugfs",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            },
+            {
+              "slot": 13,
+              "byte_offset": 52,
+              "field": "get_expected_throughput",
+              "raw_u32": 0,
+              "relocations": [],
+              "classification": "NULL"
+            }
+          ],
+          "populated_callback_slots": 8,
+          "null_slots": 5
+        },
+        {
+          "name": "efuse_ops",
+          "section": ".rodata",
+          "offset": 592,
+          "bytes": 8,
+          "layout_fields_proven": true,
+          "slots": [
+            {
+              "slot": 0,
+              "byte_offset": 0,
+              "field": "efuse_onebyte_read",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "efuse_one_byte_read",
+                  "section": ".text",
+                  "offset": 19240,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "efuse_one_byte_read"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 1,
+              "byte_offset": 4,
+              "field": "efuse_logical_map_read",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "efuse_shadow_read",
+                  "section": ".text",
+                  "offset": 20536,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "efuse_shadow_read"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            }
+          ],
+          "populated_callback_slots": 2,
+          "null_slots": 0
+        }
+      ],
+      "current_source_definition_matches": 4,
+      "original_source_definition_matches": 156,
+      "source_definition_union_matches": 156,
+      "symbols_without_available_definition": [
+        "arch_local_irq_save",
+        "ieee80211_tx_info_clear_status",
+        "fls",
+        "__udelay",
+        "eth_zero_addr",
+        "fls",
+        "get_order",
+        "kmalloc_array.constprop.0",
+        "ieee80211_rate_set_vht",
+        "cleanup_module",
+        "init_module"
+      ]
+    },
+    {
+      "name": "rtl_pci",
+      "path": "outputs\\rea\\arc700-20261021-r2\\current-radio2g\\rtl_pci.ko",
+      "sha256": "6f85efa424c6aa5b693982ae074d268d2312a3f9262238e8c6f5eda16199df63",
+      "bytes": 45680,
+      "symbols": 280,
+      "function_symbols": 47,
+      "unique_function_ranges": 47,
+      "code_allocated_bytes": 18840,
+      "relocations": 514,
+      "code_relocations": 451,
+      "code_relocations_without_function_owner": 0,
+      "object_symbols": 112,
+      "compilation_units": [
+        "pci.c",
+        "rtl_pci.mod.c"
+      ],
+      "imports": [
+        "___ratelimit",
+        "__dev_kfree_skb_any",
+        "__dev_kfree_skb_irq",
+        "__init_swait_queue_head",
+        "__local_bh_enable_ip",
+        "__netdev_alloc_skb",
+        "__tasklet_schedule",
+        "__umodsi3",
+        "_cond_resched",
+        "cancel_delayed_work_sync",
+        "cancel_work_sync",
+        "delayed_work_timer_fn",
+        "dev_driver_string",
+        "disable_irq",
+        "dma_alloc_attrs",
+        "dma_free_attrs",
+        "dma_map_page_attrs",
+        "dma_set_coherent_mask",
+        "dma_set_mask",
+        "dma_unmap_page_attrs",
+        "enable_irq",
+        "free_irq",
+        "ieee80211_alloc_hw_nm",
+        "ieee80211_beacon_get_tim",
+        "ieee80211_free_hw",
+        "ieee80211_hdrlen",
+        "ieee80211_register_hw",
+        "ieee80211_rx_irqsafe",
+        "ieee80211_stop_queue",
+        "ieee80211_tx_status_irqsafe",
+        "ieee80211_unregister_hw",
+        "ieee80211_wake_queue",
+        "init_timer_key",
+        "is_vmalloc_addr",
+        "jiffies",
+        "kfree",
+        "kfree_skb",
+        "loops_per_jiffy",
+        "mem_map",
+        "memcpy",
+        "memmove",
+        "memset",
+        "mod_delayed_work_on",
+        "msleep",
+        "of_machine_is_compatible",
+        "param_ops_bool",
+        "param_ops_uint",
+        "pci_disable_device",
+        "pci_enable_device",
+        "pci_iomap",
+        "pci_read_config_byte",
+        "pci_read_config_dword",
+        "pci_read_config_word",
+        "pci_release_regions",
+        "pci_request_regions",
+        "pci_set_master",
+        "pci_write_config_byte",
+        "pcie_capability_clear_and_set_word",
+        "pcie_capability_read_word",
+        "printk",
+        "queue_delayed_work_on",
+        "read_efuse_byte",
+        "request_threaded_irq",
+        "rtl_action_proc",
+        "rtl_beacon_statistic",
+        "rtl_c2hcmd_enqueue",
+        "rtl_collect_scan_list",
+        "rtl_deinit_core",
+        "rtl_deinit_deferred_work",
+        "rtl_deinit_rfkill",
+        "rtl_efuse_ops_init",
+        "rtl_hgw500_honest_tx_ack",
+        "rtl_init_core",
+        "rtl_init_rfkill",
+        "rtl_init_rx_config",
+        "rtl_is_special_data",
+        "rtl_lps_change_work_callback",
+        "rtl_lps_leave",
+        "rtl_ops",
+        "rtl_p2p_info",
+        "rtl_recognize_peer",
+        "rtl_swlps_beacon",
+        "rtl_tid_to_ac",
+        "rtl_tx_ackqueue",
+        "rtl_tx_mgmt_proc",
+        "skb_dequeue",
+        "skb_pull",
+        "skb_push",
+        "skb_put",
+        "skb_queue_tail",
+        "skb_trim",
+        "synchronize_irq",
+        "system_wq",
+        "tasklet_kill",
+        "tasklet_setup",
+        "wait_for_completion",
+        "warn_slowpath_fmt"
+      ],
+      "callback_tables": [
+        {
+          "name": "rtl_pci_ops",
+          "section": ".rodata",
+          "offset": 20,
+          "bytes": 36,
+          "layout_fields_proven": true,
+          "slots": [
+            {
+              "slot": 0,
+              "byte_offset": 0,
+              "field": "read_efuse_byte",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "read_efuse_byte",
+                  "section": "UND",
+                  "offset": 0,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "read_efuse_byte"
+                  ],
+                  "imported": true
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 1,
+              "byte_offset": 4,
+              "field": "adapter_start",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 2424,
+                  "addend": 2424,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_start"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 2,
+              "byte_offset": 8,
+              "field": "adapter_stop",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 3768,
+                  "addend": 3768,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_stop"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 3,
+              "byte_offset": 12,
+              "field": "adapter_tx",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 10616,
+                  "addend": 10616,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_tx"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 4,
+              "byte_offset": 16,
+              "field": "flush",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 1084,
+                  "addend": 1084,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_flush"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 5,
+              "byte_offset": 20,
+              "field": "reset_trx_ring",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "rtl_pci_reset_trx_ring",
+                  "section": ".text",
+                  "offset": 368,
+                  "addend": 0,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_reset_trx_ring"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 6,
+              "byte_offset": 24,
+              "field": "waitq_insert",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 4204,
+                  "addend": 4204,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_tx_chk_waitq_insert"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 7,
+              "byte_offset": 28,
+              "field": "disable_aspm",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 3488,
+                  "addend": 3488,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_disable_aspm"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            },
+            {
+              "slot": 8,
+              "byte_offset": 32,
+              "field": "enable_aspm",
+              "raw_u32": 0,
+              "relocations": [
+                {
+                  "symbol": "",
+                  "section": ".text",
+                  "offset": 3640,
+                  "addend": 3640,
+                  "relocation_type": 4,
+                  "functions": [
+                    "rtl_pci_enable_aspm"
+                  ],
+                  "imported": false
+                }
+              ],
+              "classification": "FUNCTION_POINTER"
+            }
+          ],
+          "populated_callback_slots": 9,
+          "null_slots": 0
+        }
+      ],
+      "current_source_definition_matches": 35,
+      "original_source_definition_matches": 30,
+      "source_definition_union_matches": 41,
+      "symbols_without_available_definition": [
+        "arch_local_irq_save",
+        "is_power_of_2",
+        "__skb_dequeue",
+        "__udelay",
+        "dev_kfree_skb_any",
+        "tasklet_schedule"
+      ]
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": "realtek\\src\\overlay\\files\\drivers\\net\\wireless\\realtek\\rtlwifi\\pci.c",
+      "sha256": "5155d5bb5aae02152d00b22c22f62e350dd477f0e4cceb0e284c2a501537b7c1"
+    },
+    {
+      "path": "realtek\\src\\overlay\\files\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\fw.c",
+      "sha256": "272c57264c3b6b434ca8921fcf046327ae02a337ec42421c755db0202bb1869d"
+    },
+    {
+      "path": "realtek\\src\\overlay\\files\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\trx.c",
+      "sha256": "47b2d7956e0881745b91033814799ecb60573a47e075e723471a49f07a530b57"
+    },
+    {
+      "path": "realtek\\src\\overlay\\files\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\trx.h",
+      "sha256": "913ec61faf4c507db83a2070a134ef7f0d53ea30e304ea934fa2c439344c2ac3"
+    },
+    {
+      "path": "realtek\\src\\overlay\\files\\drivers\\net\\wireless\\realtek\\rtlwifi\\wifi.h",
+      "sha256": "7095a8ce959958bc0cb525a654eab1462a01ac70ae9873f86976c310f2d9b419"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\base.c",
+      "sha256": "592e07689dd176de2d28ac2de20a8435a43440741932cbe630a98a7b6aba1140"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\base.h",
+      "sha256": "a93a99824119ced34c27e7c8ca889b842d2c2198c3a857c9c3a57121edf569f1"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbt_precomp.h",
+      "sha256": "6ced4495c41ed2195d403d4a1951bef9ec555b48f09904ae8ec1632bc6887bb0"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8192e2ant.c",
+      "sha256": "53f7f140182c79bb05b14e9f8eb6bac8585b1cd8372d3d2166c07db7e97f89b2"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8192e2ant.h",
+      "sha256": "217555a47e25cd18277c514b97936282a6a210eda4899c240afb8f281cd5d27f"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8723b1ant.c",
+      "sha256": "576262f80dfb737c6aaadc54a0d7a89cdf54c59915b008ca46ae92386f295c9a"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8723b1ant.h",
+      "sha256": "30d5bb288d163fa65d4abf6b20a6750cbd5ec2cccaf52c1add46e7e0cda3e11b"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8723b2ant.c",
+      "sha256": "b9ecd4e2465fc220f235c6d12384c92eb4145002fcf8f34fd4698ed975af7681"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8723b2ant.h",
+      "sha256": "1223d00de6d6b321e5ce0095b0ad8493d103bb1d2debf301745cc988f62aea0a"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8821a1ant.c",
+      "sha256": "79e269f5d286c6a57521a69a7345de680f31f099d85fa6886e2e3b4de0ed0109"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8821a1ant.h",
+      "sha256": "0626a9a0b0dbe8f38fa218c6076460695133615aa61d322583328d0245b3b1dd"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8821a2ant.c",
+      "sha256": "ccaaf479502342eb01dd67958eefd21829f2b9a52e36ff336bdff85c668cbd43"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8821a2ant.h",
+      "sha256": "1fb4358c5c31931dcd7ce52473ae54e8c85477a043afd77329b196dd7b1433c7"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8822bwifionly.c",
+      "sha256": "15b4640ac6bc895abee33220e0eb58f615c2b6721ac2eb7eb703e5ffdd414bbc"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtc8822bwifionly.h",
+      "sha256": "e1bc0204409af6cb62ab53243bf358c2507f637ccc5cebf55c6d95335c8a5f64"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtcoutsrc.c",
+      "sha256": "fdd0cdb1dd538e4ec30ade5ccbeda33100acce6f7f987814b7e2234c2a30c951"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\halbtcoutsrc.h",
+      "sha256": "f11677cc6a2113bf61416397d2d16abce0f038f5b6f23b80e43363ec0b1f12ee"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\rtl_btc.c",
+      "sha256": "702ad0ff75cfc39301d79b6a6294560b3f77c636ce0cfb45af0fe01b24dd29ba"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\btcoexist\\rtl_btc.h",
+      "sha256": "a031e3ca2ecd31ac2e9d797216f3b4715a43b367e128000971d9ffa4963f4b96"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\cam.c",
+      "sha256": "571849f77c23ca2a041451bc90ed0104517c9573dcb25c173f887359a828f3d3"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\cam.h",
+      "sha256": "9e50026dbd391897a49feb7a95197c93baf218875a636ac7546ee8ea8c124a38"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\core.c",
+      "sha256": "931232bba7fd64026229de3a5cc2de1382b3e8faf7ab040e7d5bc6db54f22c94"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\core.h",
+      "sha256": "e424ca5e77c5c54c812e78c6827ba4899898a6682e82b4187981eed8e4dad9ba"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\debug.c",
+      "sha256": "e6abce26c0490976666155e6a92730bc59d7eb4a03d865d592f2f278276d1f78"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\debug.h",
+      "sha256": "3cbe5ada12af9b7668064096a5391eb31eb9742fdba16c4a00cffd1cdca23b5a"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\efuse.c",
+      "sha256": "b0b1dec3f5d07427985f329f46f0be79ca43e6dbcb3ddc5aa2ea2b28ccc8e2ac"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\efuse.h",
+      "sha256": "5dff2dd6349affff832a3df00f914647527580407d8d5f065e2f4eca58a7f3e5"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\pci.c",
+      "sha256": "b487ff3aa929f3543495db32bd11df133dc1949cfa130b0631df07dcede3d2f1"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\pci.h",
+      "sha256": "7075624b20f24e2e9c3107f511c0e9aceae9b4587eb19c6d6e1dc6b15bce8ff3"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\ps.c",
+      "sha256": "b59eb280622e323cef739d2704c3194fc6bd82588f3bd76d07375268bf941dcc"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\ps.h",
+      "sha256": "7575b003c5a4645b57aa5ed051f5fd5fa43c214ef43eed57c1afbd1ef9172d52"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\pwrseqcmd.h",
+      "sha256": "c06de061fa086832d941e6c3fb63c03baebd5a63bb0176c855dcc92b66ed7a5d"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rc.c",
+      "sha256": "f965ece7aa32d9632b964a28b2ca4d331f78c24136f444ac5f14b9607396d6ca"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rc.h",
+      "sha256": "efde1b2426b3181733cbd1312a72b55e105562a10dcec44c71b350a74a8fe9bb"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\regd.c",
+      "sha256": "270e9e17f277a0f455867edc1c6f8754f554128e9e354cec2514e096600a03bc"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\regd.h",
+      "sha256": "d460a3a2ed81a22b845c60988d7c0306b22cd98a4ffa32c67793af1665e7cd3b"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\def.h",
+      "sha256": "cdea0f1f9991101f7e53efdbcae6f783dda469f7550b970243b10b6ff11544d5"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\dm.c",
+      "sha256": "9f686b2ff1610205a99d8c1f4a70f40b98ff13159b7b12563242c565c6978bdc"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\dm.h",
+      "sha256": "b4fe5f0db88b910c0fe2977fcd698884312772d0704adb856f7ee549cf00669b"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\fw.c",
+      "sha256": "176f5441b12c5b59def7850b7507a4209dac071f36a768467cd6d5f03298da45"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\fw.h",
+      "sha256": "647edbcfa7a6e34e52ce599cd8ffa14263928e62602887c412e6863b3a94947d"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\hw.c",
+      "sha256": "7c5c1a247bbbc95690ffcb2fe6e0744d83da3360c70968489f4a78d8d72ba636"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\hw.h",
+      "sha256": "11bcab275a3b22bfa518b0f97a22783363877029e9b1165ffaa93154152bc9e0"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\led.c",
+      "sha256": "0d30dbd1ab527a7f8b612407fa8e16733277a83bb6921e7bdacf3184748f8de4"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\led.h",
+      "sha256": "d344387ad505cb2d3e4c1821c43be7313d0e1ec508f5ece3597f4071401ea03a"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\phy.c",
+      "sha256": "2307e9c9f541297c4560d970f8d0318caa444424d2422716b9ad5c7996252a06"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\phy.h",
+      "sha256": "33569323f9fa1d5058e9ea81800c69919271bad9d9c2852eaa3b7946a042de9f"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\pwrseq.c",
+      "sha256": "045c1b77d4f2bcfd26426f70842fcd78d0d2e35d87ca0ff181f955b466e59fe2"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\pwrseq.h",
+      "sha256": "ae6be07839cd6b7a015502964472ef75608f859192969d8eaa667cb415f287b9"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\reg.h",
+      "sha256": "f2f6a7d38627a821735f6cf980afc15052d29dd2e8b39dc1002bf915b539e7cf"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\rf.c",
+      "sha256": "00bd83917db564fdf1bcaef3a66099a2bdd8912b32b2fe1553e70bebfc1a934e"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\rf.h",
+      "sha256": "e6946339762cd05be5157a0c3e5634f2619c3129f1f80eb94a29b146a6895614"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\sw.c",
+      "sha256": "ab66f3bf2cc6b5e89250e2c8612feab62271a6e8cafdd7569a1e120daccc1043"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\table.c",
+      "sha256": "d3bc9536614b71b471b440e0f770e2651f906f224d2f1f0b70488e3e4807937e"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\table.h",
+      "sha256": "06ca6754d62427016e3f08e17a534bf7c5d76353f75beb6247a6968b85208fa4"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\trx.c",
+      "sha256": "67d870e9e963947292bb47723b6705eb185538d9956660006e76f6eac4cf1c1b"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\rtl8192ee\\trx.h",
+      "sha256": "ce3c41102a57d6d314ba8c69cabb7d6ddbd321b2dbe31113feeb77ba126cae7d"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\stats.c",
+      "sha256": "d2f64c4ac4e9e7f26fda14836c9019d5435f049c5781d8f8f12824a281b5a3ed"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\stats.h",
+      "sha256": "a4d2cf10f00794f85c0481587974738ad79bbe863cdf1b8d7851741c34ea99c2"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\usb.c",
+      "sha256": "46067daae6a0399d88450bfc0da33e27b47362f1b3ddaaff1b45d3efda8e2fe1"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\usb.h",
+      "sha256": "057b61085636001c77add6ba0d29f6ad6d03af5e75649a94ab0836ca215c7a14"
+    },
+    {
+      "path": "realtek\\original\\linux-5.10.260\\drivers\\net\\wireless\\realtek\\rtlwifi\\wifi.h",
+      "sha256": "606bebbe68085f02de1703d81c515af63c85905d6bc6ab0999a419e69baa59bd"
+    }
+  ],
+  "limits": [
+    "Symbol/relocation inventory is not source recovery or behavioral equivalence.",
+    "Definition matches are lexical availability evidence only.",
+    "NULL callback slots are real compiled absence, not missing functions.",
+    "ET_REL offsets are section-relative, not physical or runtime addresses.",
+    "Three core modules only; mac80211/cfg80211/crypto/btcoexist and firmware are separate dependencies.",
+    "Physical client, traffic, boot, recovery, soak and release gates unrun."
+  ]
+}

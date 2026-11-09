@@ -1,0 +1,32 @@
+{
+  "schema": "realtek.kernel-api-original/v1",
+  "archive_sha256": "47a8297131505b7d38338d39ad8a9d592507d33c695b27b1bbe55f25869a6b84",
+  "source_bytes_preserved": true,
+  "headers": [
+    {
+      "path": "original/kernel-api/linux-5.10.260/include/linux/pm.h",
+      "bytes": 34589,
+      "sha256": "5494374a302011e0aa1231bc55c70a81a1c323956124d08126c1960113c1195b"
+    },
+    {
+      "path": "original/kernel-api/linux-5.10.260/include/linux/pci.h",
+      "bytes": 90089,
+      "sha256": "4e3d567a2d6a92a9ff19bd35cc7ddc8e27b0f0ec27c3c2fd895022c481a15aaf"
+    },
+    {
+      "path": "original/kernel-api/linux-5.10.260/include/linux/device.h",
+      "bytes": 35165,
+      "sha256": "a952ec67b4970dde3fd4cd05ec56677de396821c6f816a593583fbfbdabc8c00"
+    },
+    {
+      "path": "original/kernel-api/linux-5.10.260/include/linux/moduleparam.h",
+      "bytes": 22924,
+      "sha256": "6a8ff4094f34fa29d98f668cda4040a8122189653c0c71b511e03e9c22b02f6d"
+    },
+    {
+      "path": "original/kernel-api/linux-5.10.260/include/linux/module.h",
+      "bytes": 24798,
+      "sha256": "8bfb46266e6834dd2c8ec75be6617832c80a3a67a40a24a1679ea33ffc1c262f"
+    }
+  ]
+}

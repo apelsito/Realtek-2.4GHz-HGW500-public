@@ -1,0 +1,51 @@
+{
+  "schema": "openmitrastar.eth73-audit/v1",
+  "status": "PASS_OFFLINE_SOURCE_ELF_AND_NEGATIVE_FIXTURES",
+  "hardware_accessed": false,
+  "upstream_files_compared": 95978,
+  "source_extra_files": 7,
+  "embedded_dt": [
+    {
+      "lane": "a",
+      "dtb_bytes": 2268,
+      "dtb_sha256": "f4b7246b5b3ba9e1d9db46669163bd54bc58b76c4eab42a6daed0d0785ce8b40",
+      "embedded_equal": true,
+      "kernel_end": "0x84c52000"
+    },
+    {
+      "lane": "b",
+      "dtb_bytes": 2268,
+      "dtb_sha256": "f4b7246b5b3ba9e1d9db46669163bd54bc58b76c4eab42a6daed0d0785ce8b40",
+      "embedded_equal": true,
+      "kernel_end": "0x84c52000"
+    }
+  ],
+  "negative_fixtures": [
+    {
+      "name": "ignore-stop-timeout",
+      "rejected_by_executed_fixture": true,
+      "failure": "FAIL 323: safe_observed"
+    },
+    {
+      "name": "reopen-recycles-descriptors",
+      "rejected_by_executed_fixture": true,
+      "failure": "FAIL 649: qtn_emac_open(&n)==-EIO"
+    },
+    {
+      "name": "skip-inherited-quiesce",
+      "rejected_by_executed_fixture": true,
+      "failure": "FAIL 305: safe_observed"
+    },
+    {
+      "name": "free-quarantined-rings",
+      "rejected_by_executed_fixture": true,
+      "failure": "FAIL 323: safe_observed"
+    }
+  ],
+  "limits": [
+    "No Ethernet physical boot, DMA traffic, cold boot or recovery performed.",
+    "Quarantine retains mapped memory on timeout; it does not recover a hung DMA engine.",
+    "IRQ routing conditions inspected; hardware routing unrun."
+  ],
+  "build_result_sha256": "3dd67df7467b2a675059e7399d275778e331a17dbe3d45ed0ef18b04fa6f85ac"
+}

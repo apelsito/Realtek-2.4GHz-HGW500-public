@@ -1,0 +1,40 @@
+{
+  "schema": "openmitrastar.eth73-paired-build/v1",
+  "hardware_accessed": false,
+  "candidate_manifest_sha256": "c66baca3ebfea4c9e3410ef5d2f7db7c076db2a0b47935b2d707b5fef0540d1b",
+  "archive_sha256": "87363c24f10e06321eb362765521094e94471f6bff8bce2d6b3e40f39f004953",
+  "basic_patch_sha256": "d36ed090cdcb9470eb301933c066b2c7cde12de3af5c1cf3d02d9a7509088192",
+  "compiler_sha256": "3918a0da3c9f2cfde359f6fed1d0df19e737438dfd2cc60edae63f2dcbf14263",
+  "physical_boot": "UNRUN",
+  "ethernet_traffic": "UNRUN",
+  "status": "PASS_OFFLINE_PAIRED_KERNEL_MODULE_NO_GO_HARDWARE",
+  "reused_composed_source": "/home/rea/openmitrastar-linux73-20261022T135100Z/eth73-offline-v2/source/linux-7.3",
+  "lanes": [
+    {
+      "lane": "a",
+      "vmlinux_sha256": "3c173455469c84ed46664a9f3b36b80dfd112ab77b77cc1f755413cbb2a6e19a",
+      "vmlinux_bytes": 4455148,
+      "module_sha256": "067f040165348edcdc3d125cf284f6921802cc3590909df9fe3772c0b9adf798",
+      "module_bytes": 25808,
+      "module_imports": 80,
+      "config_sha256": "3fa10bfafc543dc9c8f0dfe3507c57373ae88c0ff98589747e428f32d091ac05",
+      "dtb_sha256": "f4b7246b5b3ba9e1d9db46669163bd54bc58b76c4eab42a6daed0d0785ce8b40",
+      "forbidden_instructions": 0
+    },
+    {
+      "lane": "b",
+      "vmlinux_sha256": "3c173455469c84ed46664a9f3b36b80dfd112ab77b77cc1f755413cbb2a6e19a",
+      "vmlinux_bytes": 4455148,
+      "module_sha256": "067f040165348edcdc3d125cf284f6921802cc3590909df9fe3772c0b9adf798",
+      "module_bytes": 25808,
+      "module_imports": 80,
+      "config_sha256": "3fa10bfafc543dc9c8f0dfe3507c57373ae88c0ff98589747e428f32d091ac05",
+      "dtb_sha256": "f4b7246b5b3ba9e1d9db46669163bd54bc58b76c4eab42a6daed0d0785ce8b40",
+      "forbidden_instructions": 0
+    }
+  ],
+  "created_utc": "2026-10-22T16:03:04.809460+00:00",
+  "paired_identical": true,
+  "module_loaded": false,
+  "dt_ethernet_enabled": false
+}

@@ -1,0 +1,2 @@
+0x18978: mov_s r0, 0x1
+0x1897a: j_s blink

@@ -1,0 +1,14 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/pci.h
++++ b/drivers/net/wireless/realtek/rtlwifi/pci.h
+@@ -153,4 +153,11 @@ struct rtl8192_tx_ring {
+ 	dma_addr_t buffer_desc_dma; /*tx bufferd desc dma memory*/
++	u16 buffer_desc_stride;
+ 	u16 cur_tx_wp; /* current_tx_write_point */
+ 	u16 cur_tx_rp; /* current_tx_read_point */
+ };
++
++static inline u8 *rtl_pci_txbd_entry(struct rtl8192_tx_ring *ring,
++				      unsigned int index)
++{
++	return (u8 *)ring->buffer_desc + index * ring->buffer_desc_stride;
++}

@@ -1,0 +1,30 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/core.c
++++ b/drivers/net/wireless/realtek/rtlwifi/core.c
+@@ -10,6 +10,12 @@
+ #include <linux/of.h>
+ #include <net/cfg80211.h>
+ 
++static bool hgw500_tx_ampdu_disable;
++module_param_named(hgw500_tx_ampdu_disable, hgw500_tx_ampdu_disable,
++		   bool, 0444);
++MODULE_PARM_DESC(hgw500_tx_ampdu_disable,
++		 "Disable TX A-MPDU only on MitraStar HGW-500BNA-QCv2 lab runs");
++
+ u8 channel5g[CHANNEL_MAX_NUMBER_5G] = {
+ 	36, 38, 40, 42, 44, 46, 48,		/* Band 1 */
+ 	52, 54, 56, 58, 60, 62, 64,		/* Band 2 */
+@@ -1443,6 +1450,14 @@ static int rtl_op_ampdu_action(struct ieee80211_hw *hw,
+ 
+ 	switch (action) {
+ 	case IEEE80211_AMPDU_TX_START:
++		if (hgw500_tx_ampdu_disable &&
++		    of_machine_is_compatible("mitrastar,hgw-500bna-qcv2") &&
++		    rtlpriv->rtlhal.hw_type == HARDWARE_TYPE_RTL8192EE &&
++		    vif->type == NL80211_IFTYPE_AP) {
++			pr_info_ratelimited("OMRTLAMPDU stage=tx-start-rejected tid=%u aid=%u param=1\n",
++					    tid, sta ? sta->aid : 0);
++			return -EOPNOTSUPP;
++		}
+ 		rtl_dbg(rtlpriv, COMP_MAC80211, DBG_TRACE,
+ 			"IEEE80211_AMPDU_TX_START: TID:%d\n", tid);
+ 		return rtl_tx_agg_start(hw, vif, sta, tid, ssn);

@@ -1,0 +1,78 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/pci.c
++++ b/drivers/net/wireless/realtek/rtlwifi/pci.c
+@@ -2080,6 +2080,8 @@
+ 	unsigned long pmem_start, pmem_len, pmem_flags;
+ 	int err;
+ 
++	pr_info("OMRTL stage=probe-enter dev=%s irq=%u\n",
++		pci_name(pdev), pdev->irq);
+ 	err = pci_enable_device(pdev);
+ 	if (err) {
+ 		WARN_ONCE(true, "%s : Cannot enable new PCI device\n",
+@@ -2182,38 +2184,48 @@
+ 	_rtl_pci_io_handler_init(&pdev->dev, hw);
+ 
+ 	/*like read eeprom and so on */
++	pr_info("OMRTL stage=eeprom-enter dev=%s\n", pci_name(pdev));
+ 	rtlpriv->cfg->ops->read_eeprom_info(hw);
++	pr_info("OMRTL stage=eeprom-exit dev=%s\n", pci_name(pdev));
+ 
++	pr_info("OMRTL stage=sw-vars-enter dev=%s\n", pci_name(pdev));
+ 	if (rtlpriv->cfg->ops->init_sw_vars(hw)) {
+ 		pr_err("Can't init_sw_vars\n");
+ 		err = -ENODEV;
+ 		goto fail2;
+ 	}
++	pr_info("OMRTL stage=sw-vars-exit dev=%s\n", pci_name(pdev));
+ 	rtlpriv->cfg->ops->init_sw_leds(hw);
+ 
+ 	/*aspm */
+ 	rtl_pci_init_aspm(hw);
+ 
+ 	/* Init mac80211 sw */
++	pr_info("OMRTL stage=core-init-enter dev=%s\n", pci_name(pdev));
+ 	err = rtl_init_core(hw);
+ 	if (err) {
+ 		pr_err("Can't allocate sw for mac80211\n");
+ 		goto fail3;
+ 	}
++	pr_info("OMRTL stage=core-init-exit dev=%s\n", pci_name(pdev));
+ 
+ 	/* Init PCI sw */
++	pr_info("OMRTL stage=pci-init-enter dev=%s\n", pci_name(pdev));
+ 	err = rtl_pci_init(hw, pdev);
+ 	if (err) {
+ 		pr_err("Failed to init PCI\n");
+ 		goto fail4;
+ 	}
++	pr_info("OMRTL stage=pci-init-exit dev=%s\n", pci_name(pdev));
+ 
++	pr_info("OMRTL stage=register-hw-enter dev=%s\n", pci_name(pdev));
+ 	err = ieee80211_register_hw(hw);
+ 	if (err) {
+ 		pr_err("Can't register mac80211 hw.\n");
+ 		err = -ENODEV;
+ 		goto fail5;
+ 	}
++	pr_info("OMRTL stage=register-hw-exit dev=%s\n", pci_name(pdev));
+ 	rtlpriv->mac80211.mac80211_registered = 1;
+ 
+ 	/* add for debug */
+@@ -2223,6 +2235,8 @@
+ 	rtl_init_rfkill(hw);	/* Init PCI sw */
+ 
+ 	rtlpci = rtl_pcidev(pcipriv);
++	pr_info("OMRTL stage=request-irq-enter dev=%s irq=%u\n",
++		pci_name(pdev), pdev->irq);
+ 	err = rtl_pci_intr_mode_decide(hw);
+ 	if (err) {
+ 		rtl_dbg(rtlpriv, COMP_INIT, DBG_DMESG,
+@@ -2232,6 +2246,8 @@
+ 	}
+ 	rtlpci->irq_alloc = 1;
+ 
++	pr_info("OMRTL stage=probe-pass dev=%s irq=%u\n",
++		pci_name(pdev), pdev->irq);
+ 	set_bit(RTL_STATUS_INTERFACE_START, &rtlpriv->status);
+ 	return 0;
+ 

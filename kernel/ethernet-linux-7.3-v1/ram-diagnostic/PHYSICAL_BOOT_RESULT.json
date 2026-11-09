@@ -1,0 +1,54 @@
+{
+  "schema": "openmitrastar.eth73-physical-milestone/v1",
+  "status": "PASS_ETH73_PHYSICAL_BOOT_DRIVER_AND_TRAFFIC",
+  "target": "HGW-500BNA-QCv2 A2",
+  "kernel": "7.3.0-openmitrastar-eth73-v1",
+  "artifact": {
+    "path": "LOCAL_ONLY/eth73-RAM-ONLY.ras.bin",
+    "bytes": 3052800,
+    "sha256": "513dc8d0a23e9aa8c8c1be90c2e9da090a4fae483ff6bbe20c836579f04e31b4",
+    "crc32": "b6fdc394"
+  },
+  "bootbase_crc_verified": true,
+  "nonce_input_verified": true,
+  "ping_pass": true,
+  "udp_echoes": 12,
+  "udp_attempts": 12,
+  "lifecycle": "eth0up/down eth1up/down eth0reopen return0",
+  "flash_writes": 0,
+  "bootenv_writes": 0,
+  "runtime": "ETH73_RAM_LEFT_RUNNING_ETH0_UP_ETH1_DOWN_UART_RELEASED",
+  "persistent_boot": "UNRUN",
+  "second_connector_traffic": "UNRUN",
+  "long_soak": "UNRUN",
+  "source_evidence": [
+    {
+      "path": "LOCAL_EVIDENCE/eth73-physical-trial-v6/result.json",
+      "sha256": "e209019a9440301dc8340bce184e371dd47fe2ce24894e625b85c72dcf8c9b6c"
+    },
+    {
+      "path": "LOCAL_EVIDENCE/eth73-physical-trial-v6/uart-redacted.txt",
+      "sha256": "c9754c338026a04c0eb9d717b152e7e24a8bd8c0f00d29de8c063f0a3f2d0337"
+    },
+    {
+      "path": "LOCAL_EVIDENCE/eth73-physical-trial-v6/network-counters.json",
+      "sha256": "9384327256820baf8a99518d712a388a47d8f433e059285679493798781a1448"
+    },
+    {
+      "path": "LOCAL_EVIDENCE/eth73-physical-trial-v6/ymodem-control-events.json",
+      "sha256": "53e81aac9e59b79179d792977e98d8fdeef335707f77b8d006668beafe0e6bef"
+    },
+    {
+      "path": "LOCAL_EVIDENCE/eth73-physical-trial-v6/transfer-timing.jsonl",
+      "sha256": "8a61b59b9c6fc642a5090fbad64e7730b4e28781483be94a1182f5b1d02fc141"
+    },
+    {
+      "path": "LOCAL_EVIDENCE/eth73-ram-artifact-v3/CONFIG.json",
+      "sha256": "fcd4a0b443feb63f2c4fcd9b8382fd87e3b88ff5b6dd58ed1be33cfc400374f9"
+    },
+    {
+      "path": "LOCAL_EVIDENCE/eth73-ram-artifact-v3/BUILD_RESULT.json",
+      "sha256": "11a18b7f8d41cb4d3e31806e139b3f353d6d575794bb124549a1150bb21d3c01"
+    }
+  ]
+}

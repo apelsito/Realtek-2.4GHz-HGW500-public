@@ -1,0 +1,52 @@
+--- a/drivers/net/wireless/realtek/rtlwifi/core.c
++++ b/drivers/net/wireless/realtek/rtlwifi/core.c
+@@ -202,17 +202,45 @@
+ 	struct rtl_hal *rtlhal = rtl_hal(rtl_priv(hw));
+ 	struct rtl_ps_ctl *ppsc = rtl_psc(rtl_priv(hw));
+ 	struct rtl_tcb_desc tcb_desc;
++	static unsigned int trace_count;
++	unsigned int trace_id = ++trace_count;
++	bool trace = trace_id <= 32;
++	bool queued;
++	int tx_result = 0;
+ 
+ 	memset(&tcb_desc, 0, sizeof(struct rtl_tcb_desc));
++	if (trace)
++		pr_info("OMRTL stage=tx-enter id=%u len=%u fc=%#x hal_stop=%u rf=%d interface=%u\n",
++			trace_id, skb->len, le16_to_cpu(rtl_get_fc(skb)),
++			(unsigned int)is_hal_stop(rtlhal), ppsc->rfpwr_state,
++			(unsigned int)test_bit(RTL_STATUS_INTERFACE_START,
++					       &rtlpriv->status));
+ 
+-	if (unlikely(is_hal_stop(rtlhal) || ppsc->rfpwr_state != ERFON))
++	if (unlikely(is_hal_stop(rtlhal) || ppsc->rfpwr_state != ERFON)) {
++		if (trace)
++			pr_info("OMRTL stage=tx-drop id=%u reason=hal-or-rf\n",
++				trace_id);
+ 		goto err_free;
++	}
+ 
+-	if (!test_bit(RTL_STATUS_INTERFACE_START, &rtlpriv->status))
++	if (!test_bit(RTL_STATUS_INTERFACE_START, &rtlpriv->status)) {
++		if (trace)
++			pr_info("OMRTL stage=tx-drop id=%u reason=interface\n",
++				trace_id);
+ 		goto err_free;
++	}
+ 
+-	if (!rtlpriv->intf_ops->waitq_insert(hw, control->sta, skb))
+-		rtlpriv->intf_ops->adapter_tx(hw, control->sta, skb, &tcb_desc);
++	queued = rtlpriv->intf_ops->waitq_insert(hw, control->sta, skb);
++	if (trace)
++		pr_info("OMRTL stage=tx-waitq id=%u queued=%u\n",
++			trace_id, (unsigned int)queued);
++	if (!queued) {
++		tx_result = rtlpriv->intf_ops->adapter_tx(hw, control->sta, skb,
++						     &tcb_desc);
++		if (trace)
++			pr_info("OMRTL stage=tx-adapter-exit id=%u result=%d\n",
++				trace_id, tx_result);
++	}
+ 	return;
+ 
+ err_free:

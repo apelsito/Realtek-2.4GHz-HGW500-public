@@ -1,0 +1,163 @@
+{
+  "schema": "openmitrastar.radio73-independent-qualification/v1",
+  "status": "PASS_PAIRED_KERNEL_MODULE_ARC_IMPORTS",
+  "hardware_accessed": false,
+  "clean_independent_output": true,
+  "config_sha256": "cdbd2ddd1f4dfe018de86673d678dd891282cf0fb5edae0e359bbfdaad62de74",
+  "files": [
+    {
+      "path": "vmlinux",
+      "bytes": 4980564,
+      "sha256": "25c726d1d5d9a0ed617985dc974452233ced07c132687acafad167bf816bacd3",
+      "identical": true,
+      "imports_resolved": 0,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "crypto/aead.ko",
+      "bytes": 8636,
+      "sha256": "3a57eeafca87237505a4c9dcd63bd2adb9cdde2ca5f6160498c364200910737e",
+      "identical": true,
+      "imports_resolved": 13,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "crypto/aes.ko",
+      "bytes": 17748,
+      "sha256": "5af05c8cabfe09182ca62a1d3395fd60eb9923eb8b3df8c0602a403c145bd612",
+      "identical": true,
+      "imports_resolved": 38,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "crypto/ccm.ko",
+      "bytes": 14140,
+      "sha256": "cae7e6cb03b6ab99b807d453436543d5a3b92f289ffc0449171df58d53f2afea",
+      "identical": true,
+      "imports_resolved": 45,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "crypto/crypto_skcipher.ko",
+      "bytes": 23240,
+      "sha256": "03922eb391d585104509fa909fb72fe160e5457c323761ff9e723dc9fc757fa8",
+      "identical": true,
+      "imports_resolved": 37,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "crypto/ctr.ko",
+      "bytes": 6896,
+      "sha256": "0c3aa070efd3bb62a704870c3d8b9311779aef8d44c78db8092daf32210bc104",
+      "identical": true,
+      "imports_resolved": 23,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "crypto/ecb.ko",
+      "bytes": 5540,
+      "sha256": "fe54adb5b2f81564ac4008ec87abe8bbeedc0ac4929774605a9b36640f2519c9",
+      "identical": true,
+      "imports_resolved": 15,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "crypto/gcm.ko",
+      "bytes": 14528,
+      "sha256": "8225c68fd6daac3b45c5af0d5569ca487d833a37a6e3bbf421e24685fd9b89c5",
+      "identical": true,
+      "imports_resolved": 41,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "crypto/sha256.ko",
+      "bytes": 11552,
+      "sha256": "15371e1548c1eb8f9bfd21fdd51db3a15ece9eca40c25403c7a02be1932e5ad1",
+      "identical": true,
+      "imports_resolved": 17,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "drivers/base/firmware_loader/firmware_class.ko",
+      "bytes": 14380,
+      "sha256": "79479996345568c99e1e4825524158c24535b4692bad121e67c35660d0a2b233",
+      "identical": true,
+      "imports_resolved": 34,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.ko",
+      "bytes": 170816,
+      "sha256": "570eeaade280fb1eebac288f531589c9cabe60037c176ce1cd1741dc9be08b7e",
+      "identical": true,
+      "imports_resolved": 16,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.ko",
+      "bytes": 115764,
+      "sha256": "a84f22941a5e7441df2896edd110027616bbb61da63b09203fe021474e464048",
+      "identical": true,
+      "imports_resolved": 67,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko",
+      "bytes": 49928,
+      "sha256": "8bf8e4d0dd145b80aad9d9f9fff521dc31a0de444b985fa78905a7b8638ece5a",
+      "identical": true,
+      "imports_resolved": 104,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko",
+      "bytes": 97700,
+      "sha256": "c5174274229bffb293dd640ceb81a76d3f2a641df3d2a3c6b2944b717731677b",
+      "identical": true,
+      "imports_resolved": 73,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "lib/crypto/libaes.ko",
+      "bytes": 28652,
+      "sha256": "7d26ca01d56564ee755a0ebd1c2a2a18f83900a543990defd821f7dfbe3fec3f",
+      "identical": true,
+      "imports_resolved": 9,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "lib/crypto/libarc4.ko",
+      "bytes": 3144,
+      "sha256": "04c63fb0288472245a4c2d3c2e2d93f6469d9c692d1eb2ccafbe32ac209b20ca",
+      "identical": true,
+      "imports_resolved": 0,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "lib/crypto/libgf128hash.ko",
+      "bytes": 6396,
+      "sha256": "c7d9ecf0115092ec11e71f39f6a023e92182a79cc0b87196d66d464516a8130e",
+      "identical": true,
+      "imports_resolved": 2,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "net/mac80211/mac80211.ko",
+      "bytes": 606556,
+      "sha256": "df177f0d64bc4b025c10759482d326eaf2a135d69a84c85e347f30245a526ea7",
+      "identical": true,
+      "imports_resolved": 301,
+      "forbidden_instructions": 0
+    },
+    {
+      "path": "net/wireless/cfg80211.ko",
+      "bytes": 391388,
+      "sha256": "11290b32e55091ac0711e0b3151f401575247768038f5af602d05ebfb894ff66",
+      "identical": true,
+      "imports_resolved": 155,
+      "forbidden_instructions": 0
+    }
+  ],
+  "radio_physical": "UNRUN",
+  "ethernet_included_in_this_build": false
+}
